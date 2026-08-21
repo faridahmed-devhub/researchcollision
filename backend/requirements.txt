@@ -1,0 +1,23 @@
+fastapi>=0.110,<1.0
+uvicorn[standard]>=0.27
+pydantic>=2.6
+pydantic-settings>=2.2
+email-validator>=2.1
+SQLAlchemy>=2.0
+alembic>=1.13
+httpx>=0.27
+beautifulsoup4>=4.12
+PyMuPDF>=1.24
+python-docx>=1.1
+pandas>=2.2
+openpyxl>=3.1
+numpy>=1.24
+tenacity>=8.2
+structlog>=24.1
+PyJWT>=2.8
+bcrypt>=4.1
+python-multipart>=0.0.9
+
+# Optional heavy dependency (not required for mock mode):
+#   pip install sentence-transformers
+# Then set EMBEDDING_PROVIDER=sentence_transformer

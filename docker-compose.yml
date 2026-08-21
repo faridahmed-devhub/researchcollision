@@ -1,0 +1,45 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    env_file: .env
+    environment:
+      - DATABASE_URL=sqlite:///./data/researchcollision.db
+      - RUN_WORKER_IN_APP=false
+    ports:
+      - "8000:8000"
+    volumes:
+      - sqlite-data:/app/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  worker:
+    build:
+      context: ./backend
+    command: python -m app.workers.worker
+    env_file: .env
+    environment:
+      - DATABASE_URL=sqlite:///./data/researchcollision.db
+      - RUN_WORKER_IN_APP=false
+    volumes:
+      - sqlite-data:/app/data
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: http://localhost:8000/api/v1
+    ports:
+      - "5173:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  sqlite-data:
