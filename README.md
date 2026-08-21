@@ -1,63 +1,70 @@
 # ResearchCollision
 
 <p align="center">
-  <strong>An Evidence-Aware Agentic AI Platform for Discovering Non-Obvious Research Collaborations and Research Opportunities.</strong>
+  <strong>Evidence-Aware Agentic AI for Discovering Non-Obvious Research Connections</strong>
 </p>
 
 <p align="center">
-  <a href="#features">Features</a> •
-  <a href="#architecture">Architecture</a> •
-  <a href="#agentic-workflow">Agentic Workflow</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#api">API</a> •
-  <a href="#development">Development</a>
+  Discover potential research intersections, research gaps, hypotheses,
+  experiment ideas, and complementary researchers across scientific literature.
 </p>
 
 <p align="center">
 
+![Status](https://img.shields.io/badge/status-active%20development-orange)
+![Build](https://img.shields.io/badge/build-verified-brightgreen)
+![Tests](https://img.shields.io/badge/tests-8%2F8%20passing-brightgreen)
+![E2E](https://img.shields.io/badge/E2E-Playwright-blue)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688?logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-18%2B-61DAFB?logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5%2B-3178C6?logo=typescript&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-FTS5-003B57?logo=sqlite&logoColor=white)
-![License](https://img.shields.io/badge/License-Apache%202.0-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white)
+![Agentic AI](https://img.shields.io/badge/AI-Agentic%20AI-purple)
 
 </p>
 
 ---
 
-## What is ResearchCollision?
+## Overview
 
-ResearchCollision is an **Agentic AI Research Discovery Platform** designed to identify meaningful connections between researchers, research domains, scientific literature, research gaps, methods, datasets, and emerging research directions.
+ResearchCollision is an **Evidence-Aware Agentic AI research discovery
+platform** designed to identify potentially meaningful connections between:
 
-Traditional research discovery usually looks like:
+- Researchers
+- Research domains
+- Scientific literature
+- Research problems
+- Methods
+- Datasets
+- Research trajectories
+- Research gaps
+- Emerging research directions
+
+Traditional research discovery often looks like:
 
 ```text
 Research Question
-       ↓
-Search
-       ↓
+      ↓
+Keyword Search
+      ↓
 Similar Papers
-       ↓
+      ↓
 Similar Researchers
 
-ResearchCollision takes a different approach:
+ResearchCollision explores a different workflow:
 
-Researcher A
-      +
-Researcher B
-      +
-Scientific Literature
-      +
-Research Trajectories
-      +
-Research Gaps
-      +
-Methods
-      +
-Datasets
+Research Profile
       ↓
-Research Intersection
+Research DNA
+      ↓
+Scientific Literature
+      ↓
+Research Trajectories
+      ↓
+Research Gaps
+      ↓
+Research Intersections
       ↓
 Evidence Verification
       ↓
@@ -69,38 +76,66 @@ Potential Collaboration
 
 The central question is:
 
-Who could potentially be working together, and what research opportunity might exist between their research trajectories?
+What meaningful research connection might exist between research trajectories that are not obviously connected?
 
 ResearchCollision does not claim that a researcher wants to collaborate.
 
-Instead, it identifies evidence-supported potential research intersections that a human researcher can evaluate.
+Instead, it identifies evidence-supported potential research intersections
+that a human researcher can investigate and validate.
 
 Why ResearchCollision?
 Modern research is increasingly interdisciplinary.
 
 A researcher working on:
 
-Large Language Models
+LLM Evaluation
+RAG
+NLP
+Hallucination Detection
 
-may benefit from someone working on:
+may have complementary expertise with another researcher working on:
 
 Scientific Machine Learning
+Climate Modeling
+Environmental Data
 
 while another researcher may contribute:
 
-Domain-specific datasets
+Evaluation Methodology
+Benchmarking
+Robustness
 
-and another:
+Traditional keyword search may not naturally connect these research
+communities.
 
-Evaluation methodology
+ResearchCollision attempts to find the intersection:
 
-However, conventional literature search tends to stay within known keywords and research communities.
+Researcher A
+     +
+Researcher B
+     +
+Scientific Literature
+     +
+Research Gaps
+     +
+Methods
+     +
+Datasets
+     ↓
+Potential Research Collision
 
-ResearchCollision attempts to find the collision point between these research trajectories.
+For example:
 
-Core Concept
-Research Collision
-A Research Collision occurs when two or more research trajectories contain complementary:
+Domain-aware evaluation of LLM
+scientific reasoning for climate-related tasks
+
+This is not presented as guaranteed novel research.
+
+It is a candidate research direction that requires human validation.
+
+Core Concept: Research Collision
+A Research Collision occurs when two or more research trajectories contain
+potentially complementary:
 
 Problems
 Methods
@@ -134,84 +169,125 @@ Domain-aware evaluation of
 LLM scientific reasoning
 for climate-related tasks
 
-The system then searches the literature and evaluates whether this intersection is:
+The system can then investigate whether the intersection appears:
 
 Relevant
 Evidence-supported
-Underexplored
+Potentially underexplored
 Feasible
 Experimentally testable
-Key Principles
+Design Principles
 ResearchCollision is built around five principles.
 
 1. Evidence First
-AI-generated claims should be connected to evidence whenever possible.
+AI-generated claims should be connected to available evidence whenever
+possible.
+
+Important claims should preserve:
+
+Claim
+Source
+Source Type
+Retrieved At
+Evidence Status
 
 2. No Fabricated Research
 The system must never invent:
 
-Papers
 Researchers
 Universities
+Papers
 DOI
 URLs
-Findings
+Research findings
 Datasets
 Funding
 Research positions
 Collaboration intentions
-3. Separate Facts From Inference
-The platform distinguishes:
+If reliable evidence cannot be found, the system should say so.
 
+3. Separate Facts From Inference
+ResearchCollision distinguishes between:
+
+Status	Meaning
+VERIFIED	Directly supported by available evidence
+INFERRED	AI inference based on available evidence
+SPECULATIVE	Potential idea requiring validation
+UNKNOWN	Evidence unavailable
+
+Example:
+
+Claim:
+Researcher X works on LLM evaluation.
+
+Status:
 VERIFIED
+
+Evidence:
+Official university research profile
+
+Whereas:
+
+Claim:
+Researcher X may be relevant to this research direction.
+
+Status:
 INFERRED
-SPECULATIVE
-UNKNOWN
 
 4. Human-in-the-Loop
-AI proposes.
-
-Researchers validate.
+ResearchCollision is not intended to replace scientific judgment.
 
 AI Discovery
-      ↓
+     ↓
 Evidence Review
-      ↓
+     ↓
 Human Validation
-      ↓
+     ↓
 Research Decision
 
-5. Scientific Novelty Is Not Guaranteed
-The system must never say:
+The AI proposes.
 
-"Nobody has researched this."
+The researcher validates.
+
+5. Scientific Novelty Is Not Guaranteed
+The system should never claim:
+
+Nobody has researched this.
 
 Instead:
 
-"No relevant evidence was found in the searched literature."
+No relevant evidence was found in the searched literature.
 
 or:
 
-"This appears underexplored based on the retrieved literature."
+This appears potentially underexplored based on
+the retrieved literature.
+
+Scientific novelty ultimately requires human and scholarly validation.
 
 Features
 Research DNA Extraction
-Upload a CV or research document.
+A researcher can provide:
 
-The system extracts:
+CV
+Research statement
+Publication list
+Projects
+Research portfolio
+The system can extract:
 
-Research interests
-Research questions
-Research problems
-Academic background
+Research Domains
+Research Problems
+Research Questions
+Methods
+Technical Skills
+Datasets
 Publications
 Projects
-Methods
-Technical skills
-Datasets
-Domains
-Research experience
-Emerging interests
+Research Experience
+Research Interests
+Emerging Interests
+
 Example:
 
 {
@@ -234,12 +310,13 @@ Example:
   ]
 }
 
-The extracted profile can be edited before research discovery starts.
+The extracted research profile can be reviewed and edited before discovery.
 
 Literature Discovery
-ResearchCollision uses a provider abstraction for scholarly discovery.
+ResearchCollision is designed around a provider abstraction for scholarly
+literature.
 
-Initial providers:
+Supported/planned providers include:
 
 OpenAlex
 Semantic Scholar
@@ -247,18 +324,18 @@ Crossref
 arXiv
 Architecture:
 
-                    LiteratureProvider
-                           |
-          +----------------+----------------+
-          |                |                |
-       OpenAlex      Semantic Scholar    Crossref
-                                             |
-                                           arXiv
+                 LiteratureProvider
+                        |
+          +-------------+-------------+
+          |             |             |
+       OpenAlex   Semantic Scholar  Crossref
+                                      |
+                                    arXiv
 
-The application does not depend on one provider.
+The platform should not depend on a single literature provider.
 
 Researcher Discovery
-The platform discovers researchers using multiple signals:
+Potential researchers can be identified using multiple signals:
 
 Research interests
 Publications
@@ -271,19 +348,20 @@ Complementary skills
 Keyword similarity alone is not sufficient.
 
 Research Trajectory Analysis
-A researcher's most recent publication may not fully represent their research direction.
+A researcher's latest publication does not necessarily represent their
+complete research direction.
 
-ResearchCollision analyzes:
+ResearchCollision analyzes the potential trajectory:
 
 Historical Research
-        ↓
+       ↓
 Research Evolution
-        ↓
+       ↓
 Current Research
-        ↓
-Emerging Research Direction
+       ↓
+Emerging Direction
 
-Potential signals:
+Potential signals include:
 
 Persistent topics
 Emerging topics
@@ -291,10 +369,10 @@ Topic transitions
 Methodological changes
 Interdisciplinary movement
 Domain shifts
-The system must not infer private intentions.
+The system must not claim to know private research intentions.
 
 Research Gap Detection
-The Research Gap Agent analyzes literature for:
+The Research Gap Agent analyzes available literature for signals such as:
 
 Explicit limitations
 Future work
@@ -302,42 +380,34 @@ Missing evaluations
 Dataset limitations
 Methodological limitations
 Contradictory findings
-Domain transfer opportunities
+Domain-transfer opportunities
 Reproducibility concerns
 Evaluation gaps
 Example:
 
-Existing literature:
-
+Existing Literature
+       ↓
 Method X
-    ↓
+       ↓
 Dataset Y
-    ↓
-Strong results
+       ↓
+Strong Results
+       ↓
+Reported Limitations
+       ↓
+Potential Research Direction
 
-But multiple papers identify:
-
-- Limited domain diversity
-- Poor generalization
-- Limited evaluation
-
-Potential research direction:
-
-Evaluate Method X across
-another scientific domain.
-
-This is an AI-generated research direction, not a guaranteed research gap.
+A generated research direction is an AI-generated candidate, not a
+guaranteed research gap.
 
 Research Intersection Discovery
-This is the core ResearchCollision capability.
-
-The system compares research trajectories and literature.
+This is the central ResearchCollision capability.
 
 Researcher A
       +
 Researcher B
       +
-Papers
+Scientific Papers
       +
 Research Gaps
       +
@@ -347,7 +417,7 @@ Datasets
       ↓
 Intersection Candidate
 
-Each candidate contains:
+A candidate can contain:
 
 Title
 Description
@@ -355,10 +425,9 @@ Shared research problem
 Complementary expertise
 Research gap
 Supporting evidence
-Researcher A relevance
-Researcher B relevance
-Novelty confidence
-Feasibility confidence
+Researcher relevance
+Feasibility
+Confidence
 Evidence System
 Every important externally sourced claim should have an evidence record.
 
@@ -371,7 +440,7 @@ Source:
 Official university profile
 
 Source Type:
-University Profile
+University Research Profile
 
 Status:
 VERIFIED
@@ -382,15 +451,13 @@ Retrieved:
 Evidence statuses:
 
 Status	Description
-VERIFIED	Directly supported by available evidence
-INFERRED	AI inference from available evidence
-SPECULATIVE	Possible idea requiring validation
+VERIFIED	Directly supported by evidence
+INFERRED	AI inference from evidence
+SPECULATIVE	Potential idea requiring validation
 UNKNOWN	Evidence unavailable
 
 Citation Verification
-ResearchCollision validates scholarly metadata where possible.
-
-Validation signals include:
+Scholarly metadata can be checked using:
 
 DOI
 Paper title
@@ -398,26 +465,27 @@ Authors
 Provider ID
 Publication year
 Source URL
-A citation must not be marked as verified unless the underlying source can be validated.
+A citation should not be marked as verified unless the underlying source
+can be validated.
 
 Hypothesis Generation
-For promising research intersections, the system generates a structured hypothesis.
+For promising research intersections, the system can generate structured
+research hypotheses.
 
 Example:
 
 Research Question
 
-Can domain-aware evaluation improve
-the reliability assessment of LLMs
-on scientific reasoning tasks?
+Can domain-aware evaluation improve the reliability
+assessment of LLMs on scientific reasoning tasks?
 
-Hypothesis
+Potential hypothesis:
 
-Domain-specific evaluation protocols
-will reveal failure modes that are not
-captured by general-purpose benchmarks.
+Domain-specific evaluation protocols may reveal
+failure modes that are not captured by
+general-purpose benchmarks.
 
-Hypotheses may include:
+A hypothesis may include:
 
 Research question
 Hypothesis
@@ -430,128 +498,89 @@ Baseline
 Metrics
 Expected contribution
 Risks
-AI-generated hypotheses are clearly labeled.
+AI-generated hypotheses are explicitly labeled.
 
 Experiment Design
-ResearchCollision can transform a research intersection into an initial experiment plan.
+A research intersection can be transformed into an initial experiment plan:
 
 Research Question
-        ↓
+       ↓
 Hypothesis
-        ↓
+       ↓
 Dataset
-        ↓
+       ↓
 Baseline
-        ↓
+       ↓
 Proposed Method
-        ↓
+       ↓
 Evaluation Metrics
-        ↓
+       ↓
 Ablation
-        ↓
+       ↓
 Expected Outcome
 
-The system separates:
+The system distinguishes between:
 
 Verified Resources
 
-from:
+and:
 
 AI-Proposed Resources
 
-Collaboration Discovery
-ResearchCollision ranks researchers who may be relevant to a research opportunity.
+This prevents generated suggestions from being confused with verified
+scientific resources.
 
-Example scoring:
+Collaboration Ranking
+Potentially relevant researchers can be ranked using configurable signals.
 
-Research relevance          25%
-Method complementarity      20%
-Research trajectory         20%
-Research gap relevance      15%
-Evidence strength           10%
+Example scoring model:
+
+Research Relevance          25%
+Method Complementarity      20%
+Research Trajectory         20%
+Research Gap Relevance      15%
+Evidence Strength           10%
 Feasibility                 10%
 
 Example:
 
-Collaboration Score: 91
+Collaboration Score: 91/100
 
-Research relevance:        Strong
-Method complementarity:    Strong
-Trajectory relevance:      Strong
-Evidence coverage:         High
+Research Relevance:        Strong
+Method Complementarity:    Strong
+Trajectory Relevance:      Strong
+Evidence Coverage:         High
 Feasibility:               Good
 
-The system should say:
+The score is a decision-support signal.
 
-"This researcher appears potentially relevant based on available research evidence."
+It is not a prediction of actual collaboration.
 
-It should never say:
+Agentic AI Architecture
+ResearchCollision is designed around specialized agents rather than one
+large monolithic prompt.
 
-"This researcher wants to collaborate."
+                 Research DNA Agent
+                         ↓
+                Literature Agent
+                         ↓
+                Paper Analysis Agent
+                         ↓
+                 Trajectory Agent
+                         ↓
+                  Research Gap Agent
+                         ↓
+              Research Intersection Agent
+                         ↓
+                Evidence Verification
+                         ↓
+                  Hypothesis Agent
+                         ↓
+                  Experiment Agent
+                         ↓
+                Collaboration Ranking
 
-Agentic Architecture
-ResearchCollision uses specialized agents rather than one large prompt.
-
-                         ┌─────────────────────┐
-                         │   Research DNA      │
-                         │       Agent         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │    Literature       │
-                         │       Agent         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │   Paper Analysis    │
-                         │       Agent         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │    Trajectory       │
-                         │       Agent         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │    Research Gap     │
-                         │       Agent         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │ Research Intersection│
-                         │       Agent         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │    Verification     │
-                         │       Agent         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │    Hypothesis       │
-                         │       Agent         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │    Experiment       │
-                         │       Agent         │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │ Collaboration Rank  │
-                         │       Agent         │
-                         └─────────────────────┘
-
-Each agent must have:
+Each agent should have:
 
 Structured input
 Structured output
@@ -568,6 +597,7 @@ Input:
 CV
 Research Statement
 Publication List
+Projects
 
 Output:
 
@@ -621,7 +651,7 @@ Validate claims
 Validate citations
 Validate URLs
 Check source quality
-Mark evidence status
+Assign evidence status
 Hypothesis Agent
 Responsibilities:
 
@@ -634,7 +664,7 @@ Responsibilities:
 
 Propose datasets
 Propose baselines
-Propose methodology
+Propose methodologies
 Propose evaluation metrics
 Generate experiment plans
 Ranking Agent
@@ -647,50 +677,45 @@ Return evidence-backed reasons
 Architecture
 ResearchCollision follows a modular monolith architecture.
 
-This provides:
+This keeps local development simple while maintaining clear boundaries for
+future scaling.
 
-Simple local development
-Clear domain boundaries
-Easy testing
-Lower operational complexity
-Future migration to distributed services
-┌─────────────────────────────────────┐
-│             React UI                │
-└──────────────────┬──────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────┐
-│             FastAPI                 │
-│          REST API Layer              │
-└──────────────────┬──────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────┐
-│        Application Services         │
-└──────────────────┬──────────────────┘
-                   │
-       ┌───────────┼───────────┐
-       ▼           ▼           ▼
-   Agents      Providers    Evidence
-       │           │           │
-       └───────────┼───────────┘
-                   ▼
-┌─────────────────────────────────────┐
-│         Domain / Repository         │
-│              Layer                  │
-└──────────────────┬──────────────────┘
-                   │
-                   ▼
-┌─────────────────────────────────────┐
-│          SQLite + FTS5              │
-└─────────────────────────────────────┘
+┌───────────────────────────────┐
+│          React UI             │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│           FastAPI             │
+│          REST API             │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│      Application Services     │
+└───────────────┬───────────────┘
+                │
+        ┌───────┼────────┐
+        ▼       ▼        ▼
+     Agents  Providers  Evidence
+        │       │        │
+        └───────┼────────┘
+                ▼
+┌───────────────────────────────┐
+│      Domain / Repository      │
+└───────────────┬───────────────┘
+                │
+                ▼
+┌───────────────────────────────┐
+│          SQLite + FTS5        │
+└───────────────────────────────┘
 
 Technology Stack
 Backend
 Python 3.11+
 FastAPI
-Pydantic v2
-SQLAlchemy 2
+Pydantic
+SQLAlchemy
 Alembic
 SQLite
 SQLite FTS5
@@ -736,123 +761,41 @@ Project Structure
 researchcollision/
 │
 ├── backend/
-│   │
 │   ├── app/
-│   │   │
 │   │   ├── api/
 │   │   │   └── v1/
-│   │   │       ├── health.py
-│   │   │       ├── workspaces.py
-│   │   │       ├── research_profiles.py
-│   │   │       ├── researchers.py
-│   │   │       ├── papers.py
-│   │   │       ├── discovery.py
-│   │   │       ├── trajectories.py
-│   │   │       ├── gaps.py
-│   │   │       ├── intersections.py
-│   │   │       ├── hypotheses.py
-│   │   │       ├── experiments.py
-│   │   │       ├── collaborations.py
-│   │   │       ├── evidence.py
-│   │   │       └── reports.py
-│   │   │
 │   │   ├── agents/
-│   │   │   ├── base.py
-│   │   │   ├── profile_agent.py
-│   │   │   ├── literature_agent.py
-│   │   │   ├── paper_analysis_agent.py
-│   │   │   ├── trajectory_agent.py
-│   │   │   ├── gap_agent.py
-│   │   │   ├── intersection_agent.py
-│   │   │   ├── verification_agent.py
-│   │   │   ├── hypothesis_agent.py
-│   │   │   ├── experiment_agent.py
-│   │   │   └── ranking_agent.py
-│   │   │
 │   │   ├── core/
-│   │   │   ├── config.py
-│   │   │   ├── logging.py
-│   │   │   ├── security.py
-│   │   │   └── dependencies.py
-│   │   │
 │   │   ├── db/
-│   │   │   ├── base.py
-│   │   │   ├── session.py
-│   │   │   ├── models/
-│   │   │   └── repositories/
-│   │   │
 │   │   ├── providers/
 │   │   │   ├── ai/
-│   │   │   │   ├── base.py
-│   │   │   │   ├── openrouter.py
-│   │   │   │   ├── huggingface.py
-│   │   │   │   └── mock.py
-│   │   │   │
 │   │   │   ├── literature/
-│   │   │   │   ├── base.py
-│   │   │   │   ├── openalex.py
-│   │   │   │   ├── semantic_scholar.py
-│   │   │   │   ├── crossref.py
-│   │   │   │   └── arxiv.py
-│   │   │   │
 │   │   │   └── embeddings/
-│   │   │
 │   │   ├── schemas/
 │   │   ├── services/
-│   │   ├── workers/
-│   │   ├── prompts/
-│   │   └── main.py
-│   │
+│   │   └── workers/
 │   ├── alembic/
 │   ├── tests/
 │   ├── requirements.txt
 │   └── pyproject.toml
 │
 ├── frontend/
-│   │
 │   ├── src/
 │   │   ├── api/
 │   │   ├── components/
 │   │   ├── features/
-│   │   │   ├── profile/
-│   │   │   ├── discovery/
-│   │   │   ├── researchers/
-│   │   │   ├── intersections/
-│   │   │   ├── hypotheses/
-│   │   │   └── experiments/
 │   │   ├── hooks/
 │   │   ├── layouts/
 │   │   ├── pages/
 │   │   ├── stores/
 │   │   ├── types/
 │   │   └── utils/
-│   │
 │   ├── tests/
-│   ├── package.json
-│   └── vite.config.ts
-│
-├── evaluation/
-│   ├── datasets/
-│   ├── benchmarks/
-│   └── reports/
-│
-├── sample_data/
-│   ├── sample_cv.pdf
-│   ├── sample_researchers.json
-│   └── sample_papers.json
-│
-├── scripts/
-│   ├── seed.py
-│   ├── reset_db.py
-│   └── benchmark.py
+│   └── package.json
 │
 ├── docs/
-│   ├── architecture.md
-│   ├── agents.md
-│   ├── database.md
-│   ├── providers.md
-│   └── evaluation.md
-│
+├── sample_data/
+├── scripts/
 ├── data/
 │
 ├── .env.example
@@ -863,12 +806,10 @@ researchcollision/
 ├── LICENSE
 └── README.md
 
-Database Architecture
-SQLite is the default database for local development.
+Database
+SQLite is the default development database.
 
-The schema is designed to allow future migration to PostgreSQL.
-
-Core entities:
+The architecture is designed around clear domain entities such as:
 
 users
 workspaces
@@ -913,55 +854,36 @@ generated_reports
 settings
 audit_logs
 
-All major tables should contain:
+SQLite FTS5 can be used for local full-text search.
 
-id
-created_at
-updated_at
+The architecture leaves room for future PostgreSQL/pgvector migration.
 
-Foreign keys, indexes, uniqueness constraints, and appropriate cascading behavior should be enforced.
+Caching
+Research discovery can be expensive.
 
-Full Discovery Workflow
-1. Create Workspace
-        ↓
-2. Upload CV / Research Profile
-        ↓
-3. Research DNA Agent
-        ↓
-4. Review Research Profile
-        ↓
-5. Select Research Domains
-        ↓
-6. Discover Relevant Researchers
-        ↓
-7. Collect Publications
-        ↓
-8. Analyze Publications
-        ↓
-9. Build Research Trajectories
-        ↓
-10. Detect Research Gaps
-        ↓
-11. Generate Research Intersections
-        ↓
-12. Verify Evidence
-        ↓
-13. Rank Intersections
-        ↓
-14. Generate Hypotheses
-        ↓
-15. Design Experiments
-        ↓
-16. Rank Collaboration Candidates
-        ↓
-17. Human Review
-        ↓
-18. Export Research Report
+The platform is designed to cache:
 
-Job System
-Research discovery may require hundreds or thousands of operations.
+Provider responses
+Paper metadata
+Researcher metadata
+Extracted content
+AI analysis
+Embeddings
+Evidence
+Cached records can include:
 
-The job system supports:
+URL
+Provider
+Content Hash
+Retrieved At
+Expires At
+
+A future refresh workflow can explicitly re-run research when needed.
+
+Background Jobs
+Long-running discovery workflows should run as jobs.
+
+Supported states:
 
 PENDING
 RUNNING
@@ -970,7 +892,7 @@ COMPLETED
 FAILED
 CANCELLED
 
-Operations:
+Supported actions:
 
 START
 PAUSE
@@ -980,56 +902,38 @@ RETRY
 
 Example:
 
-Research Discovery Job
+Research Discovery
 
-Status: RUNNING
+████████████████░░░░ 82%
 
-Researchers:
-124 / 250
+Researchers analyzed: 146 / 180
+Papers analyzed:      1,430
+Evidence records:     3,412
+Collisions found:     37
 
-Papers:
-1,284 / 2,000
-
-Evidence:
-3,412 records
-
-Intersections:
-37 candidates
-
-A failed researcher should not terminate the entire job.
-
-Errors are logged and processing continues where possible.
-
-Caching
-ResearchCollision caches expensive research operations.
-
-Cached objects include:
-
-Provider responses
-Paper metadata
-Researcher metadata
-Extracted text
-Embeddings
-Evidence
-AI analysis
-Research trajectories
-Cache metadata:
-
-URL
-Content Hash
-Provider
-Retrieved At
-Expires At
-
-The system should avoid repeatedly requesting the same public resource unless the user explicitly chooses:
-
-Refresh Research
+A failure affecting one researcher should not unnecessarily terminate the
+whole discovery workflow.
 
 Provider Architecture
-Providers use interfaces.
+AI Provider
+class LLMProvider(Protocol):
 
-Example:
+    async def generate(
+        self,
+        prompt: str,
+    ) -> str:
+        ...
 
+    async def generate_structured(
+        self,
+        prompt: str,
+        schema: type[BaseModel],
+    ) -> BaseModel:
+        ...
+
+Structured generation should be preferred for agent outputs.
+
+Literature Provider
 class LiteratureProvider(Protocol):
 
     async def search(
@@ -1039,50 +943,176 @@ class LiteratureProvider(Protocol):
     ) -> list[PaperRecord]:
         ...
 
-AI providers follow a similar interface:
-
-class LLMProvider(Protocol):
-
-    async def generate_structured(
+    async def get_paper(
         self,
-        prompt: str,
-        schema: type[BaseModel],
-    ) -> BaseModel:
+        paper_id: str,
+    ) -> PaperRecord | None:
         ...
 
-This allows providers to be replaced without changing business logic.
+This allows providers to be replaced without rewriting the application.
 
-AI Provider Configuration
-Example:
+Research Integrity
+ResearchCollision must never fabricate:
 
-LLM_PROVIDER=openrouter
-LLM_MODEL=your-model
-OPENROUTER_API_KEY=your-key
+Researchers
+Universities
+Papers
+DOI
+URLs
+Findings
+Datasets
+Funding
+Positions
+Collaboration intentions
+If evidence is unavailable:
 
-Alternative:
+UNKNOWN
 
-LLM_PROVIDER=huggingface
+is preferable to an unsupported claim.
 
-Development:
+Web Usage & Safety
+The system must not:
 
-LLM_PROVIDER=mock
+Bypass CAPTCHA
+Bypass login pages
+Bypass Cloudflare
+Scrape private profiles
+Circumvent access controls
+Ignore robots restrictions
+Scrape aggressively
+Only legitimately accessible public information should be used.
 
-API keys must never be hard-coded.
+Reasonable rate limits should be applied.
 
-Literature Provider Configuration
-OpenAlex:
+Privacy
+Research documents may contain sensitive academic information.
 
-LITERATURE_PROVIDER=openalex
-OPENALEX_EMAIL=your-email@example.com
+The application should support:
 
-Semantic Scholar:
+File validation
+File size limits
+Secure temporary storage
+Workspace deletion
+Document deletion
+Export controls
+Configurable external AI processing
+Uploaded files must never be executed as code.
 
-SEMANTIC_SCHOLAR_API_KEY=your-key
+Verification Status
+The current repository is in active development.
 
-The application should gracefully handle unavailable providers.
+The following application foundation has been verified locally:
+
+Frontend
+npm run build
+✓ PASSING
+
+Unit Tests
+Vitest
+8 / 8 passing ✓
+
+Development Server
+Frontend:
+http://localhost:5173
+
+Backend:
+http://localhost:8000
+
+Verified:
+
+Vite development server     ✓
+Frontend → backend proxy    ✓
+Login flow                  ✓
+Dashboard statistics        ✓
+
+End-to-End Testing
+A Playwright E2E specification has been added.
+
+Install Chromium once:
+
+npx playwright install chromium
+
+Run:
+
+npm run e2e
+
+E2E tests should be considered verified only after running the command
+successfully in the current environment.
+
+Demo Account
+For local development/demo purposes:
+
+Email:
+demo@researchcollision.dev
+
+Password:
+demo1234
+
+Open:
+
+http://localhost:5173
+
+Then sign in using the demo account.
+
+Important: These credentials are for local/demo use only.
+Never use demo credentials in production.
+
+Quick Start
+Requirements
+Install:
+
+Python 3.11+
+Node.js 20+
+npm
+Git
+Optional:
+
+Docker
+Docker Compose
+Backend
+cd backend
+
+python -m venv .venv
+
+Linux/macOS
+source .venv/bin/activate
+
+Windows
+.venv\Scripts\activate
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run the backend:
+
+uvicorn app.main:app --reload --port 8000
+
+Backend:
+
+http://localhost:8000
+
+API documentation:
+
+http://localhost:8000/docs
+
+Frontend
+Open another terminal:
+
+cd frontend
+
+npm install
+
+npm run dev
+
+Open:
+
+http://localhost:5173
+
+The Vite development server proxies requests to the FastAPI backend.
 
 Environment Variables
-Copy:
+Create:
 
 cp .env.example .env
 
@@ -1113,524 +1143,45 @@ CORS_ORIGINS=http://localhost:5173
 
 LOG_LEVEL=INFO
 
-Installation
-Requirements
-Python 3.11+
-Node.js 20+
-npm
-Git
-Optional:
+Never commit .env.
 
 Docker
-Docker Compose
-Clone Repository
-git clone https://github.com/YOUR_USERNAME/researchcollision.git
-
-cd researchcollision
-
-Backend Setup
-cd backend
-
-python -m venv .venv
-
-Linux/macOS:
-
-source .venv/bin/activate
-
-Windows:
-
-.venv\Scripts\activate
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Run migrations:
-
-alembic upgrade head
-
-Seed sample data:
-
-python ../scripts/seed.py
-
-Start backend:
-
-uvicorn app.main:app --reload
-
-Backend:
-
-http://localhost:8000
-
-API documentation:
-
-http://localhost:8000/docs
-
-Frontend Setup
-Open a second terminal:
-
-cd frontend
-
-npm install
-
-npm run dev
-
-Frontend:
-
-http://localhost:5173
-
-Docker
-Build and start:
+Build:
 
 docker compose up --build
-
-Stop:
-
-docker compose down
 
 Run in background:
 
 docker compose up -d
 
-View logs:
+Stop:
 
-docker compose logs -f
-
-Development Commands
-From the repository root:
-
-make install
-
-Run backend:
-
-make backend
-
-Run frontend:
-
-make frontend
-
-Run tests:
-
-make test
-
-Run lint:
-
-make lint
-
-Run type checking:
-
-make typecheck
-
-Run formatting:
-
-make format
-
-Run all checks:
-
-make check
+docker compose down
 
 Testing
-Backend
+Frontend unit tests:
+
+npm run test
+
+Frontend build:
+
+npm run build
+
+Install Playwright Chromium:
+
+npx playwright install chromium
+
+Run E2E:
+
+npm run e2e
+
+Backend tests:
+
 cd backend
 pytest
 
-With coverage:
-
-pytest --cov=app --cov-report=term-missing
-
-Frontend
-cd frontend
-npm run test
-
-End-to-End
-npm run test:e2e
-
-or:
-
-make e2e
-
-API
-The backend exposes REST APIs under:
-
-/api/v1
-
-Core endpoints:
-
-GET    /api/v1/health
-
-POST   /api/v1/workspaces
-GET    /api/v1/workspaces
-
-POST   /api/v1/research-profiles
-GET    /api/v1/research-profiles/{id}
-PUT    /api/v1/research-profiles/{id}
-
-POST   /api/v1/documents/upload
-
-POST   /api/v1/discovery/jobs
-GET    /api/v1/discovery/jobs/{id}
-
-POST   /api/v1/discovery/jobs/{id}/pause
-POST   /api/v1/discovery/jobs/{id}/resume
-POST   /api/v1/discovery/jobs/{id}/cancel
-
-GET    /api/v1/researchers
-GET    /api/v1/researchers/{id}
-
-GET    /api/v1/papers
-GET    /api/v1/papers/{id}
-
-GET    /api/v1/trajectories/{id}
-
-GET    /api/v1/gaps
-GET    /api/v1/gaps/{id}
-
-GET    /api/v1/intersections
-GET    /api/v1/intersections/{id}
-
-POST   /api/v1/hypotheses
-GET    /api/v1/hypotheses/{id}
-
-POST   /api/v1/experiments
-GET    /api/v1/experiments/{id}
-
-GET    /api/v1/collaborations
-GET    /api/v1/collaborations/{id}
-
-GET    /api/v1/evidence
-GET    /api/v1/evidence/{id}
-
-POST   /api/v1/reports
-GET    /api/v1/reports/{id}
-
-The interactive OpenAPI documentation is available at:
-
-http://localhost:8000/docs
-
-Frontend Pages
-Dashboard
-Displays:
-
-Active workspace
-Research profile
-Discovery jobs
-Researcher count
-Paper count
-Research gaps
-Research intersections
-Collaboration candidates
-Research Profile
-Displays:
-
-Research Domains
-Research Problems
-Research Questions
-Methods
-Technical Skills
-Datasets
-Publications
-Projects
-Experience
-
-Users can edit the extracted profile.
-
-Discovery Dashboard
-Displays:
-
-Job Status
-Researchers Discovered
-Papers Collected
-Papers Analyzed
-Research Gaps
-Intersections
-Evidence Records
-Collaboration Candidates
-
-Progress example:
-
-Research Discovery
-
-████████████████░░░░ 82%
-
-Researchers: 146 / 180
-Papers: 1,430 / 1,800
-
-Researcher Detail
-Shows:
-
-Researcher
-Institution
-Research areas
-Publication history
-Research trajectory
-Methods
-Topics
-Evidence
-Relevant papers
-Potential intersections
-Collaboration score
-Research Intersection Detail
-Shows:
-
-Intersection Title
-
-Why This Intersection Matters
-
-Researcher A
-
-Researcher B
-
-Shared Problem
-
-Complementary Expertise
-
-Research Gap
-
-Supporting Literature
-
-Evidence
-
-Novelty Confidence
-
-Feasibility Confidence
-
-Hypothesis Detail
-Shows:
-
-Research Question
-
-Hypothesis
-
-Motivation
-
-Research Gap
-
-Evidence
-
-Method
-
-Dataset
-
-Baseline
-
-Evaluation Metrics
-
-Expected Contribution
-
-Risks
-
-Experiment Detail
-Shows:
-
-Objective
-
-Research Question
-
-Hypothesis
-
-Dataset
-
-Baseline
-
-Method
-
-Metrics
-
-Ablation
-
-Expected Results
-
-Risks
-
-Reproducibility Notes
-
-Evidence Panel
-Every important AI-generated claim should be inspectable.
-
-Example:
-
-Claim
-
-Researcher X studies LLM evaluation.
-
-Status
-
-VERIFIED
-
-Source
-
-Official university profile
-
-Retrieved
-
-2026-08-21
-
-Export
-ResearchCollision can generate research reports.
-
-Potential formats:
-
-JSON
-CSV
-XLSX
-Markdown
-PDF
-A report should include:
-
-Research profile
-Researchers
-Papers
-Research gaps
-Research intersections
-Hypotheses
-Experiments
-Collaboration candidates
-Evidence
-Sources
-Evidence Quality
-Sources should be prioritized approximately as:
-
-Official university source
-Official researcher profile
-Official laboratory/group
-Official publication
-DOI/Crossref
-OpenAlex
-Semantic Scholar
-arXiv
-Other reputable scholarly sources
-Lower-quality sources should not automatically be treated as authoritative.
-
-Source Provenance
-Each externally derived record should retain provenance.
-
-Example:
-
-{
-  "source_url": "https://example.org/researcher",
-  "source_type": "official_profile",
-  "retrieved_at": "2026-08-21T12:00:00Z",
-  "content_hash": "sha256:...",
-  "status": "VERIFIED"
-}
-
-Rate Limiting
-ResearchCollision must use reasonable request rates.
-
-The system must not:
-
-Crawl aggressively
-Circumvent rate limits
-Bypass authentication
-Bypass CAPTCHA
-Bypass Cloudflare
-Access private information
-When a provider returns a rate-limit error, the system should:
-
-Log the error.
-Apply backoff.
-Retry when appropriate.
-Continue with other providers when possible.
-Privacy
-ResearchCollision may process sensitive academic documents such as CVs.
-
-The application should provide:
-
-File validation
-File size limits
-Secure temporary storage
-User-controlled deletion
-Workspace deletion
-Export functionality
-Configurable external AI processing
-Uploaded documents should never be executed as code.
-
-Security
-Never store API keys in source code.
-
-Never commit:
-
-.env
-API keys
-tokens
-passwords
-private certificates
-
-Use:
-
-.env.example
-
-for configuration documentation.
-
-Security vulnerabilities should be reported privately.
-
-See:
-
-SECURITY.md
-
-AI Safety and Reliability
-ResearchCollision is an AI-assisted research discovery tool.
-
-AI output may contain errors.
-
-Therefore:
-
-AI Suggestion
-      ↓
-Evidence
-      ↓
-Verification
-      ↓
-Human Review
-
-The platform should make uncertainty visible instead of hiding it.
-
-Hallucination Prevention
-The system should use:
-
-Structured outputs
-Pydantic validation
-Citation verification
-Evidence requirements
-Provider provenance
-Confidence scores
-Explicit uncertainty states
-Human review
-AI output must never be accepted blindly.
-
-Novelty Detection
-Research novelty is difficult to determine automatically.
-
-ResearchCollision therefore uses cautious language.
-
-Allowed:
-
-Potentially underexplored
-
-No relevant evidence found
-
-Potential research opportunity
-
-Not allowed:
-
-Nobody has ever done this.
-
-This is guaranteed novel.
-
-Collaboration Ethics
-ResearchCollision should not infer:
-
-Private interests
-Personal intentions
-Willingness to collaborate
-Hiring decisions
-Funding decisions
-Unpublished research
-The system only analyzes publicly available research evidence.
-
-Evaluation Framework
-ResearchCollision should be evaluated using both automated and human evaluation.
-
-Metrics:
+Evaluation
+Recommended evaluation metrics include:
 
 Precision@K
 Recall@K
@@ -1641,251 +1192,112 @@ Evidence Coverage
 Unsupported Claim Rate
 
 Researcher Relevance
-Intersection Relevance
 Research Gap Relevance
+Intersection Relevance
 
-Novelty Rating
-Feasibility Rating
+Novelty Assessment
+Feasibility Assessment
 Collaboration Relevance
 
+Human evaluation should remain part of the evaluation process.
+
 Human Evaluation
-Potential evaluation form:
+Researchers can rate discovered opportunities:
 
-Is the researcher relevant?
+Researcher Relevance
+1  2  3  4  5
 
-1 2 3 4 5
+Research Intersection Quality
+1  2  3  4  5
 
-Is the research intersection meaningful?
+Evidence Quality
+1  2  3  4  5
 
-1 2 3 4 5
+Potential Research Value
+1  2  3  4  5
 
-Is the evidence sufficient?
-
-1 2 3 4 5
-
-Does the opportunity appear feasible?
-
-1 2 3 4 5
-
-These evaluations can be used to improve ranking models.
+These evaluations can later be used to improve ranking and discovery.
 
 Reproducibility
-Every discovery job should store:
+A research discovery job should preserve:
 
 Job ID
 Prompt Version
-Model
-Model Parameters
-Provider
+AI Model
+AI Provider
 Search Queries
-Provider Responses
 Retrieved Sources
 Evidence
-Timestamp
 Ranking Configuration
+Timestamp
 
-This makes results more reproducible.
+This makes generated results easier to inspect and reproduce.
 
-Observability
-The backend should provide structured logs.
+Prompt Versioning
+Agent prompts should be version controlled.
 
 Example:
 
-INFO  discovery.job.started
-INFO  literature.search.completed
-INFO  researcher.analysis.completed
-INFO  evidence.verification.completed
-WARN  provider.rate_limit
-ERROR agent.execution.failed
-INFO  discovery.job.completed
+prompts/
+├── profile/
+│   └── v1.txt
+├── literature/
+│   └── v1.txt
+├── trajectory/
+│   └── v1.txt
+├── gap/
+│   └── v1.txt
+├── intersection/
+│   └── v1.txt
+└── hypothesis/
+    └── v1.txt
 
-Each job should have a correlation ID.
+Generated results should record the prompt version used.
 
-Error Handling
-Errors should be categorized.
+Current Development Status
+ResearchCollision is currently in active development.
 
-PROVIDER_ERROR
-RATE_LIMIT_ERROR
-VALIDATION_ERROR
-PARSING_ERROR
-AI_ERROR
-DATABASE_ERROR
-NETWORK_ERROR
-UNKNOWN_ERROR
-
-A single failed agent should not unnecessarily terminate an entire discovery job.
-
-Sample Workflow
-A typical user workflow:
-
-Create Workspace
-      ↓
-Upload CV
-      ↓
-AI extracts Research DNA
-      ↓
-User reviews profile
-      ↓
-Select research domain
-      ↓
-Start Discovery
-      ↓
-Find researchers
-      ↓
-Collect papers
-      ↓
-Analyze research trajectories
-      ↓
-Find research gaps
-      ↓
-Generate intersections
-      ↓
-Verify evidence
-      ↓
-Rank candidates
-      ↓
-Generate hypotheses
-      ↓
-Design experiments
-      ↓
-Human review
-      ↓
-Export report
-
-Example Research Collision
-Researcher A
-Primary Areas:
-
-NLP
-LLM Evaluation
-RAG
-Hallucination Detection
-
-Researcher B
-Primary Areas:
-
-Healthcare AI
-Clinical NLP
-Medical Data
-
-Literature
-LLM evaluation
-Medical reasoning
-RAG
-Clinical QA
-
-Potential Collision
-Reliable Retrieval-Augmented
-Clinical Reasoning Evaluation
-
-Possible Research Question
-Can domain-specific retrieval evaluation
-improve reliability assessment of
-LLM-based clinical reasoning systems?
-
-The system should then search the literature before presenting this as an opportunity.
-
-Development Mode
-ResearchCollision includes mock providers.
-
-MockLLMProvider
-MockLiteratureProvider
-MockEmbeddingProvider
-
-This allows the application to run without external API keys.
-
-Mock data must always be visibly labeled as:
-
-DEMO DATA
-
-Database Migration
-Create migration:
-
-cd backend
-alembic revision --autogenerate -m "description"
-
-Apply:
-
-alembic upgrade head
-
-Rollback:
-
-alembic downgrade -1
-
-Reset Development Database
-python scripts/reset_db.py
-
-Then:
-
-alembic upgrade head
-python scripts/seed.py
-
-Production Considerations
-For production deployment, consider:
-
-PostgreSQL
-pgvector
-Redis
-Background worker system
-Object storage
-Secrets manager
-Reverse proxy
-HTTPS
-Centralized logging
-Monitoring
-Rate limiting
-Automated backups
-SQLite is intentionally the default for local development.
-
-Scaling Strategy
-Initial:
-
-FastAPI
-+
-SQLite
-+
-Background Jobs
-
-Future:
-
-                    Load Balancer
-                         |
-             +-----------+-----------+
-             |                       |
-          FastAPI                 FastAPI
-             |                       |
-             +-----------+-----------+
-                         |
-                      Redis
-                         |
-                  Worker Pool
-                         |
-          +--------------+--------------+
-          |              |              |
-       AI Worker    Search Worker   Analysis Worker
-                         |
-                    PostgreSQL
-                         |
-                      pgvector
-
-The provider and repository abstractions are intended to make this migration incremental.
+Verified
+ Frontend production build
+ Vitest test suite
+ 8/8 current frontend tests passing
+ Vite development server
+ Frontend/backend proxy
+ Login flow
+ Dashboard statistics
+ Playwright E2E specification
+In Development
+ CV / research document ingestion
+ Research DNA extraction
+ Scholarly literature integrations
+ Researcher discovery pipeline
+ Research trajectory analysis
+ Research gap detection
+ Research intersection engine
+ Evidence verification pipeline
+ Hypothesis generation
+ Experiment design
+ Collaboration ranking
+ Advanced evaluation benchmarks
+This distinction is intentional: planned architecture is not represented
+as already-completed functionality.
 
 Roadmap
 Phase 1 — Foundation
- Project scaffolding
- FastAPI backend
- React frontend
- SQLite database
- Alembic migrations
- Provider interfaces
- Mock providers
- Basic authentication/workspaces
-Phase 2 — Research Profile
+ React frontend foundation
+ FastAPI backend foundation
+ Local development environment
+ Authentication flow
+ Dashboard
+ SQLite architecture
+ Frontend tests
+ Playwright specification
+Phase 2 — Research DNA
  CV upload
  PDF extraction
  DOCX extraction
- Research DNA extraction
- Profile editing
+ Research profile extraction
+ Research profile editing
  Profile versioning
 Phase 3 — Literature Intelligence
  OpenAlex integration
@@ -1894,16 +1306,16 @@ Phase 3 — Literature Intelligence
  arXiv integration
  Metadata normalization
  Deduplication
- Caching
  Citation verification
-Phase 4 — Agentic Research Discovery
+ Research caching
+Phase 4 — Agentic Discovery
  Literature Agent
  Paper Analysis Agent
  Trajectory Agent
  Research Gap Agent
- Intersection Agent
- Verification Agent
- Ranking Agent
+ Research Intersection Agent
+ Evidence Verification Agent
+ Collaboration Ranking Agent
 Phase 5 — Research Generation
  Hypothesis Agent
  Experiment Agent
@@ -1914,39 +1326,71 @@ Phase 6 — Evaluation
  Precision@K
  Recall@K
  MRR
- Human evaluation
  Citation accuracy
  Unsupported claim detection
+ Human evaluation
 Future
- Knowledge graph
+ Research knowledge graph
  PostgreSQL
  pgvector
  Distributed workers
  Research trend forecasting
- Collaborative workspaces
- Research community feedback
- Advanced interdisciplinary discovery
+ Interdisciplinary opportunity mapping
+ Community feedback loops
 Known Limitations
-ResearchCollision depends on publicly available research data.
+ResearchCollision depends on publicly available information and external
+providers.
 
-Potential limitations include:
+Therefore:
 
-Incomplete researcher profiles
-Missing publications
-Incorrect metadata
-Provider rate limits
-Citation ambiguity
-AI reasoning errors
-False-positive intersections
-Difficulty determining scientific novelty
-Limited information about future research directions
-Difficulty measuring real-world collaboration success
-Therefore, all important research decisions require human validation.
+Some researcher profiles may be incomplete.
+Some papers may have incomplete metadata.
+Research trajectories may be noisy.
+Research intersections may produce false positives.
+AI-generated hypotheses may be incorrect.
+Research novelty cannot be guaranteed automatically.
+Collaboration intent cannot be inferred reliably.
+Provider APIs may have rate limits.
+Human scientific judgment remains essential.
+Production Direction
+The initial architecture uses a modular monolith because it keeps local
+development and deployment simple.
 
+At larger scale, the system can evolve toward:
+
+Load Balancer
+      ↓
+FastAPI Services
+      ↓
+Job Queue
+      ↓
+┌───────────────┬───────────────┐
+│ Discovery     │ Literature    │
+│ Workers       │ Workers       │
+└───────────────┴───────────────┘
+      ↓
+AI Workers
+      ↓
+PostgreSQL + pgvector
+      ↓
+Evidence / Research Knowledge Graph
+
+Potential production components:
+
+PostgreSQL
+pgvector
+Redis
+Background workers
+Object storage
+Reverse proxy
+HTTPS
+Centralized logging
+Monitoring
+Secrets management
 Contributing
 Contributions are welcome.
 
-Before opening a pull request:
+Before submitting a pull request:
 
 make test
 make lint
@@ -1955,72 +1399,81 @@ make typecheck
 New AI functionality should:
 
 Use structured outputs.
-Define explicit Pydantic schemas.
+Define Pydantic schemas.
 Validate model responses.
-Provide evidence where applicable.
-Never fabricate scientific information.
+Preserve evidence provenance.
 Clearly distinguish facts from inference.
+Never fabricate scientific information.
 Include tests.
 Preserve provider abstraction.
 Avoid hard-coded secrets.
 Document important architectural decisions.
-Pull Request Guidelines
-A pull request should contain:
+Security
+If you discover a security vulnerability, please avoid publishing sensitive
+details in a public issue.
 
-Problem
-Solution
-Architecture Impact
-Tests
-Potential Risks
+See:
 
-AI-generated code should be reviewed before merging.
+SECURITY.md
+
+for responsible disclosure information.
 
 License
 Copyright © ResearchCollision Contributors.
 
 Licensed under the Apache License, Version 2.0.
 
-You may obtain a copy of the License at:
+See:
 
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+LICENSE
 
 Vision
-Most research discovery systems answer:
+Research discovery should not stop at:
 
-"What papers are similar?"
+"Find similar papers."
 
-ResearchCollision asks a different question:
+It should move toward:
 
-"What meaningful research opportunity
-might exist between these research trajectories?"
-
-The long-term vision is to build an intelligent research discovery layer where:
-
-Researchers
-     +
-Literature
-     +
-Research Trajectories
-     +
-Research Gaps
-     +
-Methods
-     +
-Datasets
-     +
-Agentic AI
-     ↓
-Research Collision
-     ↓
-Potential Research Opportunity
-     ↓
+Understand My Research
+        ↓
+Understand the Research Ecosystem
+        ↓
+Understand Research Trajectories
+        ↓
+Find Meaningful Gaps
+        ↓
+Discover Unexpected Intersections
+        ↓
+Generate Testable Hypotheses
+        ↓
+Design Experiments
+        ↓
+Find Potential Collaborators
+        ↓
 Human Scientific Validation
 
-ResearchCollision
-Who should be working together — but currently isn't?
+The goal is not to automate science.
 
-ResearchCollision is not designed to replace researchers.
+The goal is to help researchers see scientific connections that are
+difficult to discover manually.
 
-It is designed to help researchers see connections they may not have searched for yet.
+The Question Behind ResearchCollision
+Traditional research discovery asks:
+
+"What is similar to what I already know?"
+
+ResearchCollision asks:
+
+"What could collide with what I already know?"
+
+<p align="center">
+<strong>ResearchCollision</strong>
+
+<br>
+<em>Discover the research connections you didn't know to search for.</em>
+
+<br><br>
+
+⭐ Star the repository if you find the idea interesting.
+
+</p>
