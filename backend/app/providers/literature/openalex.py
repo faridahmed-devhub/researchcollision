@@ -1,15 +1,34 @@
 """OpenAlex literature provider (public API, polite pool via mailto)."""
 from __future__ import annotations
 
+from email.utils import parsedate_to_datetime
+from datetime import datetime, timezone
+
 import httpx
 import structlog
 
 from app.core.config import settings
-from app.core.exceptions import ProviderError
+from app.core.exceptions import ProviderError, ProviderThrottledError
 from app.providers.literature.base import PaperMetadata, clean_doi
 
 logger = structlog.get_logger(__name__)
 BASE_URL = "https://api.openalex.org"
+
+
+def _parse_retry_after(value: str | None) -> int | None:
+    """Retry-After: either delta-seconds or an HTTP-date."""
+    if not value:
+        return None
+    try:
+        return max(0, int(value.strip()))
+    except (TypeError, ValueError):
+        pass
+    try:
+        when = parsedate_to_datetime(value.strip())
+        secs = (when - datetime.now(timezone.utc)).total_seconds()
+        return max(0, int(secs))
+    except Exception:
+        return None
 
 
 class OpenAlexProvider:
@@ -30,7 +49,16 @@ class OpenAlexProvider:
                     f"{BASE_URL}/works",
                     params=self._params({"search": query, "per-page": min(limit, 50)}),
                 )
+                if resp.status_code == 429:
+                    # Respect the server's cooldown; this is NOT an empty result.
+                    raise ProviderThrottledError(
+                        "OpenAlex 429 Too Many Requests (rate limited)",
+                        retry_after=_parse_retry_after(resp.headers.get("retry-after")),
+                        provider="openalex",
+                    )
                 resp.raise_for_status()
+        except ProviderThrottledError:
+            raise
         except httpx.HTTPError as exc:
             raise ProviderError(f"OpenAlex search failed: {exc}") from exc
         results = resp.json().get("results", [])

@@ -1,0 +1,58 @@
+{
+  "kind": "prompt_archive",
+  "version": "v1",
+  "built_utc": "2026-09-25T03:41:13+00:00",
+  "source_dir": "E:\\AICode\\opencode\\ResearchCollision\\backend\\app\\agents\\prompts",
+  "files": {
+    "collaboration_ranking.txt": {
+      "sha256": "19788d51a0124e2d877a815bc87a13a6126bfcc8069e5894ff8f20e214cc52dd",
+      "version": "unused",
+      "agent": "unused"
+    },
+    "experiment_design.txt": {
+      "sha256": "15c1d76a1b8955ecc723a0703029b7b0494a1ba74aa1f5910c1c930180d1f44e",
+      "version": "v1",
+      "agent": "hypothesis_agent"
+    },
+    "gap_detection.txt": {
+      "sha256": "6f842bdf11456a98ecc44c9bae89733c406ba751d0921d4b2e3d00754a1ededf",
+      "version": "v1",
+      "agent": "gap_agent"
+    },
+    "hypothesis_generation.txt": {
+      "sha256": "9e66fb1e99e19d062c9f6947efa66c810a52ce6698085d0afdd950e4a37a96e0",
+      "version": "v1",
+      "agent": "hypothesis_agent"
+    },
+    "intersection_discovery.txt": {
+      "sha256": "cd4ca27e0375c22ee0a62b4fee809a004acf44189538249c3d9021178f2aa5be",
+      "version": "v1",
+      "agent": "intersection_agent"
+    },
+    "paper_analysis.txt": {
+      "sha256": "a01ea09facd9664234438ba50da71a202412f3861e34e9d745ca880fc55bb876",
+      "version": "v1",
+      "agent": "paper_analysis_agent"
+    },
+    "paper_writing.txt": {
+      "sha256": "9d40d2622fe14c5e66ef21539594bdcc20c228df267f6e080c8bf931b09b47d2",
+      "version": "v1",
+      "agent": "paper_writer_agent"
+    },
+    "profile_extraction.txt": {
+      "sha256": "c3230389ac9555aa27bc02b250e0a8f6cc90e22d4cf9bbda53854c60cd69e26f",
+      "version": "v1",
+      "agent": "profile_agent"
+    },
+    "trajectory_analysis.txt": {
+      "sha256": "d09269482235580472bfc1ba3f8f4d65781e938b99c310a7b544905030ca997f",
+      "version": "v1",
+      "agent": "trajectory_agent"
+    },
+    "verification.txt": {
+      "sha256": "7a8c38cc4d852434d0eab9948c6206f01e24c09306e21309ba8552be72c28246",
+      "version": "unused",
+      "agent": "unused"
+    }
+  }
+}

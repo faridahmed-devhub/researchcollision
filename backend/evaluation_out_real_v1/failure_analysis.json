@@ -1,0 +1,732 @@
+[
+  {
+    "case_id": "causal_inference_x_clinical_ml",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects causal inference in epidemiology with machine learning for clinical prediction?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Exploratory pairing: Causal inference in epidemiology and Machine learning for clinical prediction' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "causal_inference_x_clinical_ml",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects causal inference in epidemiology with machine learning for clinical prediction?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Advanced Causal Inference Techniques' appears on only one side of this pairing (Causal inference in epidemiology / Machine learning for clinical prediction); joint or comparative evidence was not provided, so a combined tr...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "causal_inference_x_clinical_ml",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects causal inference in epidemiology with machine learning for clinical prediction?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Genetic Associations and Epidemiology' appears on only one side of this pairing (Causal inference in epidemiology / Machine learning for clinical prediction); joint or comparative evidence was not provided, so a combined t...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "causal_inference_x_clinical_ml",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects causal inference in epidemiology with machine learning for clinical prediction?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Health, Environment, Cognitive Aging' appears on only one side of this pairing (Causal inference in epidemiology / Machine learning for clinical prediction); joint or comparative evidence was not provided, so a combined tr...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "causal_inference_x_clinical_ml",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects causal inference in epidemiology with machine learning for clinical prediction?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Statistical Methods and Bayesian Inference' appears on only one side of this pairing (Causal inference in epidemiology / Machine learning for clinical prediction); joint or comparative evidence was not provided, so a combi...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "causal_inference_x_clinical_ml",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects causal inference in epidemiology with machine learning for clinical prediction?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Exploratory pairing: Causal inference in epidemiology and Machine learning for clinical prediction",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects climate downscaling with deep learning for earth observation?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Exploratory pairing: Statistical climate downscaling and Deep learning for earth observation' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects climate downscaling with deep learning for earth observation?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Climate variability and models' appears on only one side of this pairing (Statistical climate downscaling / Deep learning for earth observation); joint or comparative evidence was not provided, so a combined treatment is w...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects climate downscaling with deep learning for earth observation?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Meteorological Phenomena and Simulations' appears on only one side of this pairing (Statistical climate downscaling / Deep learning for earth observation); joint or comparative evidence was not provided, so a combined trea...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects climate downscaling with deep learning for earth observation?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Hydrology and Drought Analysis' appears on only one side of this pairing (Statistical climate downscaling / Deep learning for earth observation); joint or comparative evidence was not provided, so a combined treatment is w...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects climate downscaling with deep learning for earth observation?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Arctic and Antarctic ice dynamics' appears on only one side of this pairing (Statistical climate downscaling / Deep learning for earth observation); joint or comparative evidence was not provided, so a combined treatment i...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects climate downscaling with deep learning for earth observation?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Exploratory pairing: Statistical climate downscaling and Deep learning for earth observation",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "clinical_nlp_x_ehr",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects clinical NLP with electronic health record analytics?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: artificial intelligence in healthcare and education + biomedical text mining and ontologies' will yield measurable gains on the shared problem; this remains to be empirically ...",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "clinical_nlp_x_ehr",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects clinical NLP with electronic health record analytics?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Topic Modeling' appears on only one side of this pairing (Natural language processing for clinical text / Electronic health record analytics); joint or comparative evidence was not provided, so a combined treatment is wort...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "clinical_nlp_x_ehr",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects clinical NLP with electronic health record analytics?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Biomedical Text Mining and Ontologies' appears on only one side of this pairing (Natural language processing for clinical text / Electronic health record analytics); joint or comparative evidence was not provided, so a com...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "clinical_nlp_x_ehr",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects clinical NLP with electronic health record analytics?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Machine Learning in Healthcare' appears on only one side of this pairing (Natural language processing for clinical text / Electronic health record analytics); joint or comparative evidence was not provided, so a combined t...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "clinical_nlp_x_ehr",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects clinical NLP with electronic health record analytics?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Artificial Intelligence in Healthcare and Education' appears on only one side of this pairing (Natural language processing for clinical text / Electronic health record analytics); joint or comparative evidence was not prov...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "clinical_nlp_x_ehr",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects clinical NLP with electronic health record analytics?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: artificial intelligence in healthcare and education + biomedical text mining and ontologies",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "federated_learning_x_privacy",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects federated learning for healthcare with differential privacy?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: cryptography and data security + privacy, security, and data protection' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "federated_learning_x_privacy",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects federated learning for healthcare with differential privacy?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Privacy-Preserving Technologies in Data' appears on only one side of this pairing (Federated learning for healthcare / Differential privacy in machine learning); joint or comparative evidence was not provided, so a combine...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "federated_learning_x_privacy",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects federated learning for healthcare with differential privacy?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Artificial Intelligence in Healthcare and Education' appears on only one side of this pairing (Federated learning for healthcare / Differential privacy in machine learning); joint or comparative evidence was not provided, ...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "federated_learning_x_privacy",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects federated learning for healthcare with differential privacy?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Machine Learning in Healthcare' appears on only one side of this pairing (Federated learning for healthcare / Differential privacy in machine learning); joint or comparative evidence was not provided, so a combined treatme...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "federated_learning_x_privacy",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects federated learning for healthcare with differential privacy?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Privacy, Security, and Data Protection' appears on only one side of this pairing (Federated learning for healthcare / Differential privacy in machine learning); joint or comparative evidence was not provided, so a combined...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "federated_learning_x_privacy",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects federated learning for healthcare with differential privacy?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: cryptography and data security + privacy, security, and data protection",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "gnn_x_protein_structure",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects graph neural networks for drug discovery with protein structure prediction?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: computational drug discovery methods + protein structure and dynamics' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "gnn_x_protein_structure",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects graph neural networks for drug discovery with protein structure prediction?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Computational Drug Discovery Methods' appears on only one side of this pairing (Graph neural networks for drug discovery / Protein structure prediction); joint or comparative evidence was not provided, so a combined treatm...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "gnn_x_protein_structure",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects graph neural networks for drug discovery with protein structure prediction?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Machine Learning in Materials Science' appears on only one side of this pairing (Graph neural networks for drug discovery / Protein structure prediction); joint or comparative evidence was not provided, so a combined treat...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "gnn_x_protein_structure",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects graph neural networks for drug discovery with protein structure prediction?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Bioinformatics and Genomic Networks' appears on only one side of this pairing (Graph neural networks for drug discovery / Protein structure prediction); joint or comparative evidence was not provided, so a combined treatme...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "gnn_x_protein_structure",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects graph neural networks for drug discovery with protein structure prediction?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Advanced Graph Neural Networks' appears on only one side of this pairing (Graph neural networks for drug discovery / Protein structure prediction); joint or comparative evidence was not provided, so a combined treatment is...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "gnn_x_protein_structure",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects graph neural networks for drug discovery with protein structure prediction?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: computational drug discovery methods + protein structure and dynamics",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "knowledge_graph_x_question_answering",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects knowledge graph embeddings with question answering over knowledge bases?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: advanced graph neural networks + domain adaptation and few-shot learning' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "knowledge_graph_x_question_answering",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects knowledge graph embeddings with question answering over knowledge bases?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Advanced Graph Neural Networks' appears on only one side of this pairing (Knowledge graph embeddings / Question answering over knowledge bases); joint or comparative evidence was not provided, so a combined treatment is wo...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "knowledge_graph_x_question_answering",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects knowledge graph embeddings with question answering over knowledge bases?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Topic Modeling' appears on only one side of this pairing (Knowledge graph embeddings / Question answering over knowledge bases); joint or comparative evidence was not provided, so a combined treatment is worth empirical st...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "knowledge_graph_x_question_answering",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects knowledge graph embeddings with question answering over knowledge bases?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Data Quality and Management' appears on only one side of this pairing (Knowledge graph embeddings / Question answering over knowledge bases); joint or comparative evidence was not provided, so a combined treatment is worth...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "knowledge_graph_x_question_answering",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects knowledge graph embeddings with question answering over knowledge bases?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Complex Network Analysis Techniques' appears on only one side of this pairing (Knowledge graph embeddings / Question answering over knowledge bases); joint or comparative evidence was not provided, so a combined treatment ...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "knowledge_graph_x_question_answering",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects knowledge graph embeddings with question answering over knowledge bases?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: advanced graph neural networks + domain adaptation and few-shot learning",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "materials_discovery_x_active_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects materials discovery with active learning?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: computational drug discovery methods + machine learning in materials science' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "materials_discovery_x_active_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects materials discovery with active learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Machine Learning in Materials Science' appears on only one side of this pairing (Machine learning for materials discovery / Active learning for experimental design); joint or comparative evidence was not provided, so a com...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "materials_discovery_x_active_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects materials discovery with active learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'X-ray Diffraction in Crystallography' appears on only one side of this pairing (Machine learning for materials discovery / Active learning for experimental design); joint or comparative evidence was not provided, so a comb...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "materials_discovery_x_active_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects materials discovery with active learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Computational Drug Discovery Methods' appears on only one side of this pairing (Machine learning for materials discovery / Active learning for experimental design); joint or comparative evidence was not provided, so a comb...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "materials_discovery_x_active_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects materials discovery with active learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: '2D Materials and Applications' appears on only one side of this pairing (Machine learning for materials discovery / Active learning for experimental design); joint or comparative evidence was not provided, so a combined tr...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "materials_discovery_x_active_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects materials discovery with active learning?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: computational drug discovery methods + machine learning in materials science",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "quantum_chemistry_x_dft",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects quantum computing for chemistry with density functional theory?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: advanced chemical physics studies + quantum and electron transport phenomena' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "quantum_chemistry_x_dft",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects quantum computing for chemistry with density functional theory?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Quantum Computing Algorithms and Architecture' appears on only one side of this pairing (Quantum computing for chemistry / Density functional theory); joint or comparative evidence was not provided, so a combined treatment...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "quantum_chemistry_x_dft",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects quantum computing for chemistry with density functional theory?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Quantum Information and Cryptography' appears on only one side of this pairing (Quantum computing for chemistry / Density functional theory); joint or comparative evidence was not provided, so a combined treatment is worth...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "quantum_chemistry_x_dft",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects quantum computing for chemistry with density functional theory?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Quantum and electron transport phenomena' appears on only one side of this pairing (Quantum computing for chemistry / Density functional theory); joint or comparative evidence was not provided, so a combined treatment is w...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "quantum_chemistry_x_dft",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects quantum computing for chemistry with density functional theory?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Quantum many-body systems' appears on only one side of this pairing (Quantum computing for chemistry / Density functional theory); joint or comparative evidence was not provided, so a combined treatment is worth empirical ...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "quantum_chemistry_x_dft",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects quantum computing for chemistry with density functional theory?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: advanced chemical physics studies + quantum and electron transport phenomena",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "recommender_x_fairness",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects recommender systems with fairness in machine learning?",
+    "system": "embedding",
+    "failure_type": "no_expected_topic_covered",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Similarity bridge: 'Neural Collaborative Filtering' and 'LSQR: An Algorithm for Sparse Linear Equations and Sparse Le' The two corpus papers most similar (embedding-wise) to the combined researcher in",
+    "detail": "no discovered intersection lexically covers any expected topic of this case (possible sparse or off-target reasoning)"
+  },
+  {
+    "case_id": "recommender_x_fairness",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects recommender systems with fairness in machine learning?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: advanced bandit algorithms research + recommender systems and techniques' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "recommender_x_fairness",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects recommender systems with fairness in machine learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Recommender Systems and Techniques' appears on only one side of this pairing (Recommender systems / Fairness in machine learning); joint or comparative evidence was not provided, so a combined treatment is worth empirical ...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "recommender_x_fairness",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects recommender systems with fairness in machine learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Advanced Bandit Algorithms Research' appears on only one side of this pairing (Recommender systems / Fairness in machine learning); joint or comparative evidence was not provided, so a combined treatment is worth empirical...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "recommender_x_fairness",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects recommender systems with fairness in machine learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Caching and Content Delivery' appears on only one side of this pairing (Recommender systems / Fairness in machine learning); joint or comparative evidence was not provided, so a combined treatment is worth empirical study.",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "recommender_x_fairness",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects recommender systems with fairness in machine learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Advanced Graph Neural Networks' appears on only one side of this pairing (Recommender systems / Fairness in machine learning); joint or comparative evidence was not provided, so a combined treatment is worth empirical study.",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "recommender_x_fairness",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects recommender systems with fairness in machine learning?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: advanced bandit algorithms research + recommender systems and techniques",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "rl_x_sim_to_real",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects reinforcement learning for robot control with sim-to-real transfer?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: reinforcement learning in robotics + robot manipulation and learning' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "rl_x_sim_to_real",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects reinforcement learning for robot control with sim-to-real transfer?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Reinforcement Learning in Robotics' appears on only one side of this pairing (Reinforcement learning for robot control / Sim-to-real transfer in robotics); joint or comparative evidence was not provided, so a combined trea...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "rl_x_sim_to_real",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects reinforcement learning for robot control with sim-to-real transfer?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Adaptive Dynamic Programming Control' appears on only one side of this pairing (Reinforcement learning for robot control / Sim-to-real transfer in robotics); joint or comparative evidence was not provided, so a combined tr...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "rl_x_sim_to_real",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects reinforcement learning for robot control with sim-to-real transfer?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Robot Manipulation and Learning' appears on only one side of this pairing (Reinforcement learning for robot control / Sim-to-real transfer in robotics); joint or comparative evidence was not provided, so a combined treatme...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "rl_x_sim_to_real",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects reinforcement learning for robot control with sim-to-real transfer?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Robotic Locomotion and Control' appears on only one side of this pairing (Reinforcement learning for robot control / Sim-to-real transfer in robotics); joint or comparative evidence was not provided, so a combined treatmen...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "rl_x_sim_to_real",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects reinforcement learning for robot control with sim-to-real transfer?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: reinforcement learning in robotics + robot manipulation and learning",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "single_cell_x_transfer_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects single-cell genomics with transfer learning?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: gene expression and cancer classification + single-cell and spatial transcriptomics' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "single_cell_x_transfer_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects single-cell genomics with transfer learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Single-cell and spatial transcriptomics' appears on only one side of this pairing (Single-cell genomics / Transfer learning in bioinformatics); joint or comparative evidence was not provided, so a combined treatment is wor...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "single_cell_x_transfer_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects single-cell genomics with transfer learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Cancer Genomics and Diagnostics' appears on only one side of this pairing (Single-cell genomics / Transfer learning in bioinformatics); joint or comparative evidence was not provided, so a combined treatment is worth empir...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "single_cell_x_transfer_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects single-cell genomics with transfer learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Extracellular vesicles in disease' appears on only one side of this pairing (Single-cell genomics / Transfer learning in bioinformatics); joint or comparative evidence was not provided, so a combined treatment is worth emp...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "single_cell_x_transfer_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects single-cell genomics with transfer learning?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Gene expression and cancer classification' appears on only one side of this pairing (Single-cell genomics / Transfer learning in bioinformatics); joint or comparative evidence was not provided, so a combined treatment is w...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "single_cell_x_transfer_learning",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects single-cell genomics with transfer learning?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: gene expression and cancer classification + single-cell and spatial transcriptomics",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  },
+  {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects automatic speech recognition with speech enhancement for hearing aids?",
+    "system": "llm_only",
+    "failure_type": "ungrounded_hypothesis",
+    "stage": "reasoning",
+    "evidence_involved": [],
+    "output_excerpt": "Applying the combined methodology suggested by 'Shared focus: speech and audio processing' will yield measurable gains on the shared problem; this remains to be empirically validated.",
+    "detail": "hypothesis hypothesis[0] is not backed by any traceable evidence reference"
+  },
+  {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects automatic speech recognition with speech enhancement for hearing aids?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Speech and Audio Processing' appears on only one side of this pairing (Automatic speech recognition / Speech enhancement for hearing aids); joint or comparative evidence was not provided, so a combined treatment is worth e...",
+    "detail": "gap gap[0] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects automatic speech recognition with speech enhancement for hearing aids?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Speech Recognition and Synthesis' appears on only one side of this pairing (Automatic speech recognition / Speech enhancement for hearing aids); joint or comparative evidence was not provided, so a combined treatment is wo...",
+    "detail": "gap gap[1] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects automatic speech recognition with speech enhancement for hearing aids?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Advanced Bandit Algorithms Research' appears on only one side of this pairing (Automatic speech recognition / Speech enhancement for hearing aids); joint or comparative evidence was not provided, so a combined treatment is...",
+    "detail": "gap gap[2] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects automatic speech recognition with speech enhancement for hearing aids?",
+    "system": "llm_only",
+    "failure_type": "gap_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Possible gap: 'Advanced Neural Network Applications' appears on only one side of this pairing (Automatic speech recognition / Speech enhancement for hearing aids); joint or comparative evidence was not provided, so a combined treatment i...",
+    "detail": "gap gap[3] is asserted without any evidence reference"
+  },
+  {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "evaluation_question": "Which real, evidence-grounded research direction plausibly connects automatic speech recognition with speech enhancement for hearing aids?",
+    "system": "llm_only",
+    "failure_type": "intersection_without_evidence",
+    "stage": "retrieval",
+    "evidence_involved": [],
+    "output_excerpt": "Shared focus: speech and audio processing",
+    "detail": "intersection intersection[0] cites no evidence, so its direction cannot be traced to the literature"
+  }
+]

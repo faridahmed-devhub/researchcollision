@@ -5,7 +5,7 @@ import hashlib
 import json
 import time
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 import structlog
 from pydantic import BaseModel, ValidationError
@@ -16,6 +16,10 @@ from app.providers.llm.base import AGENT_SCHEMAS, LLMProvider
 logger = structlog.get_logger(__name__)
 
 PROMPTS_DIR = Path(__file__).resolve().parent / "prompts"
+
+
+class OutputNormalizationError(ValueError):
+    """Raised when an agent output normalizer cannot map LLM output onto its contract."""
 
 
 def compute_input_hash(input_data: dict[str, Any]) -> str:
@@ -46,11 +50,13 @@ class BaseAgent:
         db: Any | None = None,
         workspace_id: str | None = None,
         job_id: str | None = None,
+        seed: int | None = None,
     ) -> None:
         self.llm = llm
         self.db = db
         self.workspace_id = workspace_id
         self.job_id = job_id
+        self.seed = seed
 
     def load_prompt(self) -> str:
         if not self.prompt_file:
@@ -92,8 +98,19 @@ class BaseAgent:
         except Exception:  # pragma: no cover - auditing must never break jobs
             logger.warning("agent.call_record_failed", agent=self.name)
 
-    async def run_structured(self, input_data: dict[str, Any]) -> BaseModel:
-        """Generate + validate output. One retry on schema violation."""
+    async def run_structured(
+        self,
+        input_data: dict[str, Any],
+        *,
+        normalize: Callable[[dict[str, Any]], dict[str, Any]] | None = None,
+    ) -> BaseModel:
+        """Generate + validate output. One retry on schema violation.
+
+        ``normalize`` (if given) deterministically maps raw LLM output onto the
+        agent's contract before validation. It may raise OutputNormalizationError,
+        which is treated like a schema violation (retried once, then rejected).
+        Retry/timeout behavior is unchanged.
+        """
         input_hash = compute_input_hash(input_data)
         last_error: Exception | None = None
         for attempt in range(2):
@@ -104,11 +121,14 @@ class BaseAgent:
                     input_data=input_data,
                     schema_name=self.output_schema_name,
                     schema=AGENT_SCHEMAS[self.output_schema_name],
+                    seed=self.seed,
                 )
+                if normalize is not None:
+                    raw = normalize(raw)
                 validated = self.output_model.model_validate(raw)
                 self._record_call(input_hash, (time.perf_counter() - started) * 1000, "ok")
                 return validated
-            except (ValidationError, KeyError) as exc:
+            except (ValidationError, KeyError, OutputNormalizationError) as exc:
                 last_error = exc
                 self._record_call(
                     input_hash, (time.perf_counter() - started) * 1000, "invalid", str(exc)

@@ -14,7 +14,7 @@ from app.providers.literature.semantic_scholar import SemanticScholarProvider
 
 logger = structlog.get_logger(__name__)
 
-_FALLBACK_ORDER = ["openalex", "semantic_scholar", "crossref", "arxiv", "mock"]
+_REAL_FALLBACK_ORDER = ["openalex", "semantic_scholar", "crossref", "arxiv"]
 
 
 def _instantiate(name: str) -> LiteratureProvider:
@@ -32,22 +32,41 @@ def _instantiate(name: str) -> LiteratureProvider:
 
 
 class LiteratureProviderChain:
-    """Tries the configured provider, then falls back in a fixed order.
+    """Tries the configured provider, then falls back through the real ones.
 
     Never floods APIs: one attempt per provider per call, with the shared
-    timeout from settings. Network failures degrade to the mock provider so
-    local development always works.
+    timeout from settings. The mock (synthetic) provider is appended to the
+    fallback chain ONLY when ``allow_mock`` is True — controlled by
+    ``LITERATURE_ALLOW_MOCK_FALLBACK`` or, by default, when the whole app runs
+    in mock mode (no real AI credentials). Real-provider runs therefore never
+    silently receive synthetic papers: if every real provider fails, an
+    exception is raised and the job fails clearly.
     """
 
-    def __init__(self, primary: str | None = None) -> None:
+    def __init__(
+        self,
+        primary: str | None = None,
+        allow_mock: bool | None = None,
+    ) -> None:
         self.primary_name = primary or settings.literature_provider
-        order = [self.primary_name] + [n for n in _FALLBACK_ORDER if n != self.primary_name]
+        allow_synthetic = (
+            settings.allow_synthetic_literature if allow_mock is None else allow_mock
+        )
+        order = [self.primary_name] + [
+            n
+            for n in _REAL_FALLBACK_ORDER + (["mock"] if allow_synthetic else [])
+            if n != self.primary_name
+        ]
         self.chain: list[LiteratureProvider] = []
         for n in order:
             try:
                 self.chain.append(_instantiate(n))
             except Exception as exc:  # pragma: no cover - defensive
                 logger.warning("literature.provider_init_failed", provider=n, error=str(exc))
+
+    @property
+    def provider_names(self) -> list[str]:
+        return [p.name for p in self.chain]
 
     async def search(self, query: str, *, limit: int = 10) -> tuple[list[PaperMetadata], str]:
         """Returns (papers, provider_used)."""

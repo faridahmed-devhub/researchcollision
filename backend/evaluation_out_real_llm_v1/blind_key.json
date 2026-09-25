@@ -1,0 +1,1506 @@
+{
+  "EV-cd18fc9fb6": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Causal inference in epidemiology and Machine learning for clinical prediction; such topics are not jointly evidenced."
+  },
+  "EV-494384932a": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'Machine learning applications in cancer prognosis and predic' and 'The MR-Base platform supports systematic causal inference ac'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-f3bda6fe81": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-02c0fa7a26": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Advanced Causal Inference Techniques' across Causal inference in epidemiology and Machine learning for clinical prediction; a combined treatment is missing."
+  },
+  "EV-774e22af39": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Health, Environment, Cognitive Aging' across Causal inference in epidemiology and Machine learning for clinical prediction; a combined treatment is missing."
+  },
+  "EV-93a69e2ca7": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'TRIPOD+AI statement: updated guidance for reporting clinical' and 'Machine learning applications in cancer prognosis and predic'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Causal inference in epidemiology and Machine learning for clinical prediction; combining their reported methods is a plausible joint direction."
+  },
+  "EV-956518f224": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on No source paper in the retrieved set jointly covers 'Advanced Causal Inference Techniques' across Causal inference in epidemiology and Machine learning for clinical prediction; a combined treatment is missing."
+  },
+  "EV-412c876d8e": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "There is a gap in the integration of advanced causal inference techniques with machine learning methods for clinical prediction. The researchers' individual interests do not directly overlap, making it challenging to find common ground."
+  },
+  "EV-fb2a3fa670": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Causal Inference and Machine Learning",
+    "description": "Both researchers are interested in applying advanced statistical methods, with researcher A focusing on causal inference techniques and researcher B on machine learning for clinical prediction. This intersection could lead to innovative approaches in understanding the causality behind predictive models."
+  },
+  "EV-837b5ad134": {
+    "case_id": "causal_inference_x_clinical_ml",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining causal inference techniques with machine learning can improve the accuracy of clinical predictions by providing a deeper understanding of the underlying mechanisms."
+  },
+  "EV-7120363c2b": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Statistical climate downscaling and Deep learning for earth observation; such topics are not jointly evidenced."
+  },
+  "EV-310653f610": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'Precipitation downscaling under climate change: Recent devel' and 'Statistical Downscaling and Bias Correction for Climate Rese'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-d382729bd5": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-1e13c68bf5": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Retrieved coverage is limited to the listed papers; a deeper corpus would be needed to confirm gaps between Statistical climate downscaling and Deep learning for earth observation."
+  },
+  "EV-6155a83e50": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'Transferring Deep Convolutional Neural Networks for the Scen' and 'Deep learning in remote sensing applications: A meta-analysi'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Statistical climate downscaling and Deep learning for earth observation; combining their reported methods is a plausible joint direction."
+  },
+  "EV-fd9bc840e2": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on Retrieved coverage is limited to the listed papers; a deeper corpus would be needed to confirm gaps between Statistical climate downscaling and Deep learning for earth observation."
+  },
+  "EV-a1847fb9b4": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "There is a lack of intersection between the topics 'Climate variability and models' from Statistical climate downscaling and 'Remote-Sensing Image Classification' from Deep learning for earth observation."
+  },
+  "EV-9cd206a577": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "The topic 'Hydrology and Drought Analysis' in Statistical climate downscaling does not directly intersect with any specific topic in Deep learning for earth observation."
+  },
+  "EV-ecd1cd15e2": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Remote Sensing Image Classification",
+    "description": "Both fields could benefit from integrating remote sensing image classification techniques to improve the accuracy of climate downscaling models, especially in areas where direct ground measurements are sparse."
+  },
+  "EV-85ef01fa9e": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 1,
+    "title": "Advanced Image Fusion Techniques",
+    "description": "Fusion techniques can be used to combine data from different sources (e.g., satellite imagery and climate model outputs) to enhance the resolution and detail of climate downscaling products."
+  },
+  "EV-1d6240cda0": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining statistical downscaling methods with deep learning could lead to more accurate predictions of climate variability, particularly in regions with limited observational data."
+  },
+  "EV-6003636985": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 1,
+    "title": "",
+    "description": "Integration of remote sensing and advanced image processing techniques can improve the spatial resolution and accuracy of climate models, aiding in better resource management and environmental planning."
+  },
+  "EV-3fc208e384": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "The paper 'ITINERIS - Italian Integrated Environmental Research Infrastructures System - Marine Domain' lacks specific details on the methodologies used for integration and harmonization of existing observing capabilities."
+  },
+  "EV-b34801168a": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "The paper 'Tackling Climate Change with Machine Learning' does not provide specific methodologies or datasets for analysis."
+  },
+  "EV-b1fedb56c9": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 2,
+    "title": "",
+    "description": "The study 'Deep Learning for Daily Precipitation and Temperature Downscaling' did not provide specific details on the training data or its characteristics."
+  },
+  "EV-0448aab2a1": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 3,
+    "title": "",
+    "description": "The study 'Configuration and intercomparison of deep learning neural models for statistical downscaling' focuses on a specific region (Europe) and may not be generalizable to other areas."
+  },
+  "EV-18549bc493": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 4,
+    "title": "",
+    "description": "The review 'A Transdisciplinary Review of Deep Learning Research and Its Relevance for Water Resources Scientists' does not provide specific technical details or case studies from the field of water resources."
+  },
+  "EV-f719529ca9": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 5,
+    "title": "",
+    "description": "The models in 'SoilGrids250m: Global gridded soil information based on machine learning' do not account for input uncertainties, and posterior probability distributions per pixel are not derived."
+  },
+  "EV-d33ffaa3f3": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Statistical Downscaling and Deep Learning Integration",
+    "description": "Identifying synergies between statistical climate downscaling techniques and deep learning methods for earth observation."
+  },
+  "EV-fd19a45c22": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 1,
+    "title": "Data Integration for Climate Downscaling",
+    "description": "Exploring the use of deep learning techniques to integrate and harmonize existing climate data sources."
+  },
+  "EV-2671c03c9e": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The integration of statistical downscaling and deep learning will lead to more accurate and robust climate predictions compared to using either method alone."
+  },
+  "EV-f6d2b785d6": {
+    "case_id": "climate_downscaling_x_deep_learning",
+    "system": "pipeline",
+    "surface": "hypothesis",
+    "index": 1,
+    "title": "",
+    "description": "By applying advanced deep learning methods, it is possible to integrate multiple climate data sources in a way that enhances the precision and reliability of downscaled climate predictions."
+  },
+  "EV-b320e63fc8": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Natural language processing for clinical text and Electronic health record analytics; such topics are not jointly evidenced."
+  },
+  "EV-616436ecb4": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'Machine Learning and Data Mining Methods in Diabetes Researc' and 'Deep EHR: A Survey of Recent Advances in Deep Learning Techn'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-3f4cdfaff6": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-70aaa1484c": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Topic Modeling' across Natural language processing for clinical text and Electronic health record analytics; a combined treatment is missing."
+  },
+  "EV-9f22127419": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Natural Language Processing Techniques' across Natural language processing for clinical text and Electronic health record analytics; a combined treatment is missing."
+  },
+  "EV-0ea54ebc12": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'Deep EHR: A Survey of Recent Advances in Deep Learning Techn' and 'Scalable and accurate deep learning with electronic health r'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Natural language processing for clinical text and Electronic health record analytics; combining their reported methods is a plausible joint direction."
+  },
+  "EV-2d69dfc700": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on No source paper in the retrieved set jointly covers 'Topic Modeling' across Natural language processing for clinical text and Electronic health record analytics; a combined treatment is missing."
+  },
+  "EV-598a2f89dc": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Researcher A focuses on 'Natural Language Processing Techniques' but does not specify any particular methods, while Researcher B includes specific areas such as 'Sepsis Diagnosis and Treatment'. This gap suggests a potential focus difference in the application of NLP techniques."
+  },
+  "EV-c15479a11f": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Machine Learning in Healthcare",
+    "description": "Both researchers are interested in this topic, indicating overlapping research interests."
+  },
+  "EV-d4f24bd1ec": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 1,
+    "title": "Artificial Intelligence in Healthcare and Education",
+    "description": "Researcher A and Researcher B both have an interest in this area, highlighting a shared focus on AI applications."
+  },
+  "EV-e13f4014a3": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 2,
+    "title": "Electronic Health Records Systems",
+    "description": "Both researchers are concerned with EHR systems, which is a common ground for their research interests."
+  },
+  "EV-b6cf31ea39": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Researcher A and Researcher B may collaborate on projects related to AI in healthcare, particularly focusing on NLP techniques applied to EHRs."
+  },
+  "EV-4c9361ceb6": {
+    "case_id": "clinical_nlp_x_ehr",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 1,
+    "title": "",
+    "description": "Given the shared interest in machine learning applications, there could be potential for joint research on predictive analytics in clinical settings using EHR data."
+  },
+  "EV-eb211f8067": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Federated learning for healthcare and Differential privacy in machine learning; such topics are not jointly evidenced."
+  },
+  "EV-2d934dd23d": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'Federated Learning for Smart Healthcare: A Survey' and 'Deep learning for healthcare: review, opportunities and chal'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-23d40edd0f": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-a82b23b0bb": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Retrieved coverage is limited to the listed papers; a deeper corpus would be needed to confirm gaps between Federated learning for healthcare and Differential privacy in machine learning."
+  },
+  "EV-507b246063": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'Deep Learning with Differential Privacy' and 'The future of digital health with federated learning'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Federated learning for healthcare and Differential privacy in machine learning; combining their reported methods is a plausible joint direction."
+  },
+  "EV-09b0745e3f": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on Retrieved coverage is limited to the listed papers; a deeper corpus would be needed to confirm gaps between Federated learning for healthcare and Differential privacy in machine learning."
+  },
+  "EV-b8406baf99": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Researcher A focuses on federated learning for healthcare but does not mention specific methods or techniques. There is a gap in understanding the concrete methodologies used."
+  },
+  "EV-a52395c447": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "Researcher B emphasizes differential privacy in machine learning, which overlaps with privacy-preserving technologies but lacks direct focus on healthcare applications."
+  },
+  "EV-a7759bd140": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Privacy-Preserving Technologies in Data",
+    "description": "Both researchers A and B are interested in this topic, highlighting a common ground for collaboration or comparison."
+  },
+  "EV-c224d9d4d9": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 1,
+    "title": "Cryptography and Data Security",
+    "description": "This area is relevant to both researchers as it underpins their respective fields of interest."
+  },
+  "EV-b27eb1cd0d": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Federated learning can enhance privacy-preserving technologies in healthcare by leveraging differential privacy techniques."
+  },
+  "EV-ae6b9f2538": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 1,
+    "title": "",
+    "description": "Combining federated learning and differential privacy could improve the robustness and security of machine learning models in healthcare applications."
+  },
+  "EV-34ec5dd57e": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "The study on 'Federated learning and differential privacy for medical image analysis' is based on simulations, which may not fully reflect real-world scenarios."
+  },
+  "EV-a4be2f690e": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "The paper 'Differential Privacy for Deep and Federated Learning: A Survey' does not provide new empirical evidence or datasets, but rather a review of existing literature."
+  },
+  "EV-e069394df2": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 2,
+    "title": "",
+    "description": "The paper 'The future of digital health with federated learning' does not provide specific evidence or case studies to validate the effectiveness of federated learning in real-world scenarios."
+  },
+  "EV-f7c8038108": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 3,
+    "title": "",
+    "description": "The paper 'Secure, privacy-preserving and federated machine learning in medical imaging' does not provide specific methodologies or datasets used."
+  },
+  "EV-cce38b9621": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 4,
+    "title": "",
+    "description": "The paper 'Deep learning for healthcare: review, opportunities and challenges' lacks sufficient domain knowledge, complexity of data, and need for interpretable architectures."
+  },
+  "EV-289a3752d9": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 5,
+    "title": "",
+    "description": "The paper 'Diagnostic and Statistical Manual of Mental Disorders' depends on user consent for data collection, which may introduce potential bias due to the nature of public social media data."
+  },
+  "EV-9463dc89eb": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 6,
+    "title": "",
+    "description": "The study on 'Validation of the theoretical domains framework for use in behaviour change and implementation research' was based on expert sorting which may introduce bias, and the validation methods used might not fully capture the complexity of the constructs."
+  },
+  "EV-4533cce49b": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Federated Learning and Differential Privacy in Healthcare",
+    "description": "Both researchers focus on the intersection of federated learning, differential privacy, and healthcare. Researcher A specializes in federated learning for healthcare while Researcher B focuses on differential privacy in machine learning."
+  },
+  "EV-fd6ffaf1e9": {
+    "case_id": "federated_learning_x_privacy",
+    "system": "pipeline",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "By combining federated learning with differential privacy, we can develop a system that allows for the training of machine learning models on decentralized health data while maintaining patient privacy."
+  },
+  "EV-4f160bfc02": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Graph neural networks for drug discovery and Protein structure prediction; such topics are not jointly evidenced."
+  },
+  "EV-2c0b130897": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'SWISS-MODEL: homology modelling of protein structures and co' and 'Scientific Machine Learning Through Physics\u2013Informed Neural '",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-4963deac5a": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-dd4e4a465e": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Advanced Graph Neural Networks' across Graph neural networks for drug discovery and Protein structure prediction; a combined treatment is missing."
+  },
+  "EV-bcdfc76e61": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'The rise of deep learning in drug discovery' and 'Highly accurate protein structure prediction with AlphaFold'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Graph neural networks for drug discovery and Protein structure prediction; combining their reported methods is a plausible joint direction."
+  },
+  "EV-c1725b1579": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on No source paper in the retrieved set jointly covers 'Advanced Graph Neural Networks' across Graph neural networks for drug discovery and Protein structure prediction; a combined treatment is missing."
+  },
+  "EV-29bde1def8": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "There is no direct intersection between the topics of graph neural networks in computational drug discovery and protein structure prediction, which could hinder collaborative research."
+  },
+  "EV-f6a81115b0": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Protein Structure and Dynamics",
+    "description": "Both researchers share an interest in this topic, indicating potential areas for overlap such as using advanced graph neural networks to predict protein structures relevant to drug discovery."
+  },
+  "EV-9042d7c7e6": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 1,
+    "title": "Machine Learning in Bioinformatics and Materials Science",
+    "description": "While not directly overlapping, both researchers are interested in machine learning techniques. This could be a bridge between their fields, allowing for the application of ML methods from one domain to another."
+  },
+  "EV-a32aaea801": {
+    "case_id": "gnn_x_protein_structure",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Advanced graph neural networks can improve protein structure prediction models used in drug discovery."
+  },
+  "EV-6b26b66899": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Knowledge graph embeddings and Question answering over knowledge bases; such topics are not jointly evidenced."
+  },
+  "EV-c8fb71920e": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'Knowledge Graph Embedding by Translating on Hyperplanes' and 'Learning Entity and Relation Embeddings for Knowledge Graph '",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-fe1dfee322": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-734d6e2dc1": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Multimodal Machine Learning Applications' across Knowledge graph embeddings and Question answering over knowledge bases; a combined treatment is missing."
+  },
+  "EV-57f748bad3": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'Knowledge Graph Embedding: A Survey of Approaches and Applic' and 'Knowledge Graph Embedding by Translating on Hyperplanes'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Knowledge graph embeddings and Question answering over knowledge bases; combining their reported methods is a plausible joint direction."
+  },
+  "EV-969ee88703": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on No source paper in the retrieved set jointly covers 'Multimodal Machine Learning Applications' across Knowledge graph embeddings and Question answering over knowledge bases; a combined treatment is missing."
+  },
+  "EV-35d7690d13": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Researcher A focuses on advanced graph neural networks, while Researcher B emphasizes multimodal machine learning applications. There is no overlap in their specific methodological interests."
+  },
+  "EV-c83b797729": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Topic Modeling",
+    "description": "Both researchers are interested in topic modeling, which could be a potential area for collaboration or shared interest."
+  },
+  "EV-a7bf9540ab": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 1,
+    "title": "Domain Adaptation and Few-Shot Learning",
+    "description": "This is another common ground between the two researchers that might facilitate interdisciplinary work."
+  },
+  "EV-04c45246f6": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Collaboration between Researcher A and B could lead to advancements in knowledge graph question answering reasoning by integrating advanced graph neural networks with multimodal machine learning techniques."
+  },
+  "EV-747cb4f30b": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "The study in 'QA-GNN: Reasoning with Language Models and Knowledge Graphs for Question Answering' focuses on a specific type of question answering task, which may not generalize to other types of questions or domains."
+  },
+  "EV-fe9075ffa2": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "The approach in 'Graph-Based Reasoning over Heterogeneous External Knowledge for Commonsense Question Answering' relies heavily on external knowledge sources which may not always be available or accurate."
+  },
+  "EV-84c6a9c161": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 2,
+    "title": "",
+    "description": "The research in 'Variational Reasoning for Question Answering With Knowledge Graph' is based on a specific set of datasets that may not cover all possible variations in question formulations."
+  },
+  "EV-a7ae78b590": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 3,
+    "title": "",
+    "description": "The study in 'A review: Knowledge reasoning over knowledge graph' is limited to academic papers; may not cover all relevant industry practices."
+  },
+  "EV-b14b0f1071": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 4,
+    "title": "",
+    "description": "The limitations in 'Stepwise Reasoning for Multi-Relation Question Answering over Knowledge Graph with Weak Supervision' are not explicitly detailed, making it difficult to assess the scope of its applicability."
+  },
+  "EV-07a21bd46e": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 5,
+    "title": "",
+    "description": "The limitations in 'Validation of the theoretical domains framework for use in behaviour change and implementation research' are not explicitly detailed, making it difficult to assess the scope of its applicability."
+  },
+  "EV-d4b95adc0d": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Knowledge Graph Embeddings and Question Answering Over Knowledge Bases",
+    "description": "This intersection explores the integration of knowledge graph embeddings with question answering systems to enhance reasoning capabilities."
+  },
+  "EV-8e13dc5044": {
+    "case_id": "knowledge_graph_x_question_answering",
+    "system": "pipeline",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "By leveraging pre-trained knowledge graph embeddings, the accuracy and robustness of question answering systems can be significantly improved when handling complex queries."
+  },
+  "EV-2a7570552d": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Machine learning for materials discovery and Active learning for experimental design; such topics are not jointly evidenced."
+  },
+  "EV-3e418ac01f": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'Materials discovery and design using machine learning' and 'Recent advances and applications of machine learning in soli'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-2b94e7b5ca": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-8fc099f181": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Advanced Chemical Physics Studies' across Machine learning for materials discovery and Active learning for experimental design; a combined treatment is missing."
+  },
+  "EV-ec3cbf1081": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'Recent advances and applications of machine learning in soli' and 'Materials discovery and design using machine learning'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Machine learning for materials discovery and Active learning for experimental design; combining their reported methods is a plausible joint direction."
+  },
+  "EV-896ac863a7": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on No source paper in the retrieved set jointly covers 'Advanced Chemical Physics Studies' across Machine learning for materials discovery and Active learning for experimental design; a combined treatment is missing."
+  },
+  "EV-b54a014bb9": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Researcher A focuses on 'Advanced Battery Materials and Technologies' and '2D Materials and Applications', while Researcher B's topics do not directly intersect with these areas."
+  },
+  "EV-9afcd5041e": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "There is no overlap in the methods used by both researchers, as their respective method lists are empty."
+  },
+  "EV-4a0f862d85": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Machine Learning in Materials Science",
+    "description": "Both researchers share an interest in this topic, indicating potential for collaboration or shared knowledge exchange."
+  },
+  "EV-5253cd8990": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 1,
+    "title": "X-ray Diffraction in Crystallography",
+    "description": "This topic is a common ground between the two researchers, suggesting it could be used as a basis for interdisciplinary research."
+  },
+  "EV-d88aa6d404": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Collaboration between Researcher A and B could lead to advancements in materials discovery through active learning approaches."
+  },
+  "EV-cbe1d70b56": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 1,
+    "title": "",
+    "description": "Integration of computational drug discovery methods with active experimental design could enhance the efficiency of material development processes."
+  },
+  "EV-bf07785d2e": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "The paper does not provide specific details on the methodologies used or datasets involved."
+  },
+  "EV-7e365e2dc8": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "The applicability of the proposed methods may depend on specific conditions not explicitly detailed in the abstract."
+  },
+  "EV-8dba290f08": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 2,
+    "title": "",
+    "description": "The technique cannot be used on certain types of stars."
+  },
+  "EV-6ccdc1eb48": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 3,
+    "title": "",
+    "description": "Estimated age errors are around 15% (plus possible systematic errors) for late F, G, K, and early M stars."
+  },
+  "EV-a0cf412bb0": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 4,
+    "title": "",
+    "description": "The paper is based on the knowledge available up to 2004."
+  },
+  "EV-263f1a0ac4": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Integration of Machine Learning and Active Learning in Experimental Design",
+    "description": "This intersection explores the potential synergy between machine learning for materials discovery and active learning techniques to enhance experimental design."
+  },
+  "EV-8d44c91544": {
+    "case_id": "materials_discovery_x_active_learning",
+    "system": "pipeline",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "By combining machine learning models for predicting material properties with active learning strategies to guide experimental selection, we can significantly enhance the efficiency and effectiveness of materials discovery processes."
+  },
+  "EV-f11c5b2258": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Quantum computing for chemistry and Density functional theory; such topics are not jointly evidenced."
+  },
+  "EV-68a88e4e41": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'QUANTUM ESPRESSO: a modular and open-source software project' and 'Quantum Computing in the NISQ era and beyond'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-51a26e7e5a": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-4f12a023db": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Retrieved coverage is limited to the listed papers; a deeper corpus would be needed to confirm gaps between Quantum computing for chemistry and Density functional theory."
+  },
+  "EV-eacb34a054": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'QUANTUM ESPRESSO: a modular and open-source software project' and 'Quantum Computing in the NISQ era and beyond'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Quantum computing for chemistry and Density functional theory; combining their reported methods is a plausible joint direction."
+  },
+  "EV-0a61d19c15": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on Retrieved coverage is limited to the listed papers; a deeper corpus would be needed to confirm gaps between Quantum computing for chemistry and Density functional theory."
+  },
+  "EV-b2d1eb89ed": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "There is a gap in the intersection between quantum computing algorithms and architecture (Researcher A) and spectroscopy and quantum chemical studies (Researcher B). Researcher A's focus on quantum computing does not directly address spectroscopic methods, while Researcher B's work could benefit from advancements in quantum computing."
+  },
+  "EV-50e86c2b33": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Quantum Computing Algorithms and Architecture",
+    "description": "Both researchers have an interest in Quantum Computing Algorithms and Architecture (Researcher A) and Spectroscopy and Quantum Chemical Studies (Researcher B). However, the direct application of quantum computing algorithms to spectroscopic methods is not explicitly covered."
+  },
+  "EV-0b05c0aeff": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 1,
+    "title": "Quantum and electron transport phenomena",
+    "description": "Both researchers have an interest in Quantum and Electron Transport Phenomena (Researcher A) and Spectroscopy and Quantum Chemical Studies (Researcher B). This area could benefit from a combined approach, potentially leading to new insights into quantum transport mechanisms."
+  },
+  "EV-21c8032ab3": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Advancements in quantum computing algorithms can significantly enhance the accuracy of spectroscopic studies by providing more efficient and powerful computational methods for analyzing complex chemical systems."
+  },
+  "EV-f14910ca54": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "The paper on ITINERIS - Italian Integrated Environmental Research Infrastructures System - Marine Domain lacks specific details on the methodologies used or the datasets involved."
+  },
+  "EV-5557a0fc17": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "The paper 'Research Domain Criteria' has limited evidence provided within the abstract for supporting claims."
+  },
+  "EV-79a57b75de": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 2,
+    "title": "",
+    "description": "The paper 'Research Evidence for Domain Specificity' lacks future work or limitations sections, making it difficult to assess the gaps in research."
+  },
+  "EV-b4c050c540": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 3,
+    "title": "",
+    "description": "The paper 'Domain transfer via cross-domain analogy' lacks future work or limitations sections, making it difficult to assess the gaps in research."
+  },
+  "EV-0a011344c0": {
+    "case_id": "quantum_chemistry_x_dft",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Quantum Computing for Chemistry and Density Functional Theory",
+    "description": "Both researchers focus on advanced computational methods in their respective fields, with potential overlap in the application of quantum computing to density functional theory."
+  },
+  "EV-dda74b6c24": {
+    "case_id": "recommender_x_fairness",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Recommender systems and Fairness in machine learning; such topics are not jointly evidenced."
+  },
+  "EV-db3dd7fc7c": {
+    "case_id": "recommender_x_fairness",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'Neural Collaborative Filtering' and 'LSQR: An Algorithm for Sparse Linear Equations and Sparse Le'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-7fc288b0f7": {
+    "case_id": "recommender_x_fairness",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-81ac314c0d": {
+    "case_id": "recommender_x_fairness",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Privacy-Preserving Technologies in Data' across Recommender systems and Fairness in machine learning; a combined treatment is missing."
+  },
+  "EV-cd3ee55afd": {
+    "case_id": "recommender_x_fairness",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Explainable Artificial Intelligence (XAI)' across Recommender systems and Fairness in machine learning; a combined treatment is missing."
+  },
+  "EV-593bb4bf16": {
+    "case_id": "recommender_x_fairness",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'Item-based collaborative filtering recommendation algorithms' and 'Evaluating collaborative filtering recommender systems'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Recommender systems and Fairness in machine learning; combining their reported methods is a plausible joint direction."
+  },
+  "EV-85a9c19d1d": {
+    "case_id": "recommender_x_fairness",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on No source paper in the retrieved set jointly covers 'Privacy-Preserving Technologies in Data' across Recommender systems and Fairness in machine learning; a combined treatment is missing."
+  },
+  "EV-8c6b443b50": {
+    "case_id": "recommender_x_fairness",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "There is a gap in the intersection between advanced bandit algorithms research and their application to ensuring algorithmic fairness in recommender systems."
+  },
+  "EV-dce22d4546": {
+    "case_id": "recommender_x_fairness",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Advanced Bandit Algorithms Research",
+    "description": "Both researchers are interested in this topic, suggesting potential for collaboration on developing fairer recommendation strategies using advanced bandit algorithms."
+  },
+  "EV-5704fb9a3d": {
+    "case_id": "recommender_x_fairness",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Developing fairness-aware bandit algorithms could lead to more equitable recommender systems without sacrificing performance."
+  },
+  "EV-85aa4c97cb": {
+    "case_id": "recommender_x_fairness",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "The paper 'ITINERIS - Italian Integrated Environmental Research Infrastructures System - Marine Domain' lacks specific methodologies or datasets, which limits the reproducibility and generalizability of its findings."
+  },
+  "EV-cf9dd34403": {
+    "case_id": "recommender_x_fairness",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "The paper 'Fairness in Algorithmic Decision-Making: Applications in Multi-Winner Voting, Machine Learning, and Recommender Systems' does not provide specific empirical evidence or datasets to validate its claims."
+  },
+  "EV-6385c2103b": {
+    "case_id": "recommender_x_fairness",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 2,
+    "title": "",
+    "description": "The paper 'Diagnostic and Statistical Manual of Mental Disorders' is dependent on Instagram's terms of service and data privacy policies, which could introduce biases in the training dataset for machine learning models."
+  },
+  "EV-fa3eb8f752": {
+    "case_id": "recommender_x_fairness",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Intersection of Fairness in Recommender Systems and Machine Learning",
+    "description": "Both researchers focus on fairness, but the current literature lacks specific methodologies or empirical evidence to validate claims about fairness in recommender systems."
+  },
+  "EV-505d6ec804": {
+    "case_id": "recommender_x_fairness",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 1,
+    "title": "Intersection of Methodological Gaps in Recommender Systems and Fairness",
+    "description": "There is a methodological gap in the 'ITINERIS - Italian Integrated Environmental Research Infrastructures System - Marine Domain' paper, which could be addressed by integrating fairness principles from machine learning."
+  },
+  "EV-c5e1c2ca7e": {
+    "case_id": "recommender_x_fairness",
+    "system": "pipeline",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "By integrating existing fairness techniques from machine learning into recommender systems, we can ensure more equitable recommendations."
+  },
+  "EV-1f38fcf857": {
+    "case_id": "recommender_x_fairness",
+    "system": "pipeline",
+    "surface": "hypothesis",
+    "index": 1,
+    "title": "",
+    "description": "By integrating fairness principles from machine learning into recommender systems, we can develop more robust and fair methods that enhance the reproducibility and generalizability of findings."
+  },
+  "EV-b594e22fcd": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Reinforcement learning for robot control and Sim-to-real transfer in robotics; such topics are not jointly evidenced."
+  },
+  "EV-28f7394b34": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'Sim-to-Real Transfer in Deep Reinforcement Learning for Robo' and 'Active Learning Literature Survey'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-14601cf3fb": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-a3077f9870": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Adaptive Dynamic Programming Control' across Reinforcement learning for robot control and Sim-to-real transfer in robotics; a combined treatment is missing."
+  },
+  "EV-fba229d7bc": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Robotic Path Planning Algorithms' across Reinforcement learning for robot control and Sim-to-real transfer in robotics; a combined treatment is missing."
+  },
+  "EV-4796fb9c43": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'Sim-to-Real Transfer of Robotic Control with Dynamics Random' and 'Sim-to-Real Transfer in Deep Reinforcement Learning for Robo'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Reinforcement learning for robot control and Sim-to-real transfer in robotics; combining their reported methods is a plausible joint direction."
+  },
+  "EV-cbf7bbd8bc": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on No source paper in the retrieved set jointly covers 'Adaptive Dynamic Programming Control' across Reinforcement learning for robot control and Sim-to-real transfer in robotics; a combined treatment is missing."
+  },
+  "EV-93f93e4b75": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "There is a gap in the intersection of 'Reinforcement Learning in Robotics' and 'Adversarial Robustness in Machine Learning'. Researcher A does not cover adversarial robustness, while Researcher B focuses more on domain adaptation."
+  },
+  "EV-af73ccee7c": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Reinforcement Learning in Robotics",
+    "description": "Both researchers are involved in this topic. However, their specific interests within it differ: Researcher A is more focused on control methods like Adaptive Dynamic Programming Control and Robot Manipulation and Learning, whereas Researcher B's work includes Domain Adaptation and Few-Shot Learning."
+  },
+  "EV-9f7a02fac7": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Researcher A might benefit from incorporating adversarial robustness techniques into their reinforcement learning models for robotics to improve real-world performance."
+  },
+  "EV-d11d286a53": {
+    "case_id": "rl_x_sim_to_real",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 1,
+    "title": "",
+    "description": "Researcher B could explore more applications of sim-to-real transfer in the context of robot control and manipulation, potentially leveraging adaptive dynamic programming methods."
+  },
+  "EV-5b0710c043": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Single-cell genomics and Transfer learning in bioinformatics; such topics are not jointly evidenced."
+  },
+  "EV-62e60d2577": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'GSVA: gene set variation analysis for microarray and RNA-Seq' and 'SCANPY: large-scale single-cell gene expression data analysi'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-dcf0d6c180": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-bbae428338": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Extracellular vesicles in disease' across Single-cell genomics and Transfer learning in bioinformatics; a combined treatment is missing."
+  },
+  "EV-044c6a6d33": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "No source paper in the retrieved set jointly covers 'Advanced MIMO Systems Optimization' across Single-cell genomics and Transfer learning in bioinformatics; a combined treatment is missing."
+  },
+  "EV-f3ef5ea4d8": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'SCANPY: large-scale single-cell gene expression data analysi' and 'GSVA: gene set variation analysis for microarray and RNA-Seq'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Single-cell genomics and Transfer learning in bioinformatics; combining their reported methods is a plausible joint direction."
+  },
+  "EV-c2a7e7bfd0": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on No source paper in the retrieved set jointly covers 'Extracellular vesicles in disease' across Single-cell genomics and Transfer learning in bioinformatics; a combined treatment is missing."
+  },
+  "EV-e0ce7d78ff": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "There is a lack of specific research on the application of transfer learning techniques in single-cell genomics."
+  },
+  "EV-47e9bf4269": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Single-cell and spatial transcriptomics",
+    "description": "Both researchers are interested in this topic, suggesting potential areas for collaboration or integration of methods."
+  },
+  "EV-314a1a5ec6": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 1,
+    "title": "Gene expression and cancer classification",
+    "description": "This is another overlapping area where both researchers could potentially combine their expertise to advance knowledge."
+  },
+  "EV-df65c1a6a5": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Transfer learning can improve the accuracy of single-cell genomics data analysis by leveraging existing models trained on related biological datasets."
+  },
+  "EV-d4f6e17fa6": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "The paper does not provide specific details on the technical methods or datasets used, which limits reproducibility and validation."
+  },
+  "EV-01147e73d9": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "The methodology is limited to the datasets it was tested on and may not generalize well to other types of data or research questions."
+  },
+  "EV-af65bbecea": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 2,
+    "title": "",
+    "description": "The RDoC system is not without challenges and limitations, which may affect its application in specific mental health conditions."
+  },
+  "EV-e24734ce6b": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 3,
+    "title": "",
+    "description": "Future research could explore more specific applications of transfer learning in different domains, which would provide a broader understanding of its effectiveness."
+  },
+  "EV-10c62dd604": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Integration of Single-cell Genomics with Transfer Learning in Bioinformatics",
+    "description": "This intersection explores the application of transfer learning techniques to improve the analysis and interpretation of single-cell genomics data, enhancing both reproducibility and generalizability."
+  },
+  "EV-f9c22f06db": {
+    "case_id": "single_cell_x_transfer_learning",
+    "system": "pipeline",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Transfer learning models trained on large, diverse genomic datasets can generalize better to new, unseen single-cell genomics samples compared to traditional methods."
+  },
+  "EV-92070b4e83": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "embedding",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Topics outside the top-ranked papers are least similar to the combined inputs for Automatic speech recognition and Speech enhancement for hearing aids; such topics are not jointly evidenced."
+  },
+  "EV-e87cca7821": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "embedding",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Similarity bridge: 'Speech Enhancement' and 'Speech enhancement theory and practice'",
+    "description": "The two corpus papers most similar (embedding-wise) to the combined researcher inputs are proposed as the basis of a joint direction."
+  },
+  "EV-4af2fdac03": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "embedding",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "The most embedding-similar papers jointly cover the researchers' interests; combining their methods warrants empirical evaluation."
+  },
+  "EV-d4403d7188": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "keyword",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "Retrieved coverage is limited to the listed papers; a deeper corpus would be needed to confirm gaps between Automatic speech recognition and Speech enhancement for hearing aids."
+  },
+  "EV-c3b9b61a05": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "keyword",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Bridging 'A Consolidated Perspective on Multimicrophone Speech Enhance' and 'Hearing Impairment and Cognitive Energy: The Framework for U'",
+    "description": "The two most overlapping papers share vocabulary with the combined expertise of Automatic speech recognition and Speech enhancement for hearing aids; combining their reported methods is a plausible joint direction."
+  },
+  "EV-f08a4b3d28": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "keyword",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Combining the methods reported in the top retrieved papers will yield gains on Retrieved coverage is limited to the listed papers; a deeper corpus would be needed to confirm gaps between Automatic speech recognition and Speech enhancement for hearing aids."
+  },
+  "EV-324f17b365": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "llm_only",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "There is no direct intersection between 'Automatic Speech Recognition' and 'Speech Enhancement for Hearing Aids' in terms of specific methods or techniques, as both researchers have distinct focuses."
+  },
+  "EV-7c6eb58b66": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "llm_only",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Speech and Audio Processing",
+    "description": "Both researchers are involved in the field of 'Speech and Audio Processing', which could potentially allow for shared knowledge exchange and collaboration."
+  },
+  "EV-ea4802a9a1": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "llm_only",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "Improvements in speech enhancement techniques could be beneficial for automatic speech recognition systems, especially when dealing with noisy environments common in hearing aid usage."
+  },
+  "EV-2093586be2": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 0,
+    "title": "",
+    "description": "The paper 'A Consolidated Perspective on Multimicrophone Speech Enhancement and Source Separation' lacks new research findings, which could be a gap in the literature."
+  },
+  "EV-dd32ea597d": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 1,
+    "title": "",
+    "description": "The 'Speech and language therapy for aphasia following stroke' paper has limitations in the number of participants, which could limit the generalizability of the findings."
+  },
+  "EV-910082aa91": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 2,
+    "title": "",
+    "description": "The 'Diagnostic and Statistical Manual of Mental Disorders' paper has limitations related to data privacy, which could impact the reliability of the analysis."
+  },
+  "EV-7481cd878a": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "pipeline",
+    "surface": "gap",
+    "index": 3,
+    "title": "",
+    "description": "The 'Ages for Illustrative Field Stars Using Gyrochronology: Viability, Limitations, and Errors' paper lacks quantified systematic errors, which could affect the accuracy of the results."
+  },
+  "EV-fe3db517fc": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "pipeline",
+    "surface": "intersection",
+    "index": 0,
+    "title": "Automatic Speech Recognition and Speech Enhancement for Hearing Aids",
+    "description": "Both researchers focus on speech-related topics, with 'Automatic speech recognition' aiming to improve the accuracy of converting spoken language into text or commands, while 'Speech enhancement for hearing aids' focuses on improving the quality of speech signals for individuals with hearing impairments."
+  },
+  "EV-0729354e0b": {
+    "case_id": "speech_recognition_x_hearing_aids",
+    "system": "pipeline",
+    "surface": "hypothesis",
+    "index": 0,
+    "title": "",
+    "description": "By integrating advanced noise reduction algorithms from automatic speech recognition (ASR) research, we can significantly enhance the performance of speech enhancement systems used in hearing aids."
+  }
+}

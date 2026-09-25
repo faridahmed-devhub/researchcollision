@@ -12,6 +12,7 @@ COLLAB_LANGUAGE = (
 )
 AI_GENERATED_LABEL = "AI-GENERATED HYPOTHESIS"
 SYNTHETIC_DATA_LABEL = "SYNTHETIC DEMO DATA"
+PAPER_DRAFT_FORMAT = "paper_draft"
 
 
 class JobStatus(str, Enum):
@@ -106,6 +107,7 @@ DISCOVERY_STEPS: list[str] = [
     "discover_intersections",
     "verify_evidence",
     "generate_hypotheses",
+    "write_paper_draft",
     "rank_collaborations",
 ]
 

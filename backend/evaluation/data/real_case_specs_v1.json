@@ -1,0 +1,116 @@
+{
+  "dataset_id": "real_case_study_v1",
+  "version": "1.0.0",
+  "description": "Small, reproducible real-world research case-study dataset for the ResearchCollision evaluation. Every source paper is a real, publicly traceable scholarly record retrieved from OpenAlex at build time. Machine-generated annotations (provider topic labels, a heuristic expected-evidence set) are labeled as such; research-gap annotations are marked 'none' because no independent expert annotation is available; no human annotations are fabricated.",
+  "provider": "openalex",
+  "domain_pairs": [
+    {
+      "case_id": "federated_learning_x_privacy",
+      "domain_a": "Federated learning for healthcare",
+      "query_a": "federated learning healthcare",
+      "domain_b": "Differential privacy in machine learning",
+      "query_b": "differential privacy machine learning",
+      "field_query": "federated learning differential privacy healthcare",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects federated learning for healthcare with differential privacy?"
+    },
+    {
+      "case_id": "causal_inference_x_clinical_ml",
+      "domain_a": "Causal inference in epidemiology",
+      "query_a": "causal inference epidemiology",
+      "domain_b": "Machine learning for clinical prediction",
+      "query_b": "machine learning clinical prediction models",
+      "field_query": "causal inference machine learning clinical prediction",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects causal inference in epidemiology with machine learning for clinical prediction?"
+    },
+    {
+      "case_id": "gnn_x_protein_structure",
+      "domain_a": "Graph neural networks for drug discovery",
+      "query_a": "graph neural networks drug discovery",
+      "domain_b": "Protein structure prediction",
+      "query_b": "protein structure prediction deep learning",
+      "field_query": "graph neural networks protein structure prediction drug discovery",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects graph neural networks for drug discovery with protein structure prediction?"
+    },
+    {
+      "case_id": "rl_x_sim_to_real",
+      "domain_a": "Reinforcement learning for robot control",
+      "query_a": "reinforcement learning robot control",
+      "domain_b": "Sim-to-real transfer in robotics",
+      "query_b": "sim-to-real transfer robotics learning",
+      "field_query": "reinforcement learning sim-to-real robot control",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects reinforcement learning for robot control with sim-to-real transfer?"
+    },
+    {
+      "case_id": "clinical_nlp_x_ehr",
+      "domain_a": "Natural language processing for clinical text",
+      "query_a": "clinical natural language processing",
+      "domain_b": "Electronic health record analytics",
+      "query_b": "electronic health records machine learning",
+      "field_query": "clinical natural language processing electronic health records",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects clinical NLP with electronic health record analytics?"
+    },
+    {
+      "case_id": "climate_downscaling_x_deep_learning",
+      "domain_a": "Statistical climate downscaling",
+      "query_a": "statistical downscaling climate projections",
+      "domain_b": "Deep learning for earth observation",
+      "query_b": "deep learning earth observation remote sensing",
+      "field_query": "climate downscaling deep learning earth observation",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects climate downscaling with deep learning for earth observation?"
+    },
+    {
+      "case_id": "quantum_chemistry_x_dft",
+      "domain_a": "Quantum computing for chemistry",
+      "query_a": "quantum computing quantum chemistry simulation",
+      "domain_b": "Density functional theory",
+      "query_b": "density functional theory exchange correlation functional",
+      "field_query": "quantum computing density functional theory chemistry",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects quantum computing for chemistry with density functional theory?"
+    },
+    {
+      "case_id": "recommender_x_fairness",
+      "domain_a": "Recommender systems",
+      "query_a": "recommender systems collaborative filtering",
+      "domain_b": "Fairness in machine learning",
+      "query_b": "algorithmic fairness recommender systems",
+      "field_query": "recommender systems algorithmic fairness",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects recommender systems with fairness in machine learning?"
+    },
+    {
+      "case_id": "single_cell_x_transfer_learning",
+      "domain_a": "Single-cell genomics",
+      "query_a": "single-cell RNA sequencing analysis",
+      "domain_b": "Transfer learning in bioinformatics",
+      "query_b": "transfer learning single-cell genomics",
+      "field_query": "single-cell genomics transfer learning",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects single-cell genomics with transfer learning?"
+    },
+    {
+      "case_id": "materials_discovery_x_active_learning",
+      "domain_a": "Machine learning for materials discovery",
+      "query_a": "materials discovery machine learning",
+      "domain_b": "Active learning for experimental design",
+      "query_b": "active learning materials discovery",
+      "field_query": "materials discovery active learning",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects materials discovery with active learning?"
+    },
+    {
+      "case_id": "knowledge_graph_x_question_answering",
+      "domain_a": "Knowledge graph embeddings",
+      "query_a": "knowledge graph embeddings",
+      "domain_b": "Question answering over knowledge bases",
+      "query_b": "question answering knowledge base reasoning",
+      "field_query": "knowledge graph question answering reasoning",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects knowledge graph embeddings with question answering over knowledge bases?"
+    },
+    {
+      "case_id": "speech_recognition_x_hearing_aids",
+      "domain_a": "Automatic speech recognition",
+      "query_a": "automatic speech recognition deep learning",
+      "domain_b": "Speech enhancement for hearing aids",
+      "query_b": "speech enhancement hearing aids",
+      "field_query": "automatic speech recognition speech enhancement hearing aids",
+      "evaluation_question": "Which real, evidence-grounded research direction plausibly connects automatic speech recognition with speech enhancement for hearing aids?"
+    }
+  ]
+}

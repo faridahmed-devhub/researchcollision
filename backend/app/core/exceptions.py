@@ -52,6 +52,21 @@ class ProviderError(AppError):
     code = "provider_error"
 
 
+class ProviderThrottledError(ProviderError):
+    """The provider returned a throttling response (HTTP 429) that may carry a
+    server-provided ``retry_after`` (seconds). Never treat as an empty result or
+    as an exclusion — only as a temporary unavailability signal.
+    """
+
+    code = "provider_throttled"
+    status_code = 429
+
+    def __init__(self, message: str = "Provider throttled", *, retry_after: int | None = None, provider: str = "provider") -> None:
+        super().__init__(message, code="provider_throttled")
+        self.retry_after = retry_after
+        self.provider = provider
+
+
 class RateLimitAppError(AppError):
     status_code = 429
     code = "rate_limited"
@@ -60,3 +75,8 @@ class RateLimitAppError(AppError):
 class JobControlError(AppError):
     status_code = 409
     code = "job_control_error"
+
+
+class NotImplementedAppError(AppError):
+    status_code = 501
+    code = "not_implemented"

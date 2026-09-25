@@ -12,10 +12,14 @@ from sqlalchemy import event
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-# Force mock providers + temp DB BEFORE importing app modules
+# Force mock providers + temp DB BEFORE importing app modules.
+# When the operator explicitly opts into live-provider smoke tests
+# (RUN_REAL_PROVIDER_TESTS=1), keep their real LITERATURE_PROVIDER setting
+# so the live tests exercise the real chain instead of mock.
+if os.getenv("RUN_REAL_PROVIDER_TESTS") != "1":
+    os.environ["LITERATURE_PROVIDER"] = "mock"
 os.environ["LLM_PROVIDER"] = "mock"
 os.environ["EMBEDDING_PROVIDER"] = "mock"
-os.environ["LITERATURE_PROVIDER"] = "mock"
 os.environ["RUN_WORKER_IN_APP"] = "false"
 os.environ["SECRET_KEY"] = "test-secret-key-for-pytest-only"
 
@@ -39,6 +43,8 @@ def db_engine(tmp_path):
             )
     except Exception:
         pass
+    import app.db.models  # noqa: F401  (register all tables before create_all)
+
     Base.metadata.create_all(bind=engine)
     factory = make_session_factory(engine)
     yield engine, factory

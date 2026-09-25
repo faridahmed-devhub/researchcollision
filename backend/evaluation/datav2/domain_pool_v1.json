@@ -1,0 +1,240 @@
+{
+  "pool_id": "domain_pool_v1",
+  "version": "1.0.0",
+  "description": "Frozen candidate domain pool for the v2 benchmark dataset. Each domain is a research area with a canonical search query and a discipline stratum. biomed=True marks domains where PubMed is an applicable secondary corpus.",
+  "created_utc": "2026-09-25T00:00:00+00:00",
+  "strata": [
+    {
+      "id": "life_health",
+      "label": "Life & Health Sciences",
+      "intra_allocation": 8
+    },
+    {
+      "id": "physical_eng",
+      "label": "Physical Sciences & Engineering",
+      "intra_allocation": 8
+    },
+    {
+      "id": "cs_ai",
+      "label": "Computer Science & AI",
+      "intra_allocation": 8
+    },
+    {
+      "id": "quant_methods",
+      "label": "Quantitative & Computational Methods",
+      "intra_allocation": 6
+    }
+  ],
+  "domains": [
+    {
+      "id": "clinical_decision_support",
+      "name": "Clinical decision support systems",
+      "discipline": "life_health",
+      "query": "clinical decision support systems",
+      "biomed": true
+    },
+    {
+      "id": "drug_repurposing",
+      "name": "Computational drug repurposing",
+      "discipline": "life_health",
+      "query": "drug repurposing computational methods",
+      "biomed": true
+    },
+    {
+      "id": "single_cell_analysis",
+      "name": "Single-cell transcriptomics",
+      "discipline": "life_health",
+      "query": "single cell RNA sequencing analysis",
+      "biomed": true
+    },
+    {
+      "id": "protein_structure_prediction",
+      "name": "Protein structure prediction",
+      "discipline": "life_health",
+      "query": "protein structure prediction deep learning",
+      "biomed": true
+    },
+    {
+      "id": "microbiome_health",
+      "name": "Microbiome and human health",
+      "discipline": "life_health",
+      "query": "gut microbiome human disease",
+      "biomed": true
+    },
+    {
+      "id": "cancer_genomics",
+      "name": "Cancer genomics",
+      "discipline": "life_health",
+      "query": "cancer genomics precision oncology",
+      "biomed": true
+    },
+    {
+      "id": "electronic_health_records",
+      "name": "Electronic health records analytics",
+      "discipline": "life_health",
+      "query": "electronic health records machine learning",
+      "biomed": true
+    },
+    {
+      "id": "medical_imaging_ai",
+      "name": "AI in medical imaging",
+      "discipline": "life_health",
+      "query": "deep learning medical image analysis",
+      "biomed": true
+    },
+    {
+      "id": "quantum_chemistry",
+      "name": "Quantum chemistry",
+      "discipline": "physical_eng",
+      "query": "quantum chemistry ab initio simulation",
+      "biomed": false
+    },
+    {
+      "id": "materials_discovery",
+      "name": "Accelerated materials discovery",
+      "discipline": "physical_eng",
+      "query": "machine learning materials discovery",
+      "biomed": false
+    },
+    {
+      "id": "climate_downscaling",
+      "name": "Climate downscaling",
+      "discipline": "physical_eng",
+      "query": "statistical downscaling climate projections",
+      "biomed": false
+    },
+    {
+      "id": "weather_forecasting",
+      "name": "AI weather forecasting",
+      "discipline": "physical_eng",
+      "query": "machine learning weather forecasting",
+      "biomed": false
+    },
+    {
+      "id": "battery_degradation",
+      "name": "Battery degradation modeling",
+      "discipline": "physical_eng",
+      "query": "lithium ion battery degradation modeling",
+      "biomed": false
+    },
+    {
+      "id": "computational_catalysis",
+      "name": "Computational catalysis",
+      "discipline": "physical_eng",
+      "query": "computational screening heterogeneous catalysis",
+      "biomed": false
+    },
+    {
+      "id": "structural_health",
+      "name": "Structural health monitoring",
+      "discipline": "physical_eng",
+      "query": "structural health monitoring machine learning",
+      "biomed": false
+    },
+    {
+      "id": "inverse_photonics",
+      "name": "Inverse photonic design",
+      "discipline": "physical_eng",
+      "query": "inverse design photonic devices",
+      "biomed": false
+    },
+    {
+      "id": "federated_learning",
+      "name": "Federated learning",
+      "discipline": "cs_ai",
+      "query": "federated learning",
+      "biomed": false
+    },
+    {
+      "id": "differential_privacy",
+      "name": "Differential privacy",
+      "discipline": "cs_ai",
+      "query": "differential privacy machine learning",
+      "biomed": false
+    },
+    {
+      "id": "recommender_systems",
+      "name": "Recommender systems",
+      "discipline": "cs_ai",
+      "query": "recommender systems collaborative filtering",
+      "biomed": false
+    },
+    {
+      "id": "graph_neural_networks",
+      "name": "Graph neural networks",
+      "discipline": "cs_ai",
+      "query": "graph neural networks",
+      "biomed": false
+    },
+    {
+      "id": "reinforcement_learning",
+      "name": "Reinforcement learning",
+      "discipline": "cs_ai",
+      "query": "reinforcement learning",
+      "biomed": false
+    },
+    {
+      "id": "llm_interpretability",
+      "name": "Large language model interpretability",
+      "discipline": "cs_ai",
+      "query": "large language models interpretability",
+      "biomed": false
+    },
+    {
+      "id": "semantic_segmentation",
+      "name": "Semantic segmentation",
+      "discipline": "cs_ai",
+      "query": "semantic segmentation deep neural networks",
+      "biomed": false
+    },
+    {
+      "id": "formal_verification",
+      "name": "Formal verification of deep networks",
+      "discipline": "cs_ai",
+      "query": "formal verification neural networks",
+      "biomed": false
+    },
+    {
+      "id": "causal_inference",
+      "name": "Causal inference",
+      "discipline": "quant_methods",
+      "query": "causal inference observational data",
+      "biomed": false
+    },
+    {
+      "id": "uncertainty_quantification",
+      "name": "Uncertainty quantification",
+      "discipline": "quant_methods",
+      "query": "prediction intervals uncertainty deep learning",
+      "biomed": false
+    },
+    {
+      "id": "time_series_forecasting",
+      "name": "Time-series forecasting",
+      "discipline": "quant_methods",
+      "query": "time series forecasting deep learning",
+      "biomed": false
+    },
+    {
+      "id": "bayesian_optimization",
+      "name": "Bayesian optimization",
+      "discipline": "quant_methods",
+      "query": "bayesian optimization machine learning",
+      "biomed": false
+    },
+    {
+      "id": "survival_analysis",
+      "name": "Survival analysis",
+      "discipline": "quant_methods",
+      "query": "survival analysis machine learning",
+      "biomed": false
+    },
+    {
+      "id": "algorithmic_fairness",
+      "name": "Algorithmic fairness",
+      "discipline": "quant_methods",
+      "query": "algorithmic fairness bias audit",
+      "biomed": false
+    }
+  ]
+}

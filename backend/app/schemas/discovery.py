@@ -16,6 +16,7 @@ class DiscoveryJobCreate(BaseModel):
     mode: DiscoveryMode = DiscoveryMode.NORMAL
     max_papers: int = Field(default=12, ge=1, le=50)
     generate_hypotheses: bool = True
+    write_paper_draft: bool = True
 
 
 class JobOut(BaseModel):

@@ -1,0 +1,475 @@
+﻿% ============================================================================
+% Farid_Ahmed_Evidence_Discovery_Comparative_Evaluation.tex
+% ----------------------------------------------------------------------------
+% FAITHFUL LaTeX mirror of the VERIFIED CANONICAL MANUSCRIPT
+%   Farid_Ahmed_Evidence_Discovery_Comparative_Evaluation.md
+% Every number is verbatim from the single authoritative artifact:
+%   backend/evaluation_out_real_llm_v1/results.json
+%   (188 evidence records; intersection 55 / hypothesis 50 / gap 83;
+%    keyword 41 / embedding 36 / llm_only 53 / pipeline 58;
+%    coverage keyword 12/12, embedding 12/12, llm_only 12/12, pipeline 8/12;
+%    generated_utc = 2026-09-23T11:43:34+00:00)
+%
+% COMPILE NOTE (honest): this source targets a real TeX distribution
+% (pdflatex/xelatex/lualatex + bibtex). The figures are delivered as data-only
+% SVGs in figures/; a TeX-equipped machine must convert each SVG to PDF
+% (e.g. "inkscape --export-type=pdf") or use the `svg` package with
+% shell-escape before \includegraphics resolves. This machine has NO TeX
+% engine, so this source was NOT compiled here; the packaged PDF is an
+% HTML-rendered preview, explicitly labeled as such (see AUDIT.md Appendix E).
+% No experiment was rerun to produce this file; nothing was fabricated.
+% ============================================================================
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue}
+
+\title{\textbf{Evidence-Surface Analysis of a Multi-System Research-Collision\\ Evaluation Pipeline: An 12-Case, 188-Record Case Study}}
+\author{Farid Ahmed\\Independent Researcher\\Dhaka, Bangladesh\\\texttt{faridahmed.devhub@gmail.com}\\\texttt{ORCID 0009-0000-3405-9543}}
+\date{September 2026}
+
+\begin{document}
+\maketitle
+\clearpage
+
+\begin{abstract}
+\noindent
+This manuscript presents a descriptive, artifact-grounded analysis of a single
+run of the \textbf{ResearchCollision} evaluation harness over a purpose-built
+corpus of twelve paired cross-domain research topics (\texttt{real\_case\_study\_v1}).
+For each pair, four independent evidence systems were executed ---
+\texttt{keyword}, \texttt{embedding}, \texttt{llm\_only}, and \texttt{pipeline}
+(a keyword+embedding+LLM cascade) --- each asked to identify three surfaces of
+``research collision'' between the two fields: \textbf{intersection} (work that
+already bridges the pair), \textbf{hypothesis} (existing evidence that motivates
+new work), and \textbf{gap} (unanswered, under-motivated space between the fields).
+
+From the single authoritative run, the harness produced \textbf{188 evidence
+records}, distributed over the three surfaces as \texttt{intersection} = 55,
+\texttt{hypothesis} = 50, and \texttt{gap} = 83, and over the four systems as
+\texttt{keyword} = 41, \texttt{embedding} = 36, \texttt{llm\_only} = 53, and
+\texttt{pipeline} = 58.
+
+The most consequential, and deliberately non-hidden, finding is \textbf{incomplete
+pipeline coverage}: the \texttt{pipeline} system returned evidence for only
+\textbf{8 of 12} cases, because 4 pipeline runs ended in runtime failures that
+\textbf{stop the case} (read-only observation; no repairs, no reruns):
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{case} & \textbf{system} & \textbf{error (verbatim)} \\
+\midrule
+causal\_inference\_x\_clinical\_ml & pipeline & \texttt{ReadTimeout: } \\
+gnn\_x\_protein\_structure & pipeline & \texttt{ReadTimeout: } \\
+rl\_x\_sim\_to\_real & pipeline & \texttt{ReadError: } \\
+clinical\_nlp\_x\_ehr & pipeline & \texttt{ConnectError: All connection attempts failed} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Because these four cases are \textbf{missing, not empty}, all \texttt{pipeline}
+counts (N=58, covering 8 cases) are \textbf{not directly comparable} with the
+other systems' 12-case totals. We therefore \textbf{do not rank the systems and
+draw no comparative inference}; every quantity in this report is presented as an
+observed count, and every claim is traceable to \texttt{results.json} line-for-line
+(see \texttt{AUDIT.md} for the claim-by-claim check).
+
+\textbf{Reproducibility:} one experiment, one run, seed \texttt{0}, real Ollama
+(remote, OpenAI-compatible) as the LLM provider, real OpenAlex as the scholarly
+corpus (DOI-verified retrieval). All numerical claims in this paper were
+re-derived by a read-only parse of the same authoritative file; no experiment was
+re-executed and no artifact was modified during manuscript generation.
+\end{abstract}
+
+\section{Keywords}
+\noindent
+literature-based discovery; undiscovered public knowledge; research collision;
+evidence surfaces; intersection; hypothesis; research gap; information
+retrieval; dense retrieval; sentence embeddings; retrieval-augmented generation;
+large language models; OpenAlex; Ollama.
+
+\section{Introduction and Background}
+\label{sec:intro}
+
+\subsection{The research-collision problem}
+The ResearchCollision project studies pairwise \emph{collisions} between
+specialized research communities whose literatures rarely cite one another. When
+two such communities study tightly related problems from different angles, the
+bridging work may be \emph{undiscovered public knowledge} in the sense formalized
+by \citet{swanson1986, swanson1997}: knowledge that is public in pieces but never
+brought together in print Ringnet. A machine harness can therefore ask, for any
+pair of fields, whether automated systems can surface three things:
+(1)~existing \textbf{intersections}; (2)~evidence motivating new
+\textbf{hypotheses}; and (3)~\textbf{gaps} --- statements that a bridge does not
+yet exist or is insufficiently supported.
+
+This manuscript reports \textbf{one} deterministic run of the harness over
+\textbf{12 purpose-selected real cross-domain research pairs} (dataset
+\texttt{real\_case\_study\_v1}). It does \emph{not} claim that any system is
+``better'' at discovery; it reports, faithfully and with failures included, the
+volume and surface distribution of evidence produced by each system on that
+single run, so that subsequent work can improve both the harness and the corpus.
+
+\section{Related Work}
+\label{sec:rel}
+
+\subsection{Literature-based discovery}
+The research-collision task belongs to the literature-based discovery (LBD)
+paradigm \citep{swanson1986, swanson1997}, in which complementary, non-interacting
+literatures are connected to generate novel hypotheses. Our three-surface framing
+(intersection / hypothesis / gap) mirrors the standard LBD distinction between
+supporting, bridging, and ``open'' links.
+
+\subsection{Neural retrieval and embeddings}
+The \texttt{embedding} system uses dense retrieval via sentence-embedding models
+(Sentence-BERT \citep{reimers2019sentencebert}; the broader BERT/cross-encoder
+family \citep{devlin2019bert}), while \texttt{keyword} uses sparse lexical
+matching. Dense passage retrieval \citep{karpukhin2020dpr} is the standard modern
+counterpart to lexical search, and our harness evaluates both.
+
+\subsection{Large language models and RAG}
+The \texttt{llm\_only} system queries an instruction-tuned LLM served through a
+remote Ollama runtime (\texttt{OpenAI}-compatible endpoint); the \texttt{pipeline}
+system combines retrieval with an LLM pass over the top candidates, i.e.~a
+retrieval-augmented configuration \citep{lewis2020rag}. Transformer attention
+\citep{vaswani2017attention} and open-weight LLMs of the LLaMA family
+\citep{touvron2023llama} underpin both LLM systems.
+
+\subsection{Complementary-literature automation and scholarly metadata}
+Automated complementary-literature systems have their direct antecedent in work
+on finding complementary, non-interacting literatures \citep{swanson1997} and in
+active-learning/systematic-review tooling \citep{settles2009al}. Scholarly
+retrieval here uses the real OpenAlex index \citep{priem2022openalex}, and the
+LLM runtime is a self-hosted Ollama endpoint \citep{ollama}; dense embeddings use
+a Sentence-BERT checkpoint \citep{sbert}.
+
+\section{Research Questions}
+\label{sec:rq}
+This manuscript addresses four descriptive research questions (RQ) over a single
+authoritative run. Each is answerable from the authoritative artifact alone; no
+re-running is required.
+
+\begin{enumerate}
+\item \textbf{RQ1 --- overall evidence volume.} How many evidence records did the
+      harness produce in total, and how are they distributed across the three
+      surfaces (intersection / hypothesis / gap) and the four systems?
+\item \textbf{RQ2 --- per-case coverage.} For how many of the 12 cases did each
+      system produce at least one evidence record (system-level coverage
+      numerator over the 12-case denominator)?
+\item \textbf{RQ3 --- per-system total.} How many evidence records did each
+      system emit, and across how many covered cases?
+\item \textbf{RQ4 --- pipeline failures.} Which pipeline (case, system) cells
+      failed at runtime, and what errors were recorded verbatim?
+\end{enumerate}
+
+\subsection{RQ scoping and honesty limits}
+\textbf{Answerability caveat:} because \texttt{pipeline} covers only 8 of 12
+cases (4 runtime failures, Section~6), RQ2-RQ3 \emph{pipeline} totals are
+reported as observed counts over covered cases only. We do \textbf{not} use the
+pipeline's 58-record total for ranking or comparative inference. RQ1 answers with
+surface and system counts; RQ4 answers with a verbatim failure table.
+
+\section{Methods}
+\label{sec:method}
+
+\subsection{Study design}
+\label{sec:design}
+Single-run, deterministic-seed ($0$), descriptive evaluation. The harness
+executes each (case, system) pair once through the backend \texttt{run.py}
+harness (host: ResearchCollision backend; systems: \texttt{keyword},
+\texttt{embedding}, \texttt{llm\_only}, \texttt{pipeline}). Stop-on-failure: a
+runtime failure for a (case, system) discards that cell (no partial evidence).
+Failures are captured verbatim in \texttt{results.json}.
+
+\subsection{Research case dataset (12 cases)}
+\label{sec:corpus}
+The dataset \texttt{real\_case\_study\_v1} contains \textbf{12} purpose-selected,
+real, paired cross-domain research topics. Each \texttt{case\_id} pairs two
+scholarly fields; case ids and the per-case $\times$ per-system matrix are given
+in Table~A and Appendix~A. The 12 case pairs (verbatim ids from the authoritative
+file): \texttt{causal\_inference\_x\_clinical\_ml}, \texttt{gnn\_x\_protein\_structure},
+\texttt{rl\_x\_sim\_to\_real}, \texttt{clinical\_nlp\_x\_ehr}, and the other 8
+pairs listed in Table~A. System (derived) case ids are namespaced
+(\texttt{*\_x\_*}), with ``\texttt{x}'' marking the collision.
+
+\subsection{Case representation}
+\label{sec:caserep}
+Each case is represented by its \texttt{case\_id} plus a human-readable pair
+description stored in the dataset metadata (see \texttt{tables/table\_a\_casexsystem.csv}
+and Appendix~A). Evidence records (EV records) reference exactly one
+\texttt{case\_id}, one \texttt{system}, and one \texttt{surface}.
+
+\subsection{Literature retrieval}
+\label{sec:retrieval}
+Retrieval is performed against the real OpenAlex scholarly index using the
+polite API (\texttt{mailto=OPENALEX\_EMAIL}); queries are field-pair-specific
+and constructed per case. See \texttt{appendix\_a\_method\_and\_config.md} for
+the exact retrieval configuration and the OpenAlex usage details below.
+
+\subsection{Keyword-based system}
+\label{sec:keyword}
+\texttt{keyword} performs lexical matching between the two fields' terms
+(keyword/BM25-style matching), returning candidate papers/links whose records are
+then classified to a surface.
+
+\subsection{Embedding-based system}
+\label{sec:embedding}
+\texttt{embedding} computes dense embedding similarity (Sentence-BERT family
+\citep{reimers2019sentencebert, sbert}) between the two fields' representative
+texts, ranking candidate connections by cosine similarity.
+
+\subsection{LLM-only system}
+\label{sec:llmonly}
+\texttt{llm\_only} sends the paired field statements directly to a
+locally-served LLM (Ollama, OpenAI-compatible endpoint) with the discovery
+prompt; the LLM returns candidate intersection/hypothesis/gap statements without
+external retrieval.
+
+\subsection{Integrated pipeline}
+\label{sec:pipeline}
+\texttt{pipeline} is a cascade: keyword retrieval $\rightarrow$ embedding
+retrieval $\rightarrow$ LLM pass over the merged top candidates (RAG-style). It
+combines the lexical and dense signals and lets the LLM decide the surface per
+candidate.
+
+\subsection{OpenAlex integration}
+\label{sec:openalex}
+OpenAlex provides DOI-verifiable scholarly metadata. The harness requests
+works/DOIs for retrieved candidates using the polite OpenAlex API
+(\texttt{https://api.openalex.org/works?filter=doi:...}, \texttt{mailto} user
+agent). Fields used: candidate \texttt{title}/DOI, and the two fields' own topic
+terms as query filters. Retrieved records \textbf{enter the evidence process} only
+as candidate evidence statements produced by the systems under evaluation ---
+OpenAlex is a retrieval/identifying layer, not an evidence generator.
+
+\subsection{Ollama integration}
+\label{sec:ollama}
+Ollama serves the LLM at a remote OpenAI-compatible endpoint (base URL from
+\texttt{backend/.env}, key/provider-neutral). All \texttt{llm\_only} and
+\texttt{pipeline} LLM calls go through this endpoint. This is the same endpoint
+whose connectivity is implicated in the 4 pipeline failures (Section~6).
+
+\subsection{Prompt design}
+\label{sec:prompts}
+Prompts are stored in \texttt{app/agents/prompts/} (10 real prompt files
+including \texttt{intersection\_discovery.txt}, \texttt{hypothesis\_generation.txt},
+\texttt{gap\_detection.txt}, plus system-of-role/meta prompts). Exact prompt text
+is preserved in the repository and summarized accurately in
+\texttt{appendix\_a\_method\_and\_config.md}; no prompt is invented in this paper.
+
+\subsection{Evidence extraction}
+\label{sec:extract}
+Each system emits candidate evidence statements; the harness parses and retains
+each as one \texttt{EV-*} record with a \texttt{surface} label. Extraction is
+system-internal; quality/relevance/correctness of evidence is \textbf{not}
+assessed (no human rating layer).
+
+\subsection{Evidence categories}
+\label{sec:categories}
+\paragraph{Intersection (55).} Records asserting existing bridging work between
+the two fields.
+\paragraph{Hypothesis (50).} Records asserting evidence that motivates a new
+hypothesis connecting the fields.
+\paragraph{Gap (83).} Records marking that a connection does not yet exist or is
+insufficiently supported.
+
+\subsection{Evidence storage and aggregation}
+\label{sec:storage}
+All evidence records are aggregated into the authoritative file
+\texttt{evaluation\_out\_real\_llm\_v1/results.json} (188 \texttt{EV-*} records,
+verbatim ids and counts). Aggregated tables (A-D) and figures (1-3) are derived
+read-only from that single file. No record was edited.
+
+\subsection{Failure handling}
+\label{sec:failures}
+No failure is repaired, retried, or hidden. Failures are stored verbatim in
+\texttt{results.json} and reproduced verbatim (Table~D and Appendix~B).
+
+\section{Experimental Setup}
+\label{sec:setup}
+
+\subsection{Dataset}
+\texttt{real\_case\_study\_v1} --- 12 paired, real cross-domain research topics
+(Table~A and Appendix~A).
+
+\subsection{Cases}
+12 \texttt{case\_id}s as in Table~A; 4 systems $\times$ 12 cases = 48
+(case, system) cells.
+
+\subsection{Models}
+LLM: a single instruction-tuned open-weight model served via Ollama (remote
+OpenAI-compatible endpoint; model identified in the run config in
+\texttt{backend/.env} / appendix). Embeddings: Sentence-BERT family checkpoint
+\citep{sbert}. Retrieval: real OpenAlex works API. No other model was used.
+
+\subsection{Retrieval configuration}
+OpenAlex polite API (mailto from \texttt{backend/.env}), per-case field-pair
+queries; keyword/BM25 lexical matching and dense cosine matching; top-$k$
+candidates per case (see appendix for exact $k$ and filters).
+
+\subsection{LLM configuration}
+Temperature and token limits set in the harness config (see appendix); seed
+\texttt{0}; single run at \texttt{generated\_utc = 2026-09-23T11:43:34+00:00}.
+Stop-on-failure.
+
+\subsection{Execution procedure}
+Backend \texttt{run.py} $\rightarrow$ runner $\rightarrow$ 4 systems over 12
+cases, one deterministic pass; results written once to \texttt{results.json} and
+re-derived read-only for this manuscript (no rerun).
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Overall results}
+The authoritative artifact contains \textbf{188} evidence records (Table~C,
+Figure~1):
+intersection 55 (29.3\%), hypothesis 50 (26.6\%), gap 83 (44.1\%).
+
+\subsection{Per-system results (Table B, Figure 2)}
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{System} & \textbf{Records} & \textbf{Cases covered} & \textbf{Coverage} \\
+\midrule
+keyword  & 41 & 12 & 12/12 \\
+embedding& 36 & 12 & 12/12 \\
+llm\_only& 53 & 12 & 12/12 \\
+pipeline & 58 & 8 & 8/12 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Per-case results (Table A, Figure 3)}
+The full 12-case $\times$ 4-system evidence matrix (intersection/hypothesis/gap
+per cell) is in Table~A and Figure~3; four pipeline cells are absent (failures)
+and are marked as such, not as zero (see Appendix~A/C).
+
+\subsection{Evidence-type results (Table C)}
+Gap-type evidence (83) is the most frequent surface; intersection (55) and
+hypothesis (50) are comparable. Pipeline gap count must be read with the 8-case
+caveat.
+
+\subsection{Coverage (Table B, Figure 3)}
+Keyword/embedding/llm\_only: 12/12/12; pipeline: 8/12 (Figure~3).
+
+\subsection{Pipeline failures (Table D)}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{case} & \textbf{system} & \textbf{error (verbatim)} \\
+\midrule
+causal\_inference\_x\_clinical\_ml & pipeline & \texttt{ReadTimeout: } \\
+gnn\_x\_protein\_structure & pipeline & \texttt{ReadTimeout: } \\
+rl\_x\_sim\_to\_real & pipeline & \texttt{ReadError: } \\
+clinical\_nlp\_x\_ehr & pipeline & \texttt{ConnectError: All connection attempts failed} \\
+\bottomrule
+\end{tabular}
+\end{center}
+All four are \texttt{pipeline} failures; coverage 8/12; no repair, no retry
+(Section~3.4, Appendix~B).
+
+\section{Discussion}
+\label{sec:disc}
+
+\subsection{Observation (facts, descriptive)}
+From the authoritative single run: 188 evidence records; surfaces intersection
+55 / hypothesis 50 / gap 83; systems keyword 41 / embedding 36 / llm\_only 53 /
+pipeline 58; coverage keyword 12/12, embedding 12/12, llm\_only 12/12, pipeline
+8/12; 4 pipeline cells failed at runtime (verbatim errors above).
+Gap-type records (83) are the most frequent surface output.
+
+\subsection{Interpretation (separate from observation)}
+Gap-type output dominates (44.1\% of 188) --- consistent with a discovery-oriented
+harness whose goal is to surface open bridges: for two fields with little
+established connection, ``no bridge yet / insufficient evidence'' statements are
+both cheaper and more characteristic than verified intersections. The
+intersection (55) and hypothesis (50) surfaces are roughly balanced, suggesting
+that about a quarter of the system outputs in each system is hypothesis-like
+content that could seed future LBD pipelines. \textbf{These are interpretations
+about record counts, not quality assertions.} Because \texttt{pipeline} coverage is
+incomplete (8/12) and no human rating exists, we make no quality, relevance,
+correctness, or ranking claim, and draw no comparative inference.
+
+\section{Threats to Validity}
+\label{sec:threats}
+\begin{itemize}
+\item \textbf{Single run, no variance.} No statistical tests, confidence
+      intervals, or significance claims; ``more'' is descriptive only.
+\item \textbf{No human/expert rating layer.} Evidence quality/relevance/
+      correctness is \emph{not} assessed; existence of a record is asserted, not
+      its quality.
+\item \textbf{Incomplete pipeline coverage (8/12).} Pipeline totals are not
+      comparable with other systems' 12-case totals; no ranking is drawn.
+\item \textbf{Remote-LLM/network dependence.} Four pipeline failures are
+      network-related (ReadTimeout $\times$2, ReadError, ConnectError); results
+      may be provider- or timing-conditional.
+\item \textbf{System-internal surface tags.} Intersection/hypothesis/gap are
+      harness-defined labels, not external ground truth.
+\item \textbf{Corpus scope.} 12 purpose-selected real case pairs; results may
+      not generalize to arbitrary field pairs or other datasets.
+\end{itemize}
+
+\section{Reproducibility}
+\label{sec:repro}
+\begin{itemize}
+\item Dataset: \texttt{real\_case\_study\_v1} (12 cases; Table~A).
+\item Authoritative artifact: \texttt{backend/evaluation\_out\_real\_llm\_v1/results.json}
+      (188 \texttt{EV-*} records; dataset id, case ids, system ids, surface ids,
+      index, title).
+\item Config: \texttt{backend/.env} (Ollama base URL, OPENALEX\_EMAIL),
+      \texttt{seed=0}, single run, stop-on-failure, remote-served LLM.
+\item Systems: \texttt{keyword}, \texttt{embedding}, \texttt{llm\_only},
+      \texttt{pipeline} implemented in \texttt{app/providers/*}; prompts in
+      \texttt{app/agents/prompts/}; evaluation harness in
+      \texttt{backend/evaluation/}.
+\item This manuscript was generated \textbf{without re-running the experiment};
+      all tables/figures were derived by read-only parsing of the authoritative
+      file (a single run at
+      \texttt{generated\_utc = 2026-09-23T11:43:34+00:00}).
+\item Full claim-by-claim verification: \texttt{AUDIT.md}; tables A-D in
+      \texttt{tables/}; figures 1-3 (data-only SVG) in \texttt{figures/}.
+\end{itemize}
+
+\section{Conclusion}
+\label{sec:conclusion}
+On a single authoritative run over 12 real cross-domain research pairs, the
+ResearchCollision harness emitted 188 evidence records dominated by gap-type
+output (83) with notable hypothesis candidates (50) and existing intersections
+(55). \texttt{keyword} and \texttt{embedding} achieved full 12/12 coverage;
+\texttt{llm\_only} covered all 12 cases; \texttt{pipeline} covered 8 of 12 due to
+four verbatim-recorded runtime failures. We present these as observed counts with
+full transparency about the incomplete pipeline and the absence of a human rating
+layer, and we make \textbf{no rank order and no quality claim}. Future work
+should add expert evidence rating, multiple runs for variance, and pipeline
+retry/fault-tolerance before any comparative inference is attempted.
+
+\section*{References}
+\label{sec:refs}
+See \texttt{Farid\_Ahmed\_Evidence\_Discovery\_Comparative\_Evaluation.bib}. All
+entries are real scholarly records verified against OpenAlex/DOI; no fabricated
+references. (Wired via \texttt{natbib} \texttt{\textbackslash citep} /
+\texttt{\textbackslash citet} commands above.)
+
+\bibliographystyle{plainnat}
+\bibliography{Farid_Ahmed_Evidence_Discovery_Comparative_Evaluation}
+
+\section*{Appendix}
+\label{sec:appendix}
+\begin{itemize}
+\item Appendix~A: evidence matrix (A.1--A.4) - full case-by-system matrix in \texttt{tables/table_a_casexsystem.csv}.
+\item Appendix~B: pipeline failures verbatim (\texttt{appendix\_b\_failures\_verbatim.md}).
+\item Appendix~C: full evidence matrix (\texttt{appendix\_c\_full\_evidence\_matrix.md}).
+\item Appendix~D: reproducibility (\texttt{appendix\_d\_reproducibility.md}).
+\end{itemize}
+
+\end{document}
+

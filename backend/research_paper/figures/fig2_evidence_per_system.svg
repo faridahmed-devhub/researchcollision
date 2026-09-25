@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-label="Evidence records per system: keyword 41, embedding 36, llm_only 53, pipeline 58 (only 8 of 12 cases)">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="360" y="28" text-anchor="middle" font-size="15" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Evidence records per system (N=188)</text>
+  <!-- scale: 58/188*300=92.5 -->
+  <g font-family="Helvetica,Arial,sans-serif">
+    <text x="106" y="330" text-anchor="middle" font-size="12">keyword (41)</text>
+    <rect x="54" y="206" width="104" height="102" fill="#1b7837"/>
+    <text x="106" y="199" text-anchor="middle" font-size="13" font-weight="bold">41</text>
+    <text x="286" y="330" text-anchor="middle" font-size="12">embedding (36)</text>
+    <rect x="234" y="222" width="104" height="86" fill="#762a83"/>
+    <text x="286" y="215" text-anchor="middle" font-size="13" font-weight="bold">36</text>
+    <text x="466" y="330" text-anchor="middle" font-size="12">llm_only (53)</text>
+    <rect x="414" y="163" width="104" height="145" fill="#2166ac"/>
+    <text x="466" y="156" text-anchor="middle" font-size="13" font-weight="bold">53</text>
+    <text x="646" y="330" text-anchor="middle" font-size="12">pipeline (58)</text>
+    <rect x="594" y="140" width="104" height="168" fill="#b2182b"/>
+    <text x="646" y="133" text-anchor="middle" font-size="13" font-weight="bold">58</text>
+  </g>
+  <line x1="40" y1="315" x2="700" y2="315" stroke="#000" stroke-width="1.5"/>
+  <text x="360" y="352" text-anchor="middle" font-size="10" font-family="Helvetica,Arial,sans-serif">Caveat: pipeline completed evidence for 8 of 12 cases (4 pipeline runs failed; see Table D).</text>
+</svg>

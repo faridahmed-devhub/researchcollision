@@ -25,6 +25,7 @@ from app.db.models import (
     Researcher,
     ResearcherAlias,
 )
+from app.core.exceptions import ProviderError
 from app.db.repositories.job_repository import JobRepository
 from app.providers.llm.factory import get_llm_provider
 from app.services.evidence_service import EvidenceService
@@ -44,11 +45,18 @@ class StepControl(Exception):
 
 
 class DiscoveryPipeline:
-    def __init__(self, db, job) -> None:  # type: ignore[no-untyped-def]
+    def __init__(
+        self,
+        db,
+        job,
+        *,
+        seed: int | None = None,
+    ) -> None:  # type: ignore[no-untyped-def]
         self.db = db
         self.job = job
         self.workspace_id = job.workspace_id
         self.config = job.config or {}
+        self.seed = seed
         self.job_repo = JobRepository(db)
         self.llm = get_llm_provider()
         self.paper_service = PaperService(db)
@@ -193,6 +201,18 @@ class DiscoveryPipeline:
                     self._papers.append(paper)
                 self._link_author(paper, meta.authors)
         self.db.commit()
+        if not self._papers:
+            self.job_repo.add_event(
+                self.job.id,
+                "literature_failed",
+                "No papers retrieved from any enabled literature provider",
+                {"queries": queries},
+            )
+            raise ProviderError(
+                "Literature search produced no papers from any enabled provider. "
+                "Check network access and provider credentials, or enable "
+                "LITERATURE_ALLOW_MOCK_FALLBACK to run with synthetic papers."
+            )
         # keep only the most relevant N papers for downstream LLM work
         self._papers.sort(key=lambda p: (p.publication_year or 0), reverse=True)
         self._papers = self._papers[: max_papers * 2]
@@ -238,7 +258,7 @@ class DiscoveryPipeline:
 
     async def step_analyze_papers(self) -> None:
         agent = PaperAnalysisAgent(
-            self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id
+            self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id, seed=self.seed
         )
         self._paper_analyses = []
         errors = 0
@@ -282,7 +302,7 @@ class DiscoveryPipeline:
 
     async def step_analyze_trajectories(self) -> None:
         agent = TrajectoryAgent(
-            self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id
+            self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id, seed=self.seed
         )
         self._trajectories: dict[str, dict] = {}
         for r in (self._researcher_a, self._researcher_b):
@@ -319,13 +339,18 @@ class DiscoveryPipeline:
     async def step_detect_gaps(self) -> None:
         from sqlalchemy import select
 
-        agent = GapAgent(self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id)
+        agent = GapAgent(self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id, seed=self.seed)
         valid_evidence_ids = set(
             self.db.scalars(select_evidence(self.workspace_id)).all()
         )
         result = await agent.detect(self._paper_analyses)
-        # clear previous gaps for this workspace (regeneration replaces)
-        for old in self.db.query(ResearchGap).filter(ResearchGap.workspace_id == self.workspace_id).all():
+        # clear gaps produced by a previous run of THIS job (retries regenerate
+        # this job's own output) but never erase other jobs' gaps
+        for old in (
+            self.db.query(ResearchGap)
+            .filter(ResearchGap.workspace_id == self.workspace_id, ResearchGap.job_id == self.job.id)
+            .all()
+        ):
             self.db.delete(old)
         self.db.flush()
         self._gaps = []
@@ -353,9 +378,13 @@ class DiscoveryPipeline:
 
     async def step_discover_intersections(self) -> None:
         agent = IntersectionAgent(
-            self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id
+            self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id, seed=self.seed
         )
-        mode = DiscoveryMode(self.config.get("mode", "normal"))
+        try:
+            mode = DiscoveryMode(self.config.get("mode", "normal"))
+        except ValueError:
+            logger.warning("pipeline.invalid_mode_fallback", mode=self.config.get("mode"))
+            mode = DiscoveryMode.NORMAL
         ctx_a = self._researcher_ctx(self._researcher_a)
         ctx_b = self._researcher_ctx(self._researcher_b)
         result = await agent.discover(
@@ -414,7 +443,7 @@ class DiscoveryPipeline:
         if not self.config.get("generate_hypotheses", True):
             return
         agent = HypothesisAgent(
-            self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id
+            self.llm, db=self.db, workspace_id=self.workspace_id, job_id=self.job.id, seed=self.seed
         )
         ranked = sorted(
             self._intersections,
@@ -447,6 +476,23 @@ class DiscoveryPipeline:
                 continue
         self.db.commit()
         self.result_summary["hypotheses"] = count
+
+    async def step_write_paper_draft(self) -> None:
+        """Generate a grounded research-paper draft for this job. Safe to rerun."""
+        from app.services.paper_draft_service import PaperDraftService
+
+        if not self.config.get("write_paper_draft", True):
+            self.result_summary["paper_draft"] = None
+            return
+        svc = PaperDraftService(self.db)
+        try:
+            out = await svc.generate_for_job(self.job)
+            self.result_summary["paper_draft"] = out.report_id
+        except Exception as exc:
+            logger.warning(
+                "pipeline.paper_draft_failed", error=str(exc)[:150], job_id=self.job.id
+            )
+            self.result_summary["paper_draft"] = None
 
     async def step_rank_collaborations(self) -> None:
         from app.services.collaboration_service import CollaborationService

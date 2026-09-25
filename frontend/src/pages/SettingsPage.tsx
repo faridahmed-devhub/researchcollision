@@ -7,10 +7,12 @@ import { useWorkspaceStore } from "../stores/workspace";
 import { ErrorState } from "../components/ui";
 
 const WEIGHT_KEYS = [
-  "topic_overlap",
+  "research_relevance",
   "method_complementarity",
-  "career_stage_alignment",
-  "trajectory_momentum",
+  "trajectory_alignment",
+  "gap_relevance",
+  "evidence_strength",
+  "feasibility",
 ];
 
 export default function SettingsPage() {
@@ -66,9 +68,21 @@ export default function SettingsPage() {
     createQ.mutate();
   }
 
-  function exportData() {
+  async function exportData() {
     if (!active) return;
-    window.open(`/api/v1/workspaces/${active.id}/export`, "_blank");
+    try {
+      const res = await api.get(`/workspaces/${active.id}/export`, { responseType: "blob" });
+      const url = URL.createObjectURL(res.data as Blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${active.name.toLowerCase().replace(/\s+/g, "-")}-export.json`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      setError(apiError(err));
+    }
   }
 
   const weights = settingsQ.data?.collaboration_weights ?? {};

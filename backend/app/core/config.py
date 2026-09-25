@@ -40,6 +40,7 @@ class Settings(BaseSettings):
     openalex_email: str = ""
     semantic_scholar_api_key: str = ""
     crossref_email: str = ""
+    ncbi_email: str = ""
 
     # --- Embeddings ---
     embedding_provider: str = "mock"
@@ -54,6 +55,13 @@ class Settings(BaseSettings):
     run_worker_in_app: bool = True
     worker_poll_interval_seconds: float = 1.0
     literature_timeout_seconds: float = 15.0
+
+    # --- Provider tuning ---
+    llm_timeout_seconds: float = 180.0
+    structured_max_tokens: int = 4096
+    # When False, real literature searches never silently fall back to synthetic
+    # (mock) papers. The chain will instead raise and the job fails clearly.
+    literature_allow_mock_fallback: bool = False
 
     @property
     def is_development(self) -> bool:
@@ -78,6 +86,16 @@ class Settings(BaseSettings):
     def mock_mode(self) -> bool:
         """True when the system runs without any external AI credentials."""
         return self.is_mock_llm and self.is_mock_embedding
+
+    @property
+    def allow_synthetic_literature(self) -> bool:
+        """Permit silent fallback to synthetic (mock) papers.
+
+        Only in full mock mode (no real AI credentials configured) or when
+        explicitly enabled via LITERATURE_ALLOW_MOCK_FALLBACK=true — so a
+        real-provider run never silently mixes synthetic papers into results.
+        """
+        return self.literature_allow_mock_fallback or self.mock_mode
 
     @property
     def cors_origins_list(self) -> list[str]:

@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import {
   Atom,
   BookOpen,
+  FileText,
   FlaskConical,
   GitBranch,
   LayoutDashboard,
@@ -31,6 +32,7 @@ const NAV = [
   { to: "/gaps", label: "Gaps", icon: ShieldCheck },
   { to: "/hypotheses", label: "Hypotheses", icon: Lightbulb },
   { to: "/collaborations", label: "Collaborations", icon: Users },
+  { to: "/paper-draft", label: "Paper Draft", icon: FileText },
   { to: "/evidence", label: "Evidence", icon: ShieldCheck },
   { to: "/settings", label: "Settings", icon: Settings },
 ];

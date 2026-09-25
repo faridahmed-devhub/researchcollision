@@ -5,7 +5,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.core.constants import DiscoveryMode
-from app.db.models import IntersectionEvidence, ResearchIntersection
+from app.db.models import Evidence, IntersectionEvidence, ResearchIntersection
 
 
 class IntersectionService:
@@ -42,7 +42,16 @@ class IntersectionService:
         )
         self.db.add(ix)
         self.db.flush()
-        for ev_id in list(dict.fromkeys(candidate.get("evidence_ids", [])))[:12]:
+        # Only persist evidence that actually belongs to this workspace.
+        candidate_ids = list(dict.fromkeys(candidate.get("evidence_ids", [])))[:12]
+        owned_ids = list(
+            self.db.scalars(
+                select(Evidence.id).where(
+                    Evidence.id.in_(candidate_ids), Evidence.workspace_id == workspace_id
+                )
+            )
+        )
+        for ev_id in owned_ids:
             self.db.add(IntersectionEvidence(intersection_id=ix.id, evidence_id=ev_id))
         self.db.flush()
         return ix

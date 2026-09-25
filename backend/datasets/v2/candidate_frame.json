@@ -1,0 +1,968 @@
+{
+  "pool_id": "domain_pool_v1",
+  "pool_sha256": "417a85650866b76e97d409aa2fe349b83531f7289ec7913c0072058b8ff73295",
+  "seed": 20260925,
+  "n": 96,
+  "candidates": [
+    {
+      "pair_id": "v2_cancer_genomics_semantic_segmentation",
+      "domain_a": "cancer_genomics",
+      "domain_b": "semantic_segmentation",
+      "query_a": "cancer genomics precision oncology",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "cancer genomics precision oncology semantic segmentation deep neural networks",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_000"
+    },
+    {
+      "pair_id": "v2_clinical_decision_support_differential_privacy",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "differential_privacy",
+      "query_a": "clinical decision support systems",
+      "query_b": "differential privacy machine learning",
+      "field_query": "clinical decision support systems differential privacy machine learning",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_001"
+    },
+    {
+      "pair_id": "v2_clinical_decision_support_semantic_segmentation",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "semantic_segmentation",
+      "query_a": "clinical decision support systems",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "clinical decision support systems semantic segmentation deep neural networks",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_002"
+    },
+    {
+      "pair_id": "v2_electronic_health_records_graph_neural_networks",
+      "domain_a": "electronic_health_records",
+      "domain_b": "graph_neural_networks",
+      "query_a": "electronic health records machine learning",
+      "query_b": "graph neural networks",
+      "field_query": "electronic health records machine learning graph neural networks",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_003"
+    },
+    {
+      "pair_id": "v2_medical_imaging_ai_differential_privacy",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "differential_privacy",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "differential privacy machine learning",
+      "field_query": "deep learning medical image analysis differential privacy machine learning",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_004"
+    },
+    {
+      "pair_id": "v2_medical_imaging_ai_llm_interpretability",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "llm_interpretability",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "large language models interpretability",
+      "field_query": "deep learning medical image analysis large language models interpretability",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_005"
+    },
+    {
+      "pair_id": "v2_medical_imaging_ai_semantic_segmentation",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "semantic_segmentation",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "deep learning medical image analysis semantic segmentation deep neural networks",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_006"
+    },
+    {
+      "pair_id": "v2_microbiome_health_formal_verification",
+      "domain_a": "microbiome_health",
+      "domain_b": "formal_verification",
+      "query_a": "gut microbiome human disease",
+      "query_b": "formal verification neural networks",
+      "field_query": "gut microbiome human disease formal verification neural networks",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_007"
+    },
+    {
+      "pair_id": "v2_microbiome_health_semantic_segmentation",
+      "domain_a": "microbiome_health",
+      "domain_b": "semantic_segmentation",
+      "query_a": "gut microbiome human disease",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "gut microbiome human disease semantic segmentation deep neural networks",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_008"
+    },
+    {
+      "pair_id": "v2_protein_structure_prediction_federated_learning",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "federated_learning",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "federated learning",
+      "field_query": "protein structure prediction deep learning federated learning",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_009"
+    },
+    {
+      "pair_id": "v2_protein_structure_prediction_formal_verification",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "formal_verification",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "formal verification neural networks",
+      "field_query": "protein structure prediction deep learning formal verification neural networks",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_010"
+    },
+    {
+      "pair_id": "v2_single_cell_analysis_differential_privacy",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "differential_privacy",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "differential privacy machine learning",
+      "field_query": "single cell RNA sequencing analysis differential privacy machine learning",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_011"
+    },
+    {
+      "pair_id": "v2_single_cell_analysis_llm_interpretability",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "llm_interpretability",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "large language models interpretability",
+      "field_query": "single cell RNA sequencing analysis large language models interpretability",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_012"
+    },
+    {
+      "pair_id": "v2_single_cell_analysis_semantic_segmentation",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "semantic_segmentation",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "single cell RNA sequencing analysis semantic segmentation deep neural networks",
+      "group": "inter_cs_ai_life_health",
+      "candidate_id": "cand_013"
+    },
+    {
+      "pair_id": "v2_battery_degradation_differential_privacy",
+      "domain_a": "battery_degradation",
+      "domain_b": "differential_privacy",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "differential privacy machine learning",
+      "field_query": "lithium ion battery degradation modeling differential privacy machine learning",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_014"
+    },
+    {
+      "pair_id": "v2_battery_degradation_recommender_systems",
+      "domain_a": "battery_degradation",
+      "domain_b": "recommender_systems",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "recommender systems collaborative filtering",
+      "field_query": "lithium ion battery degradation modeling recommender systems collaborative filtering",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_015"
+    },
+    {
+      "pair_id": "v2_climate_downscaling_semantic_segmentation",
+      "domain_a": "climate_downscaling",
+      "domain_b": "semantic_segmentation",
+      "query_a": "statistical downscaling climate projections",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "statistical downscaling climate projections semantic segmentation deep neural networks",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_016"
+    },
+    {
+      "pair_id": "v2_computational_catalysis_differential_privacy",
+      "domain_a": "computational_catalysis",
+      "domain_b": "differential_privacy",
+      "query_a": "computational screening heterogeneous catalysis",
+      "query_b": "differential privacy machine learning",
+      "field_query": "computational screening heterogeneous catalysis differential privacy machine learning",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_017"
+    },
+    {
+      "pair_id": "v2_computational_catalysis_formal_verification",
+      "domain_a": "computational_catalysis",
+      "domain_b": "formal_verification",
+      "query_a": "computational screening heterogeneous catalysis",
+      "query_b": "formal verification neural networks",
+      "field_query": "computational screening heterogeneous catalysis formal verification neural networks",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_018"
+    },
+    {
+      "pair_id": "v2_computational_catalysis_recommender_systems",
+      "domain_a": "computational_catalysis",
+      "domain_b": "recommender_systems",
+      "query_a": "computational screening heterogeneous catalysis",
+      "query_b": "recommender systems collaborative filtering",
+      "field_query": "computational screening heterogeneous catalysis recommender systems collaborative filtering",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_019"
+    },
+    {
+      "pair_id": "v2_inverse_photonics_federated_learning",
+      "domain_a": "inverse_photonics",
+      "domain_b": "federated_learning",
+      "query_a": "inverse design photonic devices",
+      "query_b": "federated learning",
+      "field_query": "inverse design photonic devices federated learning",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_020"
+    },
+    {
+      "pair_id": "v2_materials_discovery_federated_learning",
+      "domain_a": "materials_discovery",
+      "domain_b": "federated_learning",
+      "query_a": "machine learning materials discovery",
+      "query_b": "federated learning",
+      "field_query": "machine learning materials discovery federated learning",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_021"
+    },
+    {
+      "pair_id": "v2_materials_discovery_reinforcement_learning",
+      "domain_a": "materials_discovery",
+      "domain_b": "reinforcement_learning",
+      "query_a": "machine learning materials discovery",
+      "query_b": "reinforcement learning",
+      "field_query": "machine learning materials discovery reinforcement learning",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_022"
+    },
+    {
+      "pair_id": "v2_materials_discovery_semantic_segmentation",
+      "domain_a": "materials_discovery",
+      "domain_b": "semantic_segmentation",
+      "query_a": "machine learning materials discovery",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "machine learning materials discovery semantic segmentation deep neural networks",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_023"
+    },
+    {
+      "pair_id": "v2_structural_health_recommender_systems",
+      "domain_a": "structural_health",
+      "domain_b": "recommender_systems",
+      "query_a": "structural health monitoring machine learning",
+      "query_b": "recommender systems collaborative filtering",
+      "field_query": "structural health monitoring machine learning recommender systems collaborative filtering",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_024"
+    },
+    {
+      "pair_id": "v2_weather_forecasting_federated_learning",
+      "domain_a": "weather_forecasting",
+      "domain_b": "federated_learning",
+      "query_a": "machine learning weather forecasting",
+      "query_b": "federated learning",
+      "field_query": "machine learning weather forecasting federated learning",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_025"
+    },
+    {
+      "pair_id": "v2_weather_forecasting_formal_verification",
+      "domain_a": "weather_forecasting",
+      "domain_b": "formal_verification",
+      "query_a": "machine learning weather forecasting",
+      "query_b": "formal verification neural networks",
+      "field_query": "machine learning weather forecasting formal verification neural networks",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_026"
+    },
+    {
+      "pair_id": "v2_weather_forecasting_reinforcement_learning",
+      "domain_a": "weather_forecasting",
+      "domain_b": "reinforcement_learning",
+      "query_a": "machine learning weather forecasting",
+      "query_b": "reinforcement learning",
+      "field_query": "machine learning weather forecasting reinforcement learning",
+      "group": "inter_cs_ai_physical_eng",
+      "candidate_id": "cand_027"
+    },
+    {
+      "pair_id": "v2_differential_privacy_algorithmic_fairness",
+      "domain_a": "differential_privacy",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "differential privacy machine learning",
+      "query_b": "algorithmic fairness bias audit",
+      "field_query": "differential privacy machine learning algorithmic fairness bias audit",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_028"
+    },
+    {
+      "pair_id": "v2_federated_learning_bayesian_optimization",
+      "domain_a": "federated_learning",
+      "domain_b": "bayesian_optimization",
+      "query_a": "federated learning",
+      "query_b": "bayesian optimization machine learning",
+      "field_query": "federated learning bayesian optimization machine learning",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_029"
+    },
+    {
+      "pair_id": "v2_formal_verification_algorithmic_fairness",
+      "domain_a": "formal_verification",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "formal verification neural networks",
+      "query_b": "algorithmic fairness bias audit",
+      "field_query": "formal verification neural networks algorithmic fairness bias audit",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_030"
+    },
+    {
+      "pair_id": "v2_formal_verification_causal_inference",
+      "domain_a": "formal_verification",
+      "domain_b": "causal_inference",
+      "query_a": "formal verification neural networks",
+      "query_b": "causal inference observational data",
+      "field_query": "formal verification neural networks causal inference observational data",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_031"
+    },
+    {
+      "pair_id": "v2_formal_verification_time_series_forecasting",
+      "domain_a": "formal_verification",
+      "domain_b": "time_series_forecasting",
+      "query_a": "formal verification neural networks",
+      "query_b": "time series forecasting deep learning",
+      "field_query": "formal verification neural networks time series forecasting deep learning",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_032"
+    },
+    {
+      "pair_id": "v2_llm_interpretability_uncertainty_quantification",
+      "domain_a": "llm_interpretability",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "large language models interpretability",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "field_query": "large language models interpretability prediction intervals uncertainty deep learning",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_033"
+    },
+    {
+      "pair_id": "v2_recommender_systems_causal_inference",
+      "domain_a": "recommender_systems",
+      "domain_b": "causal_inference",
+      "query_a": "recommender systems collaborative filtering",
+      "query_b": "causal inference observational data",
+      "field_query": "recommender systems collaborative filtering causal inference observational data",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_034"
+    },
+    {
+      "pair_id": "v2_reinforcement_learning_algorithmic_fairness",
+      "domain_a": "reinforcement_learning",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "reinforcement learning",
+      "query_b": "algorithmic fairness bias audit",
+      "field_query": "reinforcement learning algorithmic fairness bias audit",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_035"
+    },
+    {
+      "pair_id": "v2_reinforcement_learning_bayesian_optimization",
+      "domain_a": "reinforcement_learning",
+      "domain_b": "bayesian_optimization",
+      "query_a": "reinforcement learning",
+      "query_b": "bayesian optimization machine learning",
+      "field_query": "reinforcement learning bayesian optimization machine learning",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_036"
+    },
+    {
+      "pair_id": "v2_semantic_segmentation_bayesian_optimization",
+      "domain_a": "semantic_segmentation",
+      "domain_b": "bayesian_optimization",
+      "query_a": "semantic segmentation deep neural networks",
+      "query_b": "bayesian optimization machine learning",
+      "field_query": "semantic segmentation deep neural networks bayesian optimization machine learning",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_037"
+    },
+    {
+      "pair_id": "v2_semantic_segmentation_causal_inference",
+      "domain_a": "semantic_segmentation",
+      "domain_b": "causal_inference",
+      "query_a": "semantic segmentation deep neural networks",
+      "query_b": "causal inference observational data",
+      "field_query": "semantic segmentation deep neural networks causal inference observational data",
+      "group": "inter_cs_ai_quant_methods",
+      "candidate_id": "cand_038"
+    },
+    {
+      "pair_id": "v2_cancer_genomics_climate_downscaling",
+      "domain_a": "cancer_genomics",
+      "domain_b": "climate_downscaling",
+      "query_a": "cancer genomics precision oncology",
+      "query_b": "statistical downscaling climate projections",
+      "field_query": "cancer genomics precision oncology statistical downscaling climate projections",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_039"
+    },
+    {
+      "pair_id": "v2_clinical_decision_support_materials_discovery",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "materials_discovery",
+      "query_a": "clinical decision support systems",
+      "query_b": "machine learning materials discovery",
+      "field_query": "clinical decision support systems machine learning materials discovery",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_040"
+    },
+    {
+      "pair_id": "v2_clinical_decision_support_structural_health",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "structural_health",
+      "query_a": "clinical decision support systems",
+      "query_b": "structural health monitoring machine learning",
+      "field_query": "clinical decision support systems structural health monitoring machine learning",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_041"
+    },
+    {
+      "pair_id": "v2_drug_repurposing_materials_discovery",
+      "domain_a": "drug_repurposing",
+      "domain_b": "materials_discovery",
+      "query_a": "drug repurposing computational methods",
+      "query_b": "machine learning materials discovery",
+      "field_query": "drug repurposing computational methods machine learning materials discovery",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_042"
+    },
+    {
+      "pair_id": "v2_electronic_health_records_inverse_photonics",
+      "domain_a": "electronic_health_records",
+      "domain_b": "inverse_photonics",
+      "query_a": "electronic health records machine learning",
+      "query_b": "inverse design photonic devices",
+      "field_query": "electronic health records machine learning inverse design photonic devices",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_043"
+    },
+    {
+      "pair_id": "v2_electronic_health_records_materials_discovery",
+      "domain_a": "electronic_health_records",
+      "domain_b": "materials_discovery",
+      "query_a": "electronic health records machine learning",
+      "query_b": "machine learning materials discovery",
+      "field_query": "electronic health records machine learning machine learning materials discovery",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_044"
+    },
+    {
+      "pair_id": "v2_electronic_health_records_weather_forecasting",
+      "domain_a": "electronic_health_records",
+      "domain_b": "weather_forecasting",
+      "query_a": "electronic health records machine learning",
+      "query_b": "machine learning weather forecasting",
+      "field_query": "electronic health records machine learning machine learning weather forecasting",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_045"
+    },
+    {
+      "pair_id": "v2_microbiome_health_materials_discovery",
+      "domain_a": "microbiome_health",
+      "domain_b": "materials_discovery",
+      "query_a": "gut microbiome human disease",
+      "query_b": "machine learning materials discovery",
+      "field_query": "gut microbiome human disease machine learning materials discovery",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_046"
+    },
+    {
+      "pair_id": "v2_protein_structure_prediction_battery_degradation",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "battery_degradation",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "lithium ion battery degradation modeling",
+      "field_query": "protein structure prediction deep learning lithium ion battery degradation modeling",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_047"
+    },
+    {
+      "pair_id": "v2_protein_structure_prediction_materials_discovery",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "materials_discovery",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "machine learning materials discovery",
+      "field_query": "protein structure prediction deep learning machine learning materials discovery",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_048"
+    },
+    {
+      "pair_id": "v2_protein_structure_prediction_quantum_chemistry",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "quantum_chemistry",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "quantum chemistry ab initio simulation",
+      "field_query": "protein structure prediction deep learning quantum chemistry ab initio simulation",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_049"
+    },
+    {
+      "pair_id": "v2_single_cell_analysis_computational_catalysis",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "computational_catalysis",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "computational screening heterogeneous catalysis",
+      "field_query": "single cell RNA sequencing analysis computational screening heterogeneous catalysis",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_050"
+    },
+    {
+      "pair_id": "v2_single_cell_analysis_inverse_photonics",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "inverse_photonics",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "inverse design photonic devices",
+      "field_query": "single cell RNA sequencing analysis inverse design photonic devices",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_051"
+    },
+    {
+      "pair_id": "v2_single_cell_analysis_weather_forecasting",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "weather_forecasting",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "machine learning weather forecasting",
+      "field_query": "single cell RNA sequencing analysis machine learning weather forecasting",
+      "group": "inter_life_health_physical_eng",
+      "candidate_id": "cand_052"
+    },
+    {
+      "pair_id": "v2_cancer_genomics_time_series_forecasting",
+      "domain_a": "cancer_genomics",
+      "domain_b": "time_series_forecasting",
+      "query_a": "cancer genomics precision oncology",
+      "query_b": "time series forecasting deep learning",
+      "field_query": "cancer genomics precision oncology time series forecasting deep learning",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_053"
+    },
+    {
+      "pair_id": "v2_cancer_genomics_uncertainty_quantification",
+      "domain_a": "cancer_genomics",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "cancer genomics precision oncology",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "field_query": "cancer genomics precision oncology prediction intervals uncertainty deep learning",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_054"
+    },
+    {
+      "pair_id": "v2_clinical_decision_support_causal_inference",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "causal_inference",
+      "query_a": "clinical decision support systems",
+      "query_b": "causal inference observational data",
+      "field_query": "clinical decision support systems causal inference observational data",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_055"
+    },
+    {
+      "pair_id": "v2_clinical_decision_support_survival_analysis",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "survival_analysis",
+      "query_a": "clinical decision support systems",
+      "query_b": "survival analysis machine learning",
+      "field_query": "clinical decision support systems survival analysis machine learning",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_056"
+    },
+    {
+      "pair_id": "v2_clinical_decision_support_uncertainty_quantification",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "clinical decision support systems",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "field_query": "clinical decision support systems prediction intervals uncertainty deep learning",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_057"
+    },
+    {
+      "pair_id": "v2_electronic_health_records_algorithmic_fairness",
+      "domain_a": "electronic_health_records",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "electronic health records machine learning",
+      "query_b": "algorithmic fairness bias audit",
+      "field_query": "electronic health records machine learning algorithmic fairness bias audit",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_058"
+    },
+    {
+      "pair_id": "v2_electronic_health_records_uncertainty_quantification",
+      "domain_a": "electronic_health_records",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "electronic health records machine learning",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "field_query": "electronic health records machine learning prediction intervals uncertainty deep learning",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_059"
+    },
+    {
+      "pair_id": "v2_medical_imaging_ai_survival_analysis",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "survival_analysis",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "survival analysis machine learning",
+      "field_query": "deep learning medical image analysis survival analysis machine learning",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_060"
+    },
+    {
+      "pair_id": "v2_medical_imaging_ai_uncertainty_quantification",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "field_query": "deep learning medical image analysis prediction intervals uncertainty deep learning",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_061"
+    },
+    {
+      "pair_id": "v2_single_cell_analysis_causal_inference",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "causal_inference",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "causal inference observational data",
+      "field_query": "single cell RNA sequencing analysis causal inference observational data",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_062"
+    },
+    {
+      "pair_id": "v2_single_cell_analysis_survival_analysis",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "survival_analysis",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "survival analysis machine learning",
+      "field_query": "single cell RNA sequencing analysis survival analysis machine learning",
+      "group": "inter_life_health_quant_methods",
+      "candidate_id": "cand_063"
+    },
+    {
+      "pair_id": "v2_battery_degradation_causal_inference",
+      "domain_a": "battery_degradation",
+      "domain_b": "causal_inference",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "causal inference observational data",
+      "field_query": "lithium ion battery degradation modeling causal inference observational data",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_064"
+    },
+    {
+      "pair_id": "v2_battery_degradation_survival_analysis",
+      "domain_a": "battery_degradation",
+      "domain_b": "survival_analysis",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "survival analysis machine learning",
+      "field_query": "lithium ion battery degradation modeling survival analysis machine learning",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_065"
+    },
+    {
+      "pair_id": "v2_inverse_photonics_uncertainty_quantification",
+      "domain_a": "inverse_photonics",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "inverse design photonic devices",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "field_query": "inverse design photonic devices prediction intervals uncertainty deep learning",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_066"
+    },
+    {
+      "pair_id": "v2_materials_discovery_bayesian_optimization",
+      "domain_a": "materials_discovery",
+      "domain_b": "bayesian_optimization",
+      "query_a": "machine learning materials discovery",
+      "query_b": "bayesian optimization machine learning",
+      "field_query": "machine learning materials discovery bayesian optimization machine learning",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_067"
+    },
+    {
+      "pair_id": "v2_materials_discovery_survival_analysis",
+      "domain_a": "materials_discovery",
+      "domain_b": "survival_analysis",
+      "query_a": "machine learning materials discovery",
+      "query_b": "survival analysis machine learning",
+      "field_query": "machine learning materials discovery survival analysis machine learning",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_068"
+    },
+    {
+      "pair_id": "v2_quantum_chemistry_bayesian_optimization",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "bayesian_optimization",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "bayesian optimization machine learning",
+      "field_query": "quantum chemistry ab initio simulation bayesian optimization machine learning",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_069"
+    },
+    {
+      "pair_id": "v2_quantum_chemistry_causal_inference",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "causal_inference",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "causal inference observational data",
+      "field_query": "quantum chemistry ab initio simulation causal inference observational data",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_070"
+    },
+    {
+      "pair_id": "v2_quantum_chemistry_time_series_forecasting",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "time_series_forecasting",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "time series forecasting deep learning",
+      "field_query": "quantum chemistry ab initio simulation time series forecasting deep learning",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_071"
+    },
+    {
+      "pair_id": "v2_quantum_chemistry_uncertainty_quantification",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "field_query": "quantum chemistry ab initio simulation prediction intervals uncertainty deep learning",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_072"
+    },
+    {
+      "pair_id": "v2_structural_health_uncertainty_quantification",
+      "domain_a": "structural_health",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "structural health monitoring machine learning",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "field_query": "structural health monitoring machine learning prediction intervals uncertainty deep learning",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_073"
+    },
+    {
+      "pair_id": "v2_weather_forecasting_time_series_forecasting",
+      "domain_a": "weather_forecasting",
+      "domain_b": "time_series_forecasting",
+      "query_a": "machine learning weather forecasting",
+      "query_b": "time series forecasting deep learning",
+      "field_query": "machine learning weather forecasting time series forecasting deep learning",
+      "group": "inter_physical_eng_quant_methods",
+      "candidate_id": "cand_074"
+    },
+    {
+      "pair_id": "v2_differential_privacy_graph_neural_networks",
+      "domain_a": "differential_privacy",
+      "domain_b": "graph_neural_networks",
+      "query_a": "differential privacy machine learning",
+      "query_b": "graph neural networks",
+      "field_query": "differential privacy machine learning graph neural networks",
+      "group": "intra_cs_ai",
+      "candidate_id": "cand_075"
+    },
+    {
+      "pair_id": "v2_differential_privacy_recommender_systems",
+      "domain_a": "differential_privacy",
+      "domain_b": "recommender_systems",
+      "query_a": "differential privacy machine learning",
+      "query_b": "recommender systems collaborative filtering",
+      "field_query": "differential privacy machine learning recommender systems collaborative filtering",
+      "group": "intra_cs_ai",
+      "candidate_id": "cand_076"
+    },
+    {
+      "pair_id": "v2_differential_privacy_semantic_segmentation",
+      "domain_a": "differential_privacy",
+      "domain_b": "semantic_segmentation",
+      "query_a": "differential privacy machine learning",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "differential privacy machine learning semantic segmentation deep neural networks",
+      "group": "intra_cs_ai",
+      "candidate_id": "cand_077"
+    },
+    {
+      "pair_id": "v2_graph_neural_networks_semantic_segmentation",
+      "domain_a": "graph_neural_networks",
+      "domain_b": "semantic_segmentation",
+      "query_a": "graph neural networks",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "graph neural networks semantic segmentation deep neural networks",
+      "group": "intra_cs_ai",
+      "candidate_id": "cand_078"
+    },
+    {
+      "pair_id": "v2_llm_interpretability_semantic_segmentation",
+      "domain_a": "llm_interpretability",
+      "domain_b": "semantic_segmentation",
+      "query_a": "large language models interpretability",
+      "query_b": "semantic segmentation deep neural networks",
+      "field_query": "large language models interpretability semantic segmentation deep neural networks",
+      "group": "intra_cs_ai",
+      "candidate_id": "cand_079"
+    },
+    {
+      "pair_id": "v2_recommender_systems_formal_verification",
+      "domain_a": "recommender_systems",
+      "domain_b": "formal_verification",
+      "query_a": "recommender systems collaborative filtering",
+      "query_b": "formal verification neural networks",
+      "field_query": "recommender systems collaborative filtering formal verification neural networks",
+      "group": "intra_cs_ai",
+      "candidate_id": "cand_080"
+    },
+    {
+      "pair_id": "v2_clinical_decision_support_drug_repurposing",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "drug_repurposing",
+      "query_a": "clinical decision support systems",
+      "query_b": "drug repurposing computational methods",
+      "field_query": "clinical decision support systems drug repurposing computational methods",
+      "group": "intra_life_health",
+      "candidate_id": "cand_081"
+    },
+    {
+      "pair_id": "v2_clinical_decision_support_microbiome_health",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "microbiome_health",
+      "query_a": "clinical decision support systems",
+      "query_b": "gut microbiome human disease",
+      "field_query": "clinical decision support systems gut microbiome human disease",
+      "group": "intra_life_health",
+      "candidate_id": "cand_082"
+    },
+    {
+      "pair_id": "v2_drug_repurposing_cancer_genomics",
+      "domain_a": "drug_repurposing",
+      "domain_b": "cancer_genomics",
+      "query_a": "drug repurposing computational methods",
+      "query_b": "cancer genomics precision oncology",
+      "field_query": "drug repurposing computational methods cancer genomics precision oncology",
+      "group": "intra_life_health",
+      "candidate_id": "cand_083"
+    },
+    {
+      "pair_id": "v2_drug_repurposing_medical_imaging_ai",
+      "domain_a": "drug_repurposing",
+      "domain_b": "medical_imaging_ai",
+      "query_a": "drug repurposing computational methods",
+      "query_b": "deep learning medical image analysis",
+      "field_query": "drug repurposing computational methods deep learning medical image analysis",
+      "group": "intra_life_health",
+      "candidate_id": "cand_084"
+    },
+    {
+      "pair_id": "v2_protein_structure_prediction_microbiome_health",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "microbiome_health",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "gut microbiome human disease",
+      "field_query": "protein structure prediction deep learning gut microbiome human disease",
+      "group": "intra_life_health",
+      "candidate_id": "cand_085"
+    },
+    {
+      "pair_id": "v2_single_cell_analysis_protein_structure_prediction",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "protein_structure_prediction",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "protein structure prediction deep learning",
+      "field_query": "single cell RNA sequencing analysis protein structure prediction deep learning",
+      "group": "intra_life_health",
+      "candidate_id": "cand_086"
+    },
+    {
+      "pair_id": "v2_battery_degradation_structural_health",
+      "domain_a": "battery_degradation",
+      "domain_b": "structural_health",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "structural health monitoring machine learning",
+      "field_query": "lithium ion battery degradation modeling structural health monitoring machine learning",
+      "group": "intra_physical_eng",
+      "candidate_id": "cand_087"
+    },
+    {
+      "pair_id": "v2_computational_catalysis_structural_health",
+      "domain_a": "computational_catalysis",
+      "domain_b": "structural_health",
+      "query_a": "computational screening heterogeneous catalysis",
+      "query_b": "structural health monitoring machine learning",
+      "field_query": "computational screening heterogeneous catalysis structural health monitoring machine learning",
+      "group": "intra_physical_eng",
+      "candidate_id": "cand_088"
+    },
+    {
+      "pair_id": "v2_materials_discovery_structural_health",
+      "domain_a": "materials_discovery",
+      "domain_b": "structural_health",
+      "query_a": "machine learning materials discovery",
+      "query_b": "structural health monitoring machine learning",
+      "field_query": "machine learning materials discovery structural health monitoring machine learning",
+      "group": "intra_physical_eng",
+      "candidate_id": "cand_089"
+    },
+    {
+      "pair_id": "v2_quantum_chemistry_battery_degradation",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "battery_degradation",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "lithium ion battery degradation modeling",
+      "field_query": "quantum chemistry ab initio simulation lithium ion battery degradation modeling",
+      "group": "intra_physical_eng",
+      "candidate_id": "cand_090"
+    },
+    {
+      "pair_id": "v2_quantum_chemistry_structural_health",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "structural_health",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "structural health monitoring machine learning",
+      "field_query": "quantum chemistry ab initio simulation structural health monitoring machine learning",
+      "group": "intra_physical_eng",
+      "candidate_id": "cand_091"
+    },
+    {
+      "pair_id": "v2_quantum_chemistry_weather_forecasting",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "weather_forecasting",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "machine learning weather forecasting",
+      "field_query": "quantum chemistry ab initio simulation machine learning weather forecasting",
+      "group": "intra_physical_eng",
+      "candidate_id": "cand_092"
+    },
+    {
+      "pair_id": "v2_bayesian_optimization_survival_analysis",
+      "domain_a": "bayesian_optimization",
+      "domain_b": "survival_analysis",
+      "query_a": "bayesian optimization machine learning",
+      "query_b": "survival analysis machine learning",
+      "field_query": "bayesian optimization machine learning survival analysis machine learning",
+      "group": "intra_quant_methods",
+      "candidate_id": "cand_093"
+    },
+    {
+      "pair_id": "v2_causal_inference_survival_analysis",
+      "domain_a": "causal_inference",
+      "domain_b": "survival_analysis",
+      "query_a": "causal inference observational data",
+      "query_b": "survival analysis machine learning",
+      "field_query": "causal inference observational data survival analysis machine learning",
+      "group": "intra_quant_methods",
+      "candidate_id": "cand_094"
+    },
+    {
+      "pair_id": "v2_survival_analysis_algorithmic_fairness",
+      "domain_a": "survival_analysis",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "survival analysis machine learning",
+      "query_b": "algorithmic fairness bias audit",
+      "field_query": "survival analysis machine learning algorithmic fairness bias audit",
+      "group": "intra_quant_methods",
+      "candidate_id": "cand_095"
+    }
+  ]
+}

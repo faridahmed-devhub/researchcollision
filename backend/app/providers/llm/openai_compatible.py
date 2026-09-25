@@ -27,6 +27,9 @@ JSON_INSTRUCTION = (
     "URLs, or datasets. If evidence is missing, say so explicitly."
 )
 
+# Retryable chat-completions statuses: transient/rate-limit only.
+_RETRYABLE_STATUSES = {429, 500, 502, 503, 504}
+
 
 def extract_json_object(text: str) -> dict[str, Any]:
     """Extract the first balanced JSON object from an LLM response."""
@@ -65,24 +68,53 @@ class OpenAICompatibleProvider:
         self.base_url = (base_url or settings.openai_base_url).rstrip("/")
 
     @retry(
-        retry=retry_if_exception_type((httpx.HTTPError, ProviderError)),
+        retry=retry_if_exception_type((httpx.HTTPError,)),
         stop=stop_after_attempt(3),
         wait=wait_exponential(multiplier=1, min=2, max=15),
         reraise=True,
     )
-    async def _chat(self, messages: list[dict[str, str]], temperature: float, max_tokens: int) -> LLMResponse:
-        headers = {"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}
+    async def _chat(
+        self,
+        messages: list[dict[str, str]],
+        temperature: float,
+        max_tokens: int,
+        seed: int | None = None,
+    ) -> LLMResponse:
+        headers = {"Content-Type": "application/json"}
+        if self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
         payload = {
             "model": self.model,
             "messages": messages,
             "temperature": temperature,
             "max_tokens": max_tokens,
         }
-        async with httpx.AsyncClient(timeout=settings.literature_timeout_seconds * 2) as client:
+        # `seed` is passed through for endpoints that support deterministic
+        # sampling (Ollama, OpenAI-compatible). Absent when None so existing
+        # behavior for providers that reject the field is preserved.
+        if seed is not None:
+            payload["seed"] = seed
+        async with httpx.AsyncClient(timeout=settings.llm_timeout_seconds) as client:
             resp = await client.post(f"{self.base_url}/chat/completions", headers=headers, json=payload)
-            resp.raise_for_status()
-        data = resp.json()
-        content = data["choices"][0]["message"]["content"]
+            if resp.status_code in _RETRYABLE_STATUSES:
+                resp.raise_for_status()  # tenacity retries transient failures
+            if resp.status_code >= 400:
+                # Non-retryable client error (401/403/400/…): fail fast, no retries.
+                raise ProviderError(
+                    f"LLM endpoint returned HTTP {resp.status_code}: "
+                    f"{(resp.text or '')[:200]}"
+                )
+            data = resp.json()
+        choices = data.get("choices") or []
+        if not choices:
+            raise ProviderError("LLM endpoint returned no completion choices")
+        content = choices[0].get("message", {}).get("content", "")
+        if choices[0].get("finish_reason") == "length":
+            raise ProviderError(
+                "LLM response was truncated (finish_reason=length). "
+                "The structured output exceeds the configured token budget; "
+                "increase STRUCTURED_MAX_TOKENS."
+            )
         usage = data.get("usage", {})
         return LLMResponse(content=content, model=self.model, provider=self.name, usage=usage)
 
@@ -92,8 +124,9 @@ class OpenAICompatibleProvider:
         *,
         temperature: float = 0.2,
         max_tokens: int = 2000,
+        seed: int | None = None,
     ) -> LLMResponse:
-        return await self._chat(messages, temperature, max_tokens)
+        return await self._chat(messages, temperature, max_tokens, seed=seed)
 
     async def structured_generate(
         self,
@@ -103,6 +136,8 @@ class OpenAICompatibleProvider:
         schema_name: str,
         schema: dict[str, Any],
         temperature: float = 0.2,
+        max_tokens: int | None = None,
+        seed: int | None = None,
     ) -> dict[str, Any]:
         messages = [
             {"role": "system", "content": JSON_INSTRUCTION.format(schema=json.dumps(schema))},
@@ -111,12 +146,18 @@ class OpenAICompatibleProvider:
                 "content": f"Task: {task}\nInput data (JSON):\n{json.dumps(input_data, default=str)}",
             },
         ]
+        limit = max_tokens or settings.structured_max_tokens
         last_error: Exception | None = None
         for attempt in range(3):
-            response = await self._chat(messages, temperature, 2000)
+            response = await self._chat(messages, temperature, limit, seed=seed)
             try:
                 parsed = extract_json_object(response.content)
-                logger.info("llm.structured_ok", task=task, attempt=attempt + 1)
+                logger.info(
+                    "llm.structured_ok",
+                    task=task,
+                    attempt=attempt + 1,
+                    usage=response.usage,
+                )
                 return parsed
             except ProviderError as exc:
                 last_error = exc

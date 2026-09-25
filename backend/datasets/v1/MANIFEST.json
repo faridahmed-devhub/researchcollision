@@ -1,0 +1,21 @@
+{
+  "kind": "v1_pilot_snapshot",
+  "note": "Read-only byte-identical snapshot of the immutable v1 pilot. Source files are never modified.",
+  "files": {
+    "real_case_study_v1.json": {
+      "source": "E:\\AICode\\opencode\\ResearchCollision\\backend\\evaluation\\data\\real_case_study_v1.json",
+      "sha256": "90fd9f178a00ce36757e5cfebfabfac82ab675583c4eb95a2b85cec503345e59",
+      "size_bytes": 448418
+    },
+    "real_case_specs_v1.json": {
+      "source": "E:\\AICode\\opencode\\ResearchCollision\\backend\\evaluation\\data\\real_case_specs_v1.json",
+      "sha256": "fd3c16deae01e94c1529264082039569e2430aedd3f90172257094796dd60bac",
+      "size_bytes": 6914
+    },
+    "demo_discovery.json": {
+      "source": "E:\\AICode\\opencode\\ResearchCollision\\backend\\evaluation\\data\\demo_discovery.json",
+      "sha256": "2a0a7125bdcfac9edbdeb279dbb286e5cf040148de5c890480f07ba45ab42b6b",
+      "size_bytes": 12436
+    }
+  }
+}

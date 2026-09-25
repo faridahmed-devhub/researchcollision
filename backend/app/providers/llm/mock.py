@@ -64,6 +64,7 @@ class MockLLMProvider:
         *,
         temperature: float = 0.2,
         max_tokens: int = 2000,
+        seed: int | None = None,
     ) -> LLMResponse:
         prompt = messages[-1]["content"] if messages else ""
         digest = hashlib.sha256(prompt.encode()).hexdigest()[:12]
@@ -81,6 +82,8 @@ class MockLLMProvider:
         schema_name: str,
         schema: dict[str, Any],
         temperature: float = 0.2,
+        max_tokens: int | None = None,
+        seed: int | None = None,
     ) -> dict[str, Any]:
         handler = getattr(self, f"_task_{task}", None)
         if handler is None:
@@ -379,6 +382,7 @@ class MockLLMProvider:
                     "gap_index": 0 if g else None,
                 })
         if not intersections:
+            g = gaps[0] if gaps else None
             intersections.append({
                 "title": f"Exploratory pairing: {a.get('name', 'A')} and {b.get('name', 'B')}",
                 "description": (
@@ -387,13 +391,14 @@ class MockLLMProvider:
                 ),
                 "shared_problem": "Undetermined from available evidence.",
                 "complementary_expertise": "Insufficient evidence.",
-                "research_gap": NOVELTY_LANGUAGE,
+                "research_gap": gap_text(g),
                 "why_researcher_a": "No relevant evidence was found in the searched literature.",
                 "why_researcher_b": "No relevant evidence was found in the searched literature.",
                 "novelty_confidence": 0.1,
                 "feasibility_confidence": 0.1,
-                "evidence_ids": [],
-                "gap_index": None,
+                # stay grounded even without topic overlap: reuse the gap evidence
+                "evidence_ids": list(dict.fromkeys((g or {}).get("evidence_ids", [])))[:8],
+                "gap_index": 0 if g else None,
             })
         return {"intersections": intersections[:max_n]}
 
@@ -439,4 +444,176 @@ class MockLLMProvider:
             ],
             "expected_outcomes": hyp.get("expected_contribution", "Measurable improvement over baseline."),
             "failure_conditions": hyp.get("risks", "Negative or inconclusive results; dataset unavailable."),
+        }
+
+    def _task_evaluation_llm_only(self, data: dict[str, Any]) -> dict[str, Any]:
+        """Evaluation-framework LLM-only baseline (no retrieval).
+
+        Returns plausible gaps/intersections/hypotheses derived solely from the
+        researcher profiles passed in ``input_data`` — with zero citations,
+        because a retrieval-free baseline cannot produce groundable evidence.
+        """
+        a = data.get("researcher_a") or {}
+        b = data.get("researcher_b") or {}
+        a_topics = [t for t in (a.get("topics") or []) if t]
+        b_topics = [t for t in (b.get("topics") or []) if t]
+        a_methods = [t for t in (a.get("methods") or []) if t]
+        b_methods = [t for t in (b.get("methods") or []) if t]
+        a_name = a.get("name") or "Researcher A"
+        b_name = b.get("name") or "Researcher B"
+
+        all_topics = list(dict.fromkeys(a_topics + b_topics))
+        shared = sorted(
+            {t.lower() for t in a_topics} & {t.lower() for t in b_topics}
+        )
+        complementary = sorted(set(a_methods) ^ set(b_methods))
+
+        gaps = [
+            {
+                "description": (
+                    f"Possible gap: '{t}' appears on only one side of this pairing "
+                    f"({a_name} / {b_name}); joint or comparative evidence was not "
+                    f"provided, so a combined treatment is worth empirical study."
+                )
+            }
+            for t in all_topics[:4]
+        ]
+        if not gaps:
+            gaps = [{
+                "description": (
+                    "No topics were provided for this pairing, so no concrete gap "
+                    "can be identified beyond the need for joint investigation."
+                )
+            }]
+
+        intersections: list[dict[str, Any]] = []
+        if shared:
+            topic = shared[0]
+            intersections.append({
+                "title": f"Shared focus: {' + '.join(shared[:2]) or topic}",
+                "description": (
+                    f"Both profiles reference '{topic}'. Combining {a_name}'s methods "
+                    f"({', '.join(a_methods[:2]) or 'see profile'}) with {b_name}'s "
+                    f"methods ({', '.join(b_methods[:2]) or 'see profile'}) may advance "
+                    f"the shared problem."
+                ),
+            })
+        if complementary:
+            m1, m2 = (complementary + ["", ""])[:2]
+            intersections.append({
+                "title": f"Method transfer: {m1 or 'A-side'} + {m2 or 'B-side'}",
+                "description": (
+                    f"The method profiles are complementary ({m1 or 'A'} vs {m2 or 'B'}); "
+                    f"transferring {m1 or 'the first method'} toward "
+                    f"{b_name}'s problems appears underexplored."
+                ),
+            })
+        if not intersections:
+            intersections.append({
+                "title": f"Exploratory pairing: {a_name} and {b_name}",
+                "description": (
+                    "The combined expertise suggests a joint direction, but no evidence "
+                    "was retrieved to substantiate a specific intersection."
+                ),
+            })
+
+        hypotheses = [
+            {
+                "text": (
+                    f"Applying the combined methodology suggested by '{ix['title']}' will "
+                    f"yield measurable gains on the shared problem; this remains to be "
+                    f"empirically validated."
+                )
+            }
+            for ix in intersections[:2]
+        ]
+
+        return {
+            "gaps": gaps[:4],
+            "intersections": intersections[:2],
+            "hypotheses": hypotheses[:2],
+            "evidence_titles": [],
+        }
+
+    def _task_paper_writing(self, data: dict[str, Any]) -> dict[str, Any]:
+        """Deterministic, fully grounded paper-draft construction.
+
+        Every sentence references only input data (stored evidence, the
+        intersection, and the hypothesis/experiment design). No results,
+        citations, DOIs, datasets, or statistics are invented.
+        """
+        ix = data.get("intersection", {})
+        hyp = data.get("hypothesis", {}) or {}
+        exp = data.get("experiment", {}) or {}
+        evidence: list[dict] = data.get("evidence", []) or []
+        ev_ids = [e["id"] for e in evidence]
+        statuses: dict[str, str] = {e["id"]: e.get("status", "INFERRED") for e in evidence}
+        titles = [e.get("source_title") for e in evidence if e.get("source_title")]
+        title = ix.get("title") or "Research direction across complementary expertise"
+        gap = ix.get("research_gap") or (
+            hyp.get("motivation") or "A research gap identified from the retrieved literature."
+        )
+        question = hyp.get("research_question") or (
+            f"How can the direction '{title}' be advanced using the stored evidence?"
+        )
+        hypothesis = hyp.get("hypothesis_text") or (
+            f"The proposed direction '{title}' deserves empirical evaluation as suggested by the stored evidence."
+        )
+        method = hyp.get("method") or ix.get("complementary_expertise") or "Combined methodology (see experiment design)."
+        dataset = hyp.get("dataset") or exp.get("dataset") or "TBD — to be selected during dataset verification."
+        exp_design = exp.get("proposed_approach") or method
+        if exp.get("dataset_status"):
+            exp_design += f" Dataset status (from experiment design): {exp['dataset_status']}."
+        baseline = hyp.get("baseline") or "Standard baselines reported in the cited literature."
+        metrics = hyp.get("metrics") or "Metrics used in the cited papers; otherwise task-appropriate metrics."
+        verified_ev = [e["id"] for e in evidence if e.get("status") == "VERIFIED"]
+        related = (
+            "The draft is grounded in the following stored papers retrieved by the backend: "
+            + (", ".join(dict.fromkeys([t for t in titles if t])) or "none")
+            + ". Reference texts are reproduced in the References section and trace to stored evidence."
+        )
+        expected = (
+            "EXPECTED / PROPOSED outcomes only — this is a research proposal, not a results report. "
+            f"If the proposed approach performs as hypothesized, we expect measurable gains over the baseline "
+            f"({baseline}) on {metrics}. No experimental results have been collected or reported in this draft."
+        )
+        intro = (
+            f"{title} combines complementary expertise identified from the stored literature. "
+            f"Motivation: {ix.get('description') or hyp.get('motivation') or gap} "
+            f"{len(verified_ev)} of the referenced evidence items are independently VERIFIED."
+        )
+        return {
+            "title": title,
+            "abstract": (
+                f"This is an AI-generated research-paper DRAFT proposing a study that combines the "
+                f"complementary expertise described in '{title}'. The proposal is grounded in "
+                f"{len(ev_ids)} stored evidence items ({len(verified_ev)} VERIFIED). Expected outcomes are "
+                f"hypotheses, not measured results."
+            ),
+            "introduction": intro,
+            "related_work": related,
+            "research_gap": gap,
+            "research_question": question,
+            "hypothesis": hypothesis,
+            "methodology": method,
+            "experiment_design": (
+                f"Dataset: {dataset}. Baseline: {baseline}. Metrics: {metrics}. "
+                f"Setup: {exp.get('evaluation_setup') or 'evaluation to be defined'}. "
+                f"Ablations: {', '.join(exp.get('ablations') or []) or 'to be defined'}. "
+                f"Failure conditions: {exp.get('failure_conditions') or 'to be defined'}."
+            ),
+            "expected_results": expected,
+            "limitations": [
+                "This document is a draft proposal; it reports no experimentally validated findings.",
+                "Hypotheses and gaps are inferred from the retrieved literature and may overlook outside evidence.",
+                "Datasets and metrics marked INFERRED require verification before experimentation.",
+            ],
+            "conclusion": (
+                f"Motivated by {gap}, the proposed study '{title}' is worth evaluating with the described "
+                f"experiment design. None of its expected outcomes have been empirically validated."
+            ),
+            "evidence_ids": ev_ids[:30],
+            "citation_evidence_ids": [
+                eid for eid in ev_ids if statuses.get(eid) in ("VERIFIED", "INFERRED")
+            ][:30],
         }

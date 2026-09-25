@@ -219,6 +219,44 @@ export interface JobEvent {
   created_at: string;
 }
 
+export interface PaperEvidenceRef {
+  evidence_id: string;
+  claim: string;
+  status: EvidenceStatus | string;
+  source_title: string | null;
+  source_url: string | null;
+}
+
+export interface PaperCitation {
+  evidence_id: string;
+  number: number;
+  status: string;
+  text: string;
+}
+
+export interface PaperDraft {
+  report_id: string;
+  job_id: string;
+  workspace_id: string;
+  title: string;
+  abstract: string;
+  introduction: string;
+  related_work: string;
+  research_gap: string;
+  research_question: string;
+  hypothesis: string;
+  methodology: string;
+  experiment_design: string;
+  expected_results: string;
+  expected_results_label: string;
+  limitations: string[];
+  conclusion: string;
+  evidence: PaperEvidenceRef[];
+  citations: PaperCitation[];
+  draft_status: string;
+  created_at: string;
+}
+
 export interface ProfileVersion {
   id: string;
   version: number;

@@ -1,0 +1,234 @@
+﻿% ============================================================================
+% paper.tex — LaTeX manuscript (faithful translation of paper.md)
+% All numbers verbatim from the authoritative results.json (188 EV records).
+% Compile: xelatex or lualatex (UTF-8). Figures are SVG; either convert to PDF
+% (e.g., inkscape) and make figures/*.pdf, or use the `svg` package with
+% shell-escape + inkscape. Tables are the canonical CSVs/MDs in tables/.
+% No experiment was rerun to produce this file.
+% ============================================================================
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\hypersetup{colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue}
+
+\title{\textbf{Evidence-Surface Analysis of a Multi-System Research-Collision\\ Evaluation Harness: A 12-Case, 188-Record Case Study}}
+\author{ResearchCollision Evaluation Harness --- Automated Analytics Report\\\small (single-run descriptive study; no human rating layer)}
+\date{\texttt{generated\_utc = 2026-09-23T11:43:34+00:00}\\\small dataset: \texttt{real\_case\_study\_v1}; authoritative source: \texttt{backend/evaluation\_out\_real\_llm\_v1/results.json}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+This manuscript analyzes a single, deterministic evaluation run of the
+\textbf{ResearchCollision} harness over twelve purpose-selected, real paired
+cross-domain research cases (\texttt{real\_case\_study\_v1}). For each of the
+twelve case pairs, four evidence-generation systems were executed:
+\texttt{keyword}, \texttt{embedding}, \texttt{llm\_only}, and \texttt{pipeline}
+(a keyword+embedding+LLM cascade). Each system was asked to look for evidence on
+three ``surfaces'' of the potential research collision between the two fields:
+\textbf{intersection} (existing bridging work), \textbf{hypothesis} (motivating
+new work), and \textbf{gap} (unanswered bridging space).
+
+The authoritative artifact is \texttt{results.json}, which contains \textbf{188
+evidence records} (55 intersection / 50 hypothesis / 83 gap; system totals:
+keyword 41, embedding 36, llm\_only 53, pipeline 58). This manuscript is a
+\textbf{descriptive, evidence-count report}. Because the evaluation is a single
+run with \textbf{no human/expert rating layer}, this paper explicitly makes
+\textbf{no claim of evidence quality, relevance, correctness, statistical
+significance, or superiority of any system}. Pipeline evidence is incomplete
+(coverage 8/12): \textbf{4 pipeline runs failed} (verbatim in Table~D and
+Appendix~A) and are reported without repair. All numbers are traceable to
+\texttt{results.json} cell-by-cell; the full claim-by-claim verification is in
+\texttt{AUDIT.md}.
+\end{abstract}
+
+\section{Introduction and Background}
+\label{sec:intro}
+
+\subsection{The research-collision problem}
+The ResearchCollision project studies pairwise ``collisions'' between
+specialized research fields: given two fields $A$ and $B$ that are each
+internally active but poorly connected, harness-based evidence systems attempt to
+surface evidence of \textit{intersection}, \textit{hypothesis}, and \textit{gap}.
+This operationalizes a long-standing theme in information science ---
+undiscovered public knowledge and literature-based discovery (LBD), in which a
+hypothesis can be formed when two bodies of literature that individually do not
+share citations nevertheless contain complementary statements that, when brought
+together, motivate a new research direction \citep{swanson1986, swanson1997}.
+
+\subsection{Contributions and claims}
+This manuscript reports:
+\begin{enumerate}
+    \item A full 12-case $\times$ 4-system evidence matrix (Table~A).
+    \item Per-system evidence totals (Table~B) and per-surface distribution
+    (Table~C).
+    \item A verbatim, unrepaired record of the 4 pipeline failures (Table~D).
+    \item A method/configuration appendix and the full evidence corpus for
+    reproduction (Appendix~A; \texttt{tables/}).
+\end{enumerate}
+It makes \textbf{no} claim about which system is \emph{better}. The 4 pipeline
+failures are disclosed, and pipeline totals (58 records over 8 cases) are not
+treated as comparable to the other systems' 12-case totals.
+
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Corpus}
+The dataset \texttt{real\_case\_study\_v1} contains 12 paired research cases
+(real scholarly topics), each defined by its \texttt{case\_id}
+(\texttt{tables/table\_a\_casexsystem.csv}). Each case pairs two research areas;
+the pairings are recorded in the dataset metadata in \texttt{results.json}.
+
+\subsection{Systems}
+Four systems were evaluated per case:
+\begin{itemize}
+    \item \texttt{keyword}: lexical keyword-based retrieval.
+    \item \texttt{embedding}: dense-embedding retrieval.
+    \item \texttt{llm\_only}: direct LLM reasoning without retrieval.
+    \item \texttt{pipeline}: keyword + embedding + LLM cascade.
+\end{itemize}
+
+\subsection{Evidence surfaces}
+Each evidence record was classified into exactly one surface:
+\begin{itemize}
+    \item \textbf{intersection}: existing bridging evidence,
+    \item \textbf{hypothesis}: evidence motivating a new hypothesis,
+    \item \textbf{gap}: evidence of an open / unanswered bridge.
+\end{itemize}
+
+\subsection{Failure policy}
+Runs are stop-on-failure: when a (case, system) pair fails at runtime, no
+partial evidence for that cell is recorded. Failures are captured verbatim in
+\texttt{results.json} and are reported here \textbf{verbatim} (Table~D,
+Appendix~A). Failed cells are \textbf{absent evidence}, not zero evidence.
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Total evidence}
+The authoritative artifact contains \textbf{188} evidence records. The evidence
+surface distribution and per-system totals are summarized in Tables~B and~C and
+presented per case in Table~A.
+
+\subsection{Table B --- per-system totals}
+\begin{table}[h]
+\centering
+\begin{tabular}{lrr}
+\toprule
+\textbf{System} & \textbf{Records} & \textbf{Cases covered (of 12)} \\
+\midrule
+keyword   & 41 & 12 \\
+embedding & 36 & 12 \\
+llm\_only & 53 & 12 \\
+pipeline  & 58 & 8 \\
+\bottomrule
+\end{tabular}
+\caption{Per-system totals from \texttt{results.json} (188 records; pipeline
+covers 8 of 12 cases --- 4 pipeline failures, see Table~D).}
+\label{tab:b}
+\end{table}
+
+\subsection{Table C --- evidence surface distribution}
+\begin{table}[h]
+\centering
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Surface} & \textbf{Intersection} & \textbf{Hypothesis} & \textbf{Gap}\\
+\midrule
+Count & 55 & 50 & 83 \\
+\bottomrule
+\end{tabular}
+\caption{Evidence records by surface. Sum = 188. Pipeline cell totals include
+only the 8 covered cases.}
+\label{tab:c}
+\end{table}
+
+\subsection{Table A --- per-case $\times$ per-system matrix}
+The full 12-case $\times$ 4-system evidence matrix (intersection / hypothesis /
+gap per cell) is provided in \texttt{tables/table\_a\_casexsystem.csv} and
+\texttt{figures/fig1\_surface\_distribution.svg} (and figure 2 / figure 3). The
+matrix documents which (case, system) cells produced evidence and, per cell,
+how many records of each surface were produced; four pipeline cells are marked
+\textbf{FAIL} (absent evidence).
+
+\subsection{Table D --- pipeline failures (verbatim)}
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{case\_id} & \textbf{system} & \textbf{error (verbatim)} \\
+\midrule
+causal\_inference\_x\_clinical\_ml & pipeline & \texttt{ReadTimeout: } \\
+gnn\_x\_protein\_structure & pipeline & \texttt{ReadTimeout: } \\
+rl\_x\_sim\_to\_real & pipeline & \texttt{ReadError: } \\
+clinical\_nlp\_x\_ehr & pipeline & \texttt{ConnectError: All connection attempts failed} \\
+\bottomrule
+\end{tabular}
+\caption{The 4 pipeline failures, recorded verbatim from
+\texttt{results.json}. These are reported without repair or retry.}
+\label{tab:d}
+\end{table}
+
+\section{Discussion}
+\label{sec:disc}
+The observation that gap-type evidence (83/188, 44\%) is the most frequent
+surface is consistent with the design of a discovery harness whose goal is to
+surface open bridges: for any pair of fields without an established connection,
+``gap'' statements are both cheaper and more abundant than verified
+intersections. However, this is a count observation on a single run and does not
+imply that gap evidence is \emph{valuable} --- value assessment would require a
+human rating layer, which is absent in this run.
+
+The pipeline system produced the most records (58) but over only 8 cases; its
+totals are therefore \textbf{not comparable} with the other systems' 12-case
+totals versions. The 4 pipeline failures (Table~D) disclose an incomplete
+pipeline; we do not rank systems.
+
+\section{Threats to Validity}
+\label{sec:threats}
+\begin{itemize}
+    \item \textbf{Single run, no variance:} no confidence intervals or tests;
+    no statistical significance is claimed.
+    \item \textbf{No human rating layer:} evidence \emph{quality/relevance/
+    correctness} is not assessed; the manuscript does not claim it.
+    \item \textbf{Incomplete pipeline coverage:} 4 of 12 pipeline cells failed;
+    pipeline totals (Table~B) are reported with that caveat and are not used for
+    cross-system ranking.
+    \item \textbf{Evidence counts, not findings:} an evidence record attests
+    that a system produced a candidate statement on a surface; it does not
+    attest correctness.
+    \item \textbf{Single deterministic run:} all variance-free numbers come from
+    exactly one execution (seed 0); re-runs may differ on LLM quality, network,
+    and tool availability.
+\end{itemize}
+
+\section{Reproducibility}
+\label{sec:repro}
+\begin{itemize}
+    \item Authoritative artifact: \texttt{backend/evaluation\_out\_real\_llm\_v1/results.json}
+    \item Dataset: \texttt{real\_case\_study\_v1} (12 cases)
+    \item Generation UTC: \texttt{2026-09-23T11:43:34+00:00}
+    \item All tables/figures/references in this manuscript are derived from that
+    single artifact; no experiment was rerun to produce the manuscript.
+    \item Full per-claim verification: \texttt{AUDIT.md}
+\end{itemize}
+
+\section{Acknowledgements}
+The ResearchCollision harness was executed against a real remote Ollama LLM
+instance and the real OpenAlex scholarly index (polite API, mailto). This
+manuscript was generated \textbf{without} re-running the experiment; it is a
+read-only descriptive analysis of the authoritative artifact.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

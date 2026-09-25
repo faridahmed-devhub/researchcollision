@@ -1,0 +1,19 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-label="Surface distribution of 188 evidence records: intersection 55, hypothesis 50, gap 83">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="360" y="28" text-anchor="middle" font-size="15" font-family="Helvetica,Arial,sans-serif" font-weight="bold">Evidence surface distribution (N=188)</text>
+  <!-- bars: intersection 55/188 * 300px = 87.8; hypothesis 50/188*300 = 79.8; gap 83/188*300 = 132.4 -->
+  <g font-family="Helvetica,Arial,sans-serif">
+    <text x="180" y="330" text-anchor="middle" font-size="12">Intersection (55)</text>
+    <rect x="122" y="95" width="116" height="215" fill="#2c7bb6"/>
+    <text x="180" y="88" text-anchor="middle" font-size="13" font-weight="bold">55</text>
+    <text x="360" y="330" text-anchor="middle" font-size="12">Hypothesis (50)</text>
+    <rect x="302" y="120" width="116" height="190" fill="#fdae61"/>
+    <text x="360" y="113" text-anchor="middle" font-size="13" font-weight="bold">50</text>
+    <text x="540" y="330" text-anchor="middle" font-size="12">Gap (83)</text>
+    <rect x="482" y="33" width="116" height="277" fill="#d7191c"/>
+    <text x="540" y="26" text-anchor="middle" font-size="13" font-weight="bold">83</text>
+  </g>
+  <line x1="80" y1="315" x2="640" y2="315" stroke="#000" stroke-width="1.5"/>
+  <line x1="80" y1="315" x2="80" y2="20" stroke="#000" stroke-width="1.5"/>
+  <text x="360" y="352" text-anchor="middle" font-size="10" font-family="Helvetica,Arial,sans-serif">Authoritative: results.json (188 EV records). No inferred values; counts only.</text>
+</svg>

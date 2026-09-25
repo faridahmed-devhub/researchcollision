@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   BarChart,
   Bar,
@@ -20,10 +20,22 @@ import { Badge, EmptyState, PageSpinner, StatCard } from "../components/ui";
 
 export default function DashboardPage() {
   const { active, setActive } = useWorkspaceStore();
+  const qc = useQueryClient();
+  const [wsName, setWsName] = useState("");
 
   const workspacesQ = useQuery<Workspace[]>({
     queryKey: ["workspaces"],
     queryFn: async () => (await api.get("/workspaces")).data,
+  });
+
+  const createQ = useMutation({
+    mutationFn: async () =>
+      (await api.post<Workspace>("/workspaces", { name: wsName })).data,
+    onSuccess: (ws) => {
+      setWsName("");
+      setActive(ws);
+      qc.invalidateQueries({ queryKey: ["workspaces"] });
+    },
   });
 
   useEffect(() => {
@@ -56,10 +68,34 @@ export default function DashboardPage() {
 
   if (!wid) {
     return (
-      <EmptyState
-        title="No workspace yet"
-        hint="Create a workspace in Settings to start discovering research intersections."
-      />
+      <div className="mx-auto max-w-md space-y-4 pt-10" data-testid="onboarding">
+        <EmptyState
+          title="No workspace yet"
+          hint="Create your first workspace to start discovering research intersections."
+        />
+        <form
+          className="card space-y-3 p-5"
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (wsName.trim()) createQ.mutate();
+          }}
+        >
+          <label className="label" htmlFor="new-ws">
+            Workspace name
+          </label>
+          <input
+            id="new-ws"
+            className="input"
+            placeholder="e.g. Climate × Health intersections"
+            value={wsName}
+            onChange={(e) => setWsName(e.target.value)}
+            required
+          />
+          <button type="submit" className="btn-primary w-full" disabled={createQ.isPending}>
+            {createQ.isPending ? "Creating…" : "Create workspace"}
+          </button>
+        </form>
+      </div>
     );
   }
 

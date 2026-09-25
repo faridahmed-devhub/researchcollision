@@ -6,6 +6,9 @@ from typing import Any, Protocol, runtime_checkable
 
 from pydantic import BaseModel, Field
 
+from app.schemas.paper_draft import PaperDraft
+from app.schemas.profile import ResearchDNA
+
 
 @dataclass
 class LLMResponse:
@@ -28,6 +31,7 @@ class LLMProvider(Protocol):
         *,
         temperature: float = 0.2,
         max_tokens: int = 2000,
+        seed: int | None = None,
     ) -> LLMResponse: ...
 
     async def structured_generate(
@@ -38,6 +42,8 @@ class LLMProvider(Protocol):
         schema_name: str,
         schema: dict[str, Any],
         temperature: float = 0.2,
+        max_tokens: int | None = None,
+        seed: int | None = None,
     ) -> dict[str, Any]: ...
 
 
@@ -135,6 +141,8 @@ class ExperimentDraft(BaseModel):
 
 
 AGENT_SCHEMAS: dict[str, dict[str, Any]] = {
+    "ResearchDNA": ResearchDNA.model_json_schema(),
+    "PaperDraft": PaperDraft.model_json_schema(),
     "PaperAnalysis": PaperAnalysis.model_json_schema(),
     "TrajectoryAnalysis": TrajectoryAnalysis.model_json_schema(),
     "GapDetectionResult": GapDetectionResult.model_json_schema(),

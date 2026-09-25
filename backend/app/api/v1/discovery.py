@@ -2,8 +2,10 @@
 from __future__ import annotations
 
 import asyncio
+import re
 
 from fastapi import APIRouter, BackgroundTasks, Depends
+from fastapi.responses import Response
 from sqlalchemy.orm import Session
 
 from app.api.dependencies import get_current_user, get_owned_workspace
@@ -13,6 +15,7 @@ from app.db.database import SessionLocal, get_db
 from app.db.models import ResearchJob, User, Workspace
 from app.db.repositories.job_repository import JobRepository
 from app.schemas.discovery import DiscoveryJobCreate, JobEventOut, JobOut
+from app.schemas.paper_draft import PaperDraftOut
 
 router = APIRouter(prefix="/discovery", tags=["discovery"])
 
@@ -137,3 +140,73 @@ def cancel_job(job_id: str, user: User = Depends(get_current_user), db: Session 
 @router.post("/jobs/{job_id}/retry", response_model=JobOut)
 def retry_job(job_id: str, user: User = Depends(get_current_user), db: Session = Depends(get_db)) -> ResearchJob:
     return _control(db, job_id, user, "retry")
+
+
+@router.get("/jobs/{job_id}/paper-draft", response_model=PaperDraftOut)
+def get_paper_draft(
+    job_id: str,
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> PaperDraftOut:
+    """Retrieve the stored paper draft for a discovery job (404 if none)."""
+    from app.services.paper_draft_service import PaperDraftService
+
+    job = _owned_job(db, job_id, user)
+    return PaperDraftService(db).get_draft(job)
+
+
+@router.post("/jobs/{job_id}/paper-draft", response_model=PaperDraftOut, status_code=201)
+async def generate_paper_draft(
+    job_id: str,
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> PaperDraftOut:
+    """Generate (or regenerate) the paper draft for a completed discovery job."""
+    from app.services.paper_draft_service import PaperDraftService
+
+    job = _owned_job(db, job_id, user)
+    out = await PaperDraftService(db).generate_for_job(job)
+    db.commit()
+    return out
+
+
+@router.get("/jobs/{job_id}/paper-draft/export")
+def export_paper_draft(
+    job_id: str,
+    format: str = "markdown",
+    user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> Response:
+    """Export a stored paper draft as Markdown or PDF (defensive; no fabrication)."""
+    from app.services.paper_draft_service import PaperDraftService
+
+    job = _owned_job(db, job_id, user)
+    svc = PaperDraftService(db)
+    out = svc.get_draft(job)
+
+    if format not in ("markdown", "pdf"):
+        from app.core.exceptions import ValidationAppError
+
+        raise ValidationAppError("format must be one of: markdown, pdf")
+
+    slug = re.sub(r"[^\w\- ]", "", out.title).strip().replace(" ", "_")[:60] or "paper_draft"
+    workspace_name = db.get(Workspace, job.workspace_id).name if job.workspace_id else "workspace"
+    md = svc.render_markdown(out, workspace_name or "workspace")
+
+    if format == "pdf":
+        from app.core.exceptions import NotImplementedAppError
+
+        try:
+            pdf = svc.render_pdf(md)
+        except Exception as exc:  # pragma: no cover - backend import/layout issues
+            raise NotImplementedAppError(f"PDF rendering is unavailable: {str(exc)[:120]}") from exc
+        return Response(
+            content=pdf,
+            media_type="application/pdf",
+            headers={"Content-Disposition": f'attachment; filename="{slug}.pdf"'},
+        )
+    return Response(
+        content=md + "\n",
+        media_type="text/markdown; charset=utf-8",
+        headers={"Content-Disposition": f'attachment; filename="{slug}.md"'},
+    )

@@ -16,6 +16,7 @@ export default function DiscoveryPage() {
   const [ra, setRa] = useState<Researcher | null>(null);
   const [rb, setRb] = useState<Researcher | null>(null);
   const [mode, setMode] = useState("normal");
+  const [fieldQuery, setFieldQuery] = useState("");
   const [maxPapers, setMaxPapers] = useState(12);
   const [genHyp, setGenHyp] = useState(true);
   const [formError, setFormError] = useState<string | null>(null);
@@ -60,6 +61,7 @@ export default function DiscoveryPage() {
           workspace_id: wid,
           researcher_a_id: ra!.id,
           researcher_b_id: rb?.id ?? null,
+          field_query: rb ? undefined : fieldQuery.trim() || null,
           mode,
           max_papers: maxPapers,
           generate_hypotheses: genHyp,
@@ -84,6 +86,10 @@ export default function DiscoveryPage() {
       setFormError("Select researcher A first.");
       return;
     }
+    if (!rb && !fieldQuery.trim()) {
+      setFormError("Pick researcher B or enter a field query.");
+      return;
+    }
     createQ.mutate();
   }
 
@@ -96,8 +102,8 @@ export default function DiscoveryPage() {
       <div>
         <h1 className="text-xl font-semibold text-slate-800">Discovery</h1>
         <p className="text-sm text-slate-500">
-          Run the 9-step pipeline: literature → analysis → trajectories → gaps → intersections →
-          evidence verification → hypotheses → ranking.
+          Run the 10-step pipeline: literature → analysis → trajectories → gaps → intersections →
+          evidence verification → hypotheses → paper draft → ranking.
         </p>
       </div>
 
@@ -136,13 +142,29 @@ export default function DiscoveryPage() {
           />
         </div>
 
+        <div>
+          <label className="label" htmlFor="field-query">
+            Field query (virtual researcher){" "}
+            <span className="text-xs font-normal text-slate-400">
+              — used when no researcher B is selected
+            </span>
+          </label>
+          <input
+            id="field-query"
+            className="input"
+            placeholder="e.g. climate science"
+            value={fieldQuery}
+            disabled={!!rb}
+            onChange={(e) => setFieldQuery(e.target.value)}
+          />
+        </div>
+
         <div className="grid gap-4 sm:grid-cols-3">
           <div>
             <label className="label">Discovery mode</label>
             <select className="input" value={mode} onChange={(e) => setMode(e.target.value)}>
               <option value="normal">Normal</option>
-              <option value="exploratory">Exploratory</option>
-              <option value="targeted">Targeted</option>
+              <option value="serendipity">Serendipity</option>
             </select>
           </div>
           <div>
@@ -290,6 +312,7 @@ const STEP_LABELS: Record<string, string> = {
   discover_intersections: "Discovering intersections",
   verify_evidence: "Verifying evidence",
   generate_hypotheses: "Generating hypotheses",
+  write_paper_draft: "Writing paper draft",
   rank_collaborations: "Ranking collaborations",
 };
 

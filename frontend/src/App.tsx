@@ -16,6 +16,7 @@ import HypothesesPage from "./pages/HypothesesPage";
 import HypothesisDetailPage from "./pages/HypothesisDetailPage";
 import CollaborationsPage from "./pages/CollaborationsPage";
 import EvidencePage from "./pages/EvidencePage";
+import PaperDraftPage from "./pages/PaperDraftPage";
 import SettingsPage from "./pages/SettingsPage";
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
       <Route element={<ProtectedRoute />}>
         <Route element={<Layout />}>
           <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
           <Route element={<RequireWorkspace />}>
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/literature" element={<LiteraturePage />} />
@@ -38,7 +40,7 @@ export default function App() {
             <Route path="/hypotheses/:id" element={<HypothesisDetailPage />} />
             <Route path="/collaborations" element={<CollaborationsPage />} />
             <Route path="/evidence" element={<EvidencePage />} />
-            <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/paper-draft" element={<PaperDraftPage />} />
           </Route>
         </Route>
       </Route>

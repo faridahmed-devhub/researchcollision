@@ -1,0 +1,58 @@
+{
+  "seed": 20260925,
+  "note": "v1->v2 correspondence; v1 is unchanged.",
+  "cases": {
+    "federated_learning_x_privacy": {
+      "status": "not_resampled",
+      "v2_pair_id": "v2_federated_learning_differential_privacy",
+      "note": "identical domain pairing occurred in the seeded random sample OR remained unsampled; v1 case itself is preserved untouched in every case"
+    },
+    "causal_inference_x_clinical_ml": {
+      "status": "not_resampled",
+      "v2_pair_id": "v2_causal_inference_clinical_decision_support",
+      "note": "identical domain pairing occurred in the seeded random sample OR remained unsampled; v1 case itself is preserved untouched in every case"
+    },
+    "gnn_x_protein_structure": {
+      "status": "not_resampled",
+      "v2_pair_id": "v2_graph_neural_networks_protein_structure_prediction",
+      "note": "identical domain pairing occurred in the seeded random sample OR remained unsampled; v1 case itself is preserved untouched in every case"
+    },
+    "recommender_x_fairness": {
+      "status": "not_resampled",
+      "v2_pair_id": "v2_recommender_systems_algorithmic_fairness",
+      "note": "identical domain pairing occurred in the seeded random sample OR remained unsampled; v1 case itself is preserved untouched in every case"
+    },
+    "rl_x_sim_to_real": {
+      "status": "not_resampled",
+      "reason": "no counterpart domain pair defined in the v2 pool"
+    },
+    "clinical_nlp_x_ehr": {
+      "status": "not_resampled",
+      "reason": "no counterpart domain pair defined in the v2 pool"
+    },
+    "climate_downscaling_x_deep_learning": {
+      "status": "not_resampled",
+      "reason": "no counterpart domain pair defined in the v2 pool"
+    },
+    "quantum_chemistry_x_dft": {
+      "status": "not_resampled",
+      "reason": "no counterpart domain pair defined in the v2 pool"
+    },
+    "single_cell_x_transfer_learning": {
+      "status": "not_resampled",
+      "reason": "no counterpart domain pair defined in the v2 pool"
+    },
+    "knowledge_graph_x_question_answering": {
+      "status": "not_resampled",
+      "reason": "no counterpart domain pair defined in the v2 pool"
+    },
+    "speech_recognition_x_hearing_aids": {
+      "status": "not_resampled",
+      "reason": "no counterpart domain pair defined in the v2 pool"
+    },
+    "materials_discovery_x_active_learning": {
+      "status": "not_resampled",
+      "reason": "no counterpart domain pair defined in the v2 pool"
+    }
+  }
+}

@@ -50,17 +50,23 @@ class VerificationAgent:
                     status = EvidenceStatus.UNVERIFIED.value
                     reason = "Citation failed validation: paper not found in store."
                 else:
-                    abstract = (paper.abstract or "").lower()
-                    text = (ev.evidence_text or "").lower().strip()
-                    if text and len(text) > 20:
-                        # fuzzy containment on first 60 chars of the quote
-                        probe = " ".join(text[:60].split())
-                        if probe and probe in " ".join(abstract.split()):
-                            status = EvidenceStatus.VERIFIED.value
-                            reason = "Quote matched stored abstract."
-                        elif ev.status == EvidenceStatus.VERIFIED.value:
+                    if paper.is_synthetic:
+                        # Synthetic (mock) papers cannot back a VERIFIED claim.
+                        if ev.status == EvidenceStatus.VERIFIED.value:
                             status = EvidenceStatus.INFERRED.value
-                            reason = "Interpretation of stored abstract; exact quote not found."
+                            reason = "Synthetic paper; cannot be independently verified."
+                    else:
+                        abstract = (paper.abstract or "").lower()
+                        text = (ev.evidence_text or "").lower().strip()
+                        if text and len(text) > 20:
+                            # fuzzy containment on first 60 chars of the quote
+                            probe = " ".join(text[:60].split())
+                            if probe and probe in " ".join(abstract.split()):
+                                status = EvidenceStatus.VERIFIED.value
+                                reason = "Quote matched stored abstract."
+                            elif ev.status == EvidenceStatus.VERIFIED.value:
+                                status = EvidenceStatus.INFERRED.value
+                                reason = "Interpretation of stored abstract; exact quote not found."
             if status != ev.status:
                 updates.append({"evidence_id": ev.id, "status": status, "reason": reason})
         logger.info("verification.complete", checked=len(evidence_rows), updated=len(updates))

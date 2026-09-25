@@ -1,0 +1,209 @@
+{
+  "dataset_id": "demo_discovery_v1",
+  "description": "Tiny synthetic demo dataset for the ResearchCollision evaluation framework. Every paper, researcher, topic, method, and gap below is FICTIONAL. It is an automated test artifact, not a benchmark and not real research evidence.",
+  "provenance": "synthetic_fixture",
+  "is_synthetic": true,
+  "label": "SYNTHETIC EVALUATION FIXTURE \u2014 NOT REAL RESEARCH EVIDENCE",
+  "cases": [
+    {
+      "case_id": "nlp_x_speech",
+      "label": "Low-resource NLP x under-resourced speech",
+      "researcher_a": {
+        "name": "Dr. Amara Chen",
+        "affiliation": "Institute of Applied Language Technology",
+        "bio": "Works on low-resource NLP, multilingual models, and data-efficient learning.",
+        "topics": ["low-resource nlp", "multilingual models", "data-efficient learning"],
+        "methods": ["transfer learning", "data augmentation", "few-shot learning"],
+        "domains": ["natural language processing"],
+        "papers": ["syn-001", "syn-002", "syn-003"]
+      },
+      "researcher_b": {
+        "name": "Prof. Elena Petrova",
+        "affiliation": "Speech and Audio Systems Group",
+        "bio": "Speech recognition for under-resourced languages and speech accessibility.",
+        "topics": ["speech recognition", "low-resource languages", "speech accessibility"],
+        "methods": ["self-supervised speech models", "transfer learning", "data augmentation"],
+        "domains": ["speech processing"],
+        "papers": ["syn-017", "syn-018"]
+      },
+      "field_query": "low-resource language technologies",
+      "source_papers": [
+        {
+          "paper_id": "syn-001",
+          "title": "Data-Efficient Adaptation of Multilingual Language Models for Low-Resource Languages",
+          "abstract": "Multilingual language models often underperform on low-resource languages due to limited training data. We propose a data-efficient adaptation strategy combining cross-lingual transfer with lightweight parameter tuning. Experiments across eight low-resource languages show consistent gains over strong baselines while using only a fraction of labeled data. Limitations include reliance on a related high-resource pivot language and evaluation restricted to text classification.",
+          "year": 2019,
+          "venue": "Journal of Multilingual Computing (synthetic)",
+          "topics": ["low-resource nlp", "multilingual models", "transfer learning"],
+          "methods": ["transfer learning", "parameter-efficient tuning"],
+          "authors": ["Dr. Amara Chen"]
+        },
+        {
+          "paper_id": "syn-002",
+          "title": "Few-Shot Named Entity Transfer with Synthetic Corpus Augmentation",
+          "abstract": "We study few-shot named entity recognition when almost no target-language annotations exist. A synthetic corpus augmentation pipeline generates pseudo-labeled examples from a related language. The method improves F1 by 6 points in the few-shot setting. Future work includes extending to structured prediction tasks beyond sequence labeling and reducing dependence on hand-built lexicons.",
+          "year": 2021,
+          "venue": "Conference on Data-Efficient NLP (synthetic)",
+          "topics": ["low-resource nlp", "data augmentation", "few-shot learning"],
+          "methods": ["data augmentation", "few-shot learning"],
+          "authors": ["Dr. Amara Chen"]
+        },
+        {
+          "paper_id": "syn-003",
+          "title": "Active Annotation Selection for Under-Resourced Text Analytics",
+          "abstract": "Annotation budgets dominate the cost of building NLP systems for under-resourced languages. We introduce an active annotation selection framework that combines uncertainty sampling with diversity constraints. Across three tasks the approach reaches baseline quality with 40% fewer labels. A key limitation is the assumption of a stable annotation interface, which may not hold in practice.",
+          "year": 2023,
+          "venue": "Transactions on Human-Language Technologies (synthetic)",
+          "topics": ["low-resource nlp", "active learning", "annotation"],
+          "methods": ["active learning"],
+          "authors": ["Dr. Amara Chen"]
+        },
+        {
+          "paper_id": "syn-017",
+          "title": "Self-Supervised Speech Representations for Under-Resourced Languages",
+          "abstract": "Self-supervised speech models transfer poorly to very low-resource languages. We fine-tune with language-adaptive pretraining on unlabeled radio archives, cutting word error rate by 18% on two languages. Compute cost of adaptation is high, motivating parameter-efficient adaptation as future work.",
+          "year": 2021,
+          "venue": "Speech Technology Letters (synthetic)",
+          "topics": ["speech recognition", "low-resource languages", "self-supervised learning"],
+          "methods": ["self-supervised speech models", "transfer learning"],
+          "authors": ["Prof. Elena Petrova"]
+        },
+        {
+          "paper_id": "syn-018",
+          "title": "Accessible Voice Interfaces: Error Patterns for Dysarthric Speech",
+          "abstract": "We analyze recognition error patterns for dysarthric speech across commercial and research systems. A taxonomy of errors shows systematic confusions linked to prosodic patterns rather than articulation alone. Dataset diversity is limited and largely English-centric, which constrains generalization claims.",
+          "year": 2023,
+          "venue": "Accessibility and Speech (synthetic)",
+          "topics": ["speech accessibility", "speech recognition", "low-resource languages"],
+          "methods": ["error analysis"],
+          "authors": ["Prof. Elena Petrova"]
+        }
+      ],
+      "expected_topics": [
+        "low-resource nlp",
+        "multilingual models",
+        "data-efficient learning",
+        "speech recognition",
+        "low-resource languages",
+        "speech accessibility",
+        "data augmentation"
+      ],
+      "expected_methods": [
+        "transfer learning",
+        "data augmentation",
+        "few-shot learning",
+        "self-supervised learning"
+      ],
+      "expected_gaps": [
+        {
+          "gap_id": "nlp-gap-1",
+          "description": "Data-efficient transfer methods are validated mostly for text; under-resourced speech lacks comparable lightweight parameter-efficient adaptation baselines.",
+          "gap_type": "cross_domain_transfer",
+          "evidence_paper_ids": ["syn-001", "syn-017"]
+        },
+        {
+          "gap_id": "nlp-gap-2",
+          "description": "Synthetic data augmentation is rarely evaluated jointly across text and speech within one data-efficiency framework.",
+          "gap_type": "method_transfer",
+          "evidence_paper_ids": ["syn-002", "syn-018"]
+        }
+      ],
+      "expected_evidence_references": ["syn-001", "syn-002", "syn-017", "syn-018"]
+    },
+    {
+      "case_id": "epidemiology_x_clinical_ai",
+      "label": "Epidemic forecasting x clinical AI",
+      "researcher_a": {
+        "name": "Dr. Kwame Osei",
+        "affiliation": "Global Health Analytics Unit",
+        "bio": "Epidemic forecasting, spatiotemporal modeling, public health informatics.",
+        "topics": ["epidemic forecasting", "spatiotemporal modeling", "public health"],
+        "methods": ["time series models", "bayesian hierarchical models", "mobility data analysis"],
+        "domains": ["computational epidemiology"],
+        "papers": ["syn-015", "syn-016"]
+      },
+      "researcher_b": {
+        "name": "Dr. Priya Raghavan",
+        "affiliation": "Medical Imaging Research Lab",
+        "bio": "Deep learning for medical image segmentation and clinical deployment.",
+        "topics": ["medical imaging", "image segmentation", "clinical ai"],
+        "methods": ["convolutional networks", "self-supervised learning", "active learning"],
+        "domains": ["medical imaging", "healthcare ai"],
+        "papers": ["syn-007", "syn-008"]
+      },
+      "field_query": "healthcare analytics and clinical decision support",
+      "source_papers": [
+        {
+          "paper_id": "syn-015",
+          "title": "Bayesian Hierarchical Models for Epidemic Nowcasting with Mobility Data",
+          "abstract": "Timely epidemic nowcasting benefits from mobility signals. We develop a Bayesian hierarchical model fusing case reports with mobility indices, improving short-horizon forecasts in two synthetic districts. Mobility biases across demographic groups are not fully corrected, and equity implications require dedicated study.",
+          "year": 2020,
+          "venue": "Epidemic Analytics (synthetic)",
+          "topics": ["epidemic forecasting", "bayesian hierarchical models", "public health"],
+          "methods": ["bayesian hierarchical models", "mobility data analysis"],
+          "authors": ["Dr. Kwame Osei"]
+        },
+        {
+          "paper_id": "syn-016",
+          "title": "Spatiotemporal Graph Models for Disease Spread Prediction",
+          "abstract": "We model disease spread with spatiotemporal graphs whose edges encode human mobility. The model predicts district-level incidence with lower error than purely temporal baselines across simulated outbreaks. Robustness to reporting delays and sparse surveillance is identified as a key limitation.",
+          "year": 2022,
+          "venue": "Spatial Health Informatics (synthetic)",
+          "topics": ["epidemic forecasting", "spatiotemporal modeling", "graph neural networks"],
+          "methods": ["spatiotemporal modeling", "graph neural networks"],
+          "authors": ["Dr. Kwame Osei"]
+        },
+        {
+          "paper_id": "syn-007",
+          "title": "Self-Supervised Pretraining for Medical Image Segmentation with Scarce Labels",
+          "abstract": "Labeled medical images are scarce and expensive. We study self-supervised pretraining strategies for segmentation under label scarcity, comparing contrastive and masked-image objectives. Pretraining improves Dice scores by up to 5 points on two modalities. Gains shrink for out-of-distribution scanners, motivating domain-general pretraining as future work.",
+          "year": 2021,
+          "venue": "Medical Image Analysis Reports (synthetic)",
+          "topics": ["medical imaging", "image segmentation", "self-supervised learning"],
+          "methods": ["self-supervised learning", "convolutional networks"],
+          "authors": ["Dr. Priya Raghavan"]
+        },
+        {
+          "paper_id": "syn-008",
+          "title": "Uncertainty-Aware Deep Segmentation for Clinical Decision Support",
+          "abstract": "Clinical adoption of deep segmentation requires trustworthy uncertainty estimates. We propose an uncertainty-aware segmentation network with calibration losses and evaluate clinician trust in a reader study. Calibration improves without sacrificing accuracy. The study size is small, and workflow integration in busy clinics remains untested.",
+          "year": 2023,
+          "venue": "Clinical AI Transactions (synthetic)",
+          "topics": ["medical imaging", "clinical ai", "uncertainty quantification"],
+          "methods": ["calibration", "reader studies"],
+          "authors": ["Dr. Priya Raghavan"]
+        }
+      ],
+      "expected_topics": [
+        "epidemic forecasting",
+        "spatiotemporal modeling",
+        "public health",
+        "medical imaging",
+        "image segmentation",
+        "clinical ai",
+        "uncertainty quantification"
+      ],
+      "expected_methods": [
+        "bayesian hierarchical models",
+        "mobility data analysis",
+        "self-supervised learning",
+        "uncertainty quantification"
+      ],
+      "expected_gaps": [
+        {
+          "gap_id": "epi-gap-1",
+          "description": "Uncertainty quantification in clinical segmentation rarely exploits spatiotemporal or Bayesian modeling from epidemic forecasting.",
+          "gap_type": "cross_domain_transfer",
+          "evidence_paper_ids": ["syn-008", "syn-015"]
+        },
+        {
+          "gap_id": "epi-gap-2",
+          "description": "Self-supervised pretraining for segmentation has not been evaluated under the active-labeling constraints typical of clinical deployment.",
+          "gap_type": "method_transfer",
+          "evidence_paper_ids": ["syn-007"]
+        }
+      ],
+      "expected_evidence_references": ["syn-007", "syn-008", "syn-015", "syn-016"]
+    }
+  ]
+}

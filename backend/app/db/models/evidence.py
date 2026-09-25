@@ -3,7 +3,7 @@ from __future__ import annotations
 from datetime import datetime
 
 from sqlalchemy import DateTime, Float, ForeignKey, String, Text
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from app.core.constants import EvidenceStatus
 from app.db.base import Base, TimestampMixin
@@ -30,3 +30,7 @@ class Evidence(TimestampMixin, Base):
         String(20), default=EvidenceStatus.UNVERIFIED.value, nullable=False
     )
     retrieved_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+
+    paper = relationship(
+        "Paper", uselist=False, foreign_keys=[paper_id], backref="evidence_items"
+    )
