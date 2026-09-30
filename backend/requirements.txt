@@ -18,6 +18,7 @@ structlog>=24.1
 PyJWT>=2.8
 bcrypt>=4.1
 python-multipart>=0.0.9
+psycopg[binary]>=3.1
 
 # Optional heavy dependency (not required for mock mode):
 #   pip install sentence-transformers
