@@ -40,6 +40,101 @@ Scholar, PubMed), LLMs (mock, OpenAI-compatible, OpenRouter), and embeddings.
 
 ---
 
+## Who Is ResearchCollision For?
+
+ResearchCollision is intended for research-intensive users who need **structured
+research discovery**: exploring literature and researchers, organizing evidence,
+finding research intersections, analyzing research gaps, developing hypotheses,
+and reporting. It is built for people who need a fast, evidence-grounded first
+pass over a large body of literature — not a replacement for reading it.
+
+### Academic Researchers
+
+Use it to explore a field's literature and the researchers working in it, review the
+evidence behind each claim, and see where two research programs might intersect. A
+discovery run surfaces candidate intersections, research gaps, and testable
+hypotheses with novelty/feasibility scores, so you can decide where to spend your
+own reading time.
+
+### PhD Students and Thesis Researchers
+
+Use it to bootstrap literature discovery for a topic, keep the evidence you have
+gathered in one workspace, identify underexplored questions the literature itself
+points to, and develop candidate research directions and experiment designs before
+committing to a thesis path.
+
+### Research Assistants
+
+Use it to systematically discover and organize researchers, papers, evidence, and
+findings. The Evidence Explorer keeps every claim with its verification status and
+source link, and each workspace can be exported as JSON for downstream analysis or
+reporting.
+
+### Interdisciplinary Researchers
+
+Use it to explore connections between different research areas. Pairing two
+researchers (or a researcher and a research field) surfaces where their work could
+meet, along with the complementary expertise that makes the pairing plausible.
+
+### Research Labs and Research Groups
+
+Use the structured artifacts — profiles, intersections, gaps, hypotheses,
+collaboration rankings — as a consistent, inspectable record of how a group
+explored a question.
+
+> **Current scope:** a workspace is private to the account that created it; there is
+> no multi-user sharing or team roles today. Groups collaborate today by exporting a
+> workspace as JSON and sharing the file, or by running separate workspaces.
+
+### Academic and Research Organizations
+
+Use it to structure exploratory review of research areas, researchers,
+publications, evidence, and potential collaborations in a reproducible way: every
+run records its configuration, provenance, and job events.
+
+> **Current scope:** this is a research prototype, not a multi-tenant organization
+> platform. There are no organization accounts, shared dashboards, or institutional
+> integrations implemented today.
+
+### Students and Early-Career Researchers
+
+Use it as a structured starting point for exploring a research topic: build a
+profile from your CV, discover the relevant literature and researchers, and read
+back an overview of the landscape — including which questions remain open.
+
+---
+
+## What ResearchCollision Helps With
+
+A typical path through the application, using only implemented features:
+
+```
+Research topic / profile        ->  upload a CV to build a "Research DNA" profile
+Researcher discovery            ->  search the researcher directory or add researchers
+Paper discovery                 ->  search literature (OpenAlex -> Semantic Scholar -> Crossref -> arXiv)
+Evidence organization           ->  every claim stored with a status (VERIFIED / INFERRED / SPECULATIVE / ...)
+Intersections and research gaps ->  candidate connections and gaps produced by a discovery run
+Hypothesis development          ->  testable research questions and proposed experiment designs
+Reports / paper drafts          ->  generate a grounded draft, export as Markdown or PDF
+Export                          ->  download a workspace as JSON
+```
+
+Discovery runs are automated: you pick the researcher pair (or a field query),
+choose discovery mode and how many papers to retrieve, and the pipeline handles the
+rest — with live job status, an event log, and pause/resume/cancel/retry controls.
+
+### A note on limitations
+
+ResearchCollision is a **research discovery and analysis aid, not a substitute for
+scholarly judgment**. Verify discovered sources, evidence, interpretations, and
+generated hypotheses against the original literature. Outputs are candidates for
+human review; the generated paper draft is explicitly labeled as proposed research,
+not validated findings. In mock mode all data is synthetic.
+
+Full step-by-step operating instructions are in [USER_MANUAL.md](USER_MANUAL.md).
+
+---
+
 ## Current status (verified against the repository)
 
 - **v1 pilot evaluation exists.** A single-run, descriptive 12-case × 4-system
