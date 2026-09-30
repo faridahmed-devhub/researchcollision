@@ -553,11 +553,14 @@ def upgrade() -> None:
 
     # ### end Alembic commands ###
 
-    # SQLite FTS5 index for paper search (graceful if unavailable)
-    op.execute(
-        "CREATE VIRTUAL TABLE IF NOT EXISTS papers_fts USING fts5("
-        "paper_id UNINDEXED, title, abstract)"
-    )
+    # SQLite FTS5 index for paper search. PostgreSQL has no virtual tables, so the
+    # statement is only issued on SQLite; search falls back to the LIKE query in
+    # paper_repository.search_local().
+    if op.get_bind().dialect.name == "sqlite":
+        op.execute(
+            "CREATE VIRTUAL TABLE IF NOT EXISTS papers_fts USING fts5("
+            "paper_id UNINDEXED, title, abstract)"
+        )
 
 
 def downgrade() -> None:
