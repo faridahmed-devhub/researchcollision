@@ -51,6 +51,7 @@ class DiscoveryPipeline:
         job,
         *,
         seed: int | None = None,
+        literature: LiteratureService | None = None,
     ) -> None:  # type: ignore[no-untyped-def]
         self.db = db
         self.job = job
@@ -66,7 +67,7 @@ class DiscoveryPipeline:
         self.hyp_service = HypothesisService(db)
         self.vector_service = VectorService(db)
         self.settings_service = SettingsService(db)
-        self.literature = LiteratureService()
+        self.literature = literature or LiteratureService()
         self._paper_analyses: list[dict] = []
         self._gaps: list[dict] = []
         self._gap_rows: list[ResearchGap] = []

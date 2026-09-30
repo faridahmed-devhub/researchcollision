@@ -1,0 +1,2758 @@
+{
+  "seed": 20260925,
+  "queries_fetched": 30,
+  "candidates": [
+    {
+      "candidate_id": "cand_000",
+      "pair_id": "v2_cancer_genomics_semantic_segmentation",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "cancer_genomics",
+      "domain_b": "semantic_segmentation",
+      "query_a": "cancer genomics precision oncology",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 7,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2614443510",
+        "W2949273159",
+        "W2521492299",
+        "W3004781275",
+        "W4312084830"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_001",
+      "pair_id": "v2_clinical_decision_support_differential_privacy",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "differential_privacy",
+      "query_a": "clinical decision support systems",
+      "query_b": "differential privacy machine learning",
+      "usable_a": 8,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3004612364",
+        "W2069340802",
+        "W2115441252",
+        "W2073924861",
+        "W2798513298"
+      ],
+      "sample_ids_b": [
+        "W2473418344",
+        "W4205228770",
+        "W2027595342",
+        "W3016632787",
+        "W2121727866"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_002",
+      "pair_id": "v2_clinical_decision_support_semantic_segmentation",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "semantic_segmentation",
+      "query_a": "clinical decision support systems",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 8,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3004612364",
+        "W2069340802",
+        "W2115441252",
+        "W2073924861",
+        "W2798513298"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_003",
+      "pair_id": "v2_electronic_health_records_graph_neural_networks",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "electronic_health_records",
+      "domain_b": "graph_neural_networks",
+      "query_a": "electronic health records machine learning",
+      "query_b": "graph neural networks",
+      "usable_a": 8,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2888109941",
+        "W2523834880",
+        "W2784499877",
+        "W4280536523",
+        "W2625625371"
+      ],
+      "sample_ids_b": [
+        "W2116341502",
+        "W2907492528",
+        "W3152893301",
+        "W4294558607",
+        "W4210257598"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_004",
+      "pair_id": "v2_medical_imaging_ai_differential_privacy",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "differential_privacy",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "differential privacy machine learning",
+      "usable_a": 5,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2533800772",
+        "W2954996726",
+        "W2777186991",
+        "W3183198896",
+        "W2976398475"
+      ],
+      "sample_ids_b": [
+        "W2473418344",
+        "W4205228770",
+        "W2027595342",
+        "W3016632787",
+        "W2121727866"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_005",
+      "pair_id": "v2_medical_imaging_ai_llm_interpretability",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "llm_interpretability",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "large language models interpretability",
+      "usable_a": 5,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2533800772",
+        "W2954996726",
+        "W2777186991",
+        "W3183198896",
+        "W2976398475"
+      ],
+      "sample_ids_b": [
+        "W2582743722",
+        "W4391170193",
+        "W1951724000",
+        "W4401386967",
+        "W4384071683"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_006",
+      "pair_id": "v2_medical_imaging_ai_semantic_segmentation",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "semantic_segmentation",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 5,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2533800772",
+        "W2954996726",
+        "W2777186991",
+        "W3183198896",
+        "W2976398475"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_007",
+      "pair_id": "v2_microbiome_health_formal_verification",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "microbiome_health",
+      "domain_b": "formal_verification",
+      "query_a": "gut microbiome human disease",
+      "query_b": "formal verification neural networks",
+      "usable_a": 4,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2125826054",
+        "W2885492105",
+        "W2128769815",
+        "W2591030128"
+      ],
+      "sample_ids_b": [
+        "W1673923490",
+        "W2112796928",
+        "W2899116309",
+        "W2741907166",
+        "W4388903940"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_008",
+      "pair_id": "v2_microbiome_health_semantic_segmentation",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "microbiome_health",
+      "domain_b": "semantic_segmentation",
+      "query_a": "gut microbiome human disease",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 4,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2125826054",
+        "W2885492105",
+        "W2128769815",
+        "W2591030128"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_009",
+      "pair_id": "v2_protein_structure_prediction_federated_learning",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "federated_learning",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "federated learning",
+      "usable_a": 7,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3177828909",
+        "W4396721167",
+        "W3000982932",
+        "W2804822363",
+        "W3146944767"
+      ],
+      "sample_ids_b": [
+        "W2995022099",
+        "W3021654819",
+        "W3012501605",
+        "W2535838896",
+        "W2912213068"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_010",
+      "pair_id": "v2_protein_structure_prediction_formal_verification",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "formal_verification",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "formal verification neural networks",
+      "usable_a": 7,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3177828909",
+        "W4396721167",
+        "W3000982932",
+        "W2804822363",
+        "W3146944767"
+      ],
+      "sample_ids_b": [
+        "W1673923490",
+        "W2112796928",
+        "W2899116309",
+        "W2741907166",
+        "W4388903940"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_011",
+      "pair_id": "v2_single_cell_analysis_differential_privacy",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "differential_privacy",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "differential privacy machine learning",
+      "usable_a": 2,
+      "usable_b": 8,
+      "decision": "excluded",
+      "reason": "EX1 insufficient_evidence_side_a=2",
+      "sample_ids_a": [
+        "W2146512944",
+        "W2168909179"
+      ],
+      "sample_ids_b": [
+        "W2473418344",
+        "W4205228770",
+        "W2027595342",
+        "W3016632787",
+        "W2121727866"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_012",
+      "pair_id": "v2_single_cell_analysis_llm_interpretability",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "llm_interpretability",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "large language models interpretability",
+      "usable_a": 2,
+      "usable_b": 9,
+      "decision": "excluded",
+      "reason": "EX1 insufficient_evidence_side_a=2",
+      "sample_ids_a": [
+        "W2146512944",
+        "W2168909179"
+      ],
+      "sample_ids_b": [
+        "W2582743722",
+        "W4391170193",
+        "W1951724000",
+        "W4401386967",
+        "W4384071683"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_013",
+      "pair_id": "v2_single_cell_analysis_semantic_segmentation",
+      "group": "inter_cs_ai_life_health",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "semantic_segmentation",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 2,
+      "usable_b": 9,
+      "decision": "excluded",
+      "reason": "EX1 insufficient_evidence_side_a=2",
+      "sample_ids_a": [
+        "W2146512944",
+        "W2168909179"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_014",
+      "pair_id": "v2_battery_degradation_differential_privacy",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "battery_degradation",
+      "domain_b": "differential_privacy",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "differential privacy machine learning",
+      "usable_a": 9,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2417460170",
+        "W2047152377",
+        "W3016068557",
+        "W2998038350",
+        "W4398164319"
+      ],
+      "sample_ids_b": [
+        "W2473418344",
+        "W4205228770",
+        "W2027595342",
+        "W3016632787",
+        "W2121727866"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_015",
+      "pair_id": "v2_battery_degradation_recommender_systems",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "battery_degradation",
+      "domain_b": "recommender_systems",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "recommender systems collaborative filtering",
+      "usable_a": 9,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2417460170",
+        "W2047152377",
+        "W3016068557",
+        "W2998038350",
+        "W4398164319"
+      ],
+      "sample_ids_b": [
+        "W1971040550",
+        "W2105953200",
+        "W2605350416",
+        "W2100235918",
+        "W2042281163"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_016",
+      "pair_id": "v2_climate_downscaling_semantic_segmentation",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "climate_downscaling",
+      "domain_b": "semantic_segmentation",
+      "query_a": "statistical downscaling climate projections",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 7,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2292779425",
+        "W2285042355",
+        "W3015828283",
+        "W2172191993",
+        "W1956072430"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_017",
+      "pair_id": "v2_computational_catalysis_differential_privacy",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "computational_catalysis",
+      "domain_b": "differential_privacy",
+      "query_a": "computational screening heterogeneous catalysis",
+      "query_b": "differential privacy machine learning",
+      "usable_a": 7,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2995656838",
+        "W2573377826",
+        "W2146037914",
+        "W3037620337",
+        "W2441647337"
+      ],
+      "sample_ids_b": [
+        "W2473418344",
+        "W4205228770",
+        "W2027595342",
+        "W3016632787",
+        "W2121727866"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_018",
+      "pair_id": "v2_computational_catalysis_formal_verification",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "computational_catalysis",
+      "domain_b": "formal_verification",
+      "query_a": "computational screening heterogeneous catalysis",
+      "query_b": "formal verification neural networks",
+      "usable_a": 7,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2995656838",
+        "W2573377826",
+        "W2146037914",
+        "W3037620337",
+        "W2441647337"
+      ],
+      "sample_ids_b": [
+        "W1673923490",
+        "W2112796928",
+        "W2899116309",
+        "W2741907166",
+        "W4388903940"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_019",
+      "pair_id": "v2_computational_catalysis_recommender_systems",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "computational_catalysis",
+      "domain_b": "recommender_systems",
+      "query_a": "computational screening heterogeneous catalysis",
+      "query_b": "recommender systems collaborative filtering",
+      "usable_a": 7,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2995656838",
+        "W2573377826",
+        "W2146037914",
+        "W3037620337",
+        "W2441647337"
+      ],
+      "sample_ids_b": [
+        "W1971040550",
+        "W2105953200",
+        "W2605350416",
+        "W2100235918",
+        "W2042281163"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_020",
+      "pair_id": "v2_inverse_photonics_federated_learning",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "inverse_photonics",
+      "domain_b": "federated_learning",
+      "query_a": "inverse design photonic devices",
+      "query_b": "federated learning",
+      "usable_a": 6,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W4211161891",
+        "W2161685427",
+        "W2766162919",
+        "W4226463297",
+        "W3109834426"
+      ],
+      "sample_ids_b": [
+        "W2995022099",
+        "W3021654819",
+        "W3012501605",
+        "W2535838896",
+        "W2912213068"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_021",
+      "pair_id": "v2_materials_discovery_federated_learning",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "materials_discovery",
+      "domain_b": "federated_learning",
+      "query_a": "machine learning materials discovery",
+      "query_b": "federated learning",
+      "usable_a": 6,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "sample_ids_b": [
+        "W2995022099",
+        "W3021654819",
+        "W3012501605",
+        "W2535838896",
+        "W2912213068"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_022",
+      "pair_id": "v2_materials_discovery_reinforcement_learning",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "materials_discovery",
+      "domain_b": "reinforcement_learning",
+      "query_a": "machine learning materials discovery",
+      "query_b": "reinforcement learning",
+      "usable_a": 6,
+      "usable_b": 6,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "sample_ids_b": [
+        "W2121863487",
+        "W2107726111",
+        "W1515851193",
+        "W2736601468",
+        "W2963864421"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_023",
+      "pair_id": "v2_materials_discovery_semantic_segmentation",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "materials_discovery",
+      "domain_b": "semantic_segmentation",
+      "query_a": "machine learning materials discovery",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 6,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_024",
+      "pair_id": "v2_structural_health_recommender_systems",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "structural_health",
+      "domain_b": "recommender_systems",
+      "query_a": "structural health monitoring machine learning",
+      "query_b": "recommender systems collaborative filtering",
+      "usable_a": 8,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1582368210",
+        "W3110031974",
+        "W2039488112",
+        "W3183660758",
+        "W3020454825"
+      ],
+      "sample_ids_b": [
+        "W1971040550",
+        "W2105953200",
+        "W2605350416",
+        "W2100235918",
+        "W2042281163"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_025",
+      "pair_id": "v2_weather_forecasting_federated_learning",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "weather_forecasting",
+      "domain_b": "federated_learning",
+      "query_a": "machine learning weather forecasting",
+      "query_b": "federated learning",
+      "usable_a": 9,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1485009520",
+        "W4405031167",
+        "W2920947047",
+        "W2013120098",
+        "W4220726206"
+      ],
+      "sample_ids_b": [
+        "W2995022099",
+        "W3021654819",
+        "W3012501605",
+        "W2535838896",
+        "W2912213068"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_026",
+      "pair_id": "v2_weather_forecasting_formal_verification",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "weather_forecasting",
+      "domain_b": "formal_verification",
+      "query_a": "machine learning weather forecasting",
+      "query_b": "formal verification neural networks",
+      "usable_a": 9,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1485009520",
+        "W4405031167",
+        "W2920947047",
+        "W2013120098",
+        "W4220726206"
+      ],
+      "sample_ids_b": [
+        "W1673923490",
+        "W2112796928",
+        "W2899116309",
+        "W2741907166",
+        "W4388903940"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_027",
+      "pair_id": "v2_weather_forecasting_reinforcement_learning",
+      "group": "inter_cs_ai_physical_eng",
+      "domain_a": "weather_forecasting",
+      "domain_b": "reinforcement_learning",
+      "query_a": "machine learning weather forecasting",
+      "query_b": "reinforcement learning",
+      "usable_a": 9,
+      "usable_b": 6,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1485009520",
+        "W4405031167",
+        "W2920947047",
+        "W2013120098",
+        "W4220726206"
+      ],
+      "sample_ids_b": [
+        "W2121863487",
+        "W2107726111",
+        "W1515851193",
+        "W2736601468",
+        "W2963864421"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_028",
+      "pair_id": "v2_differential_privacy_algorithmic_fairness",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "differential_privacy",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "differential privacy machine learning",
+      "query_b": "algorithmic fairness bias audit",
+      "usable_a": 8,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2473418344",
+        "W4205228770",
+        "W2027595342",
+        "W3016632787",
+        "W2121727866"
+      ],
+      "sample_ids_b": [
+        "W2969896603",
+        "W2981869278",
+        "W2962059918",
+        "W4385564466",
+        "W4213278005"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_029",
+      "pair_id": "v2_federated_learning_bayesian_optimization",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "federated_learning",
+      "domain_b": "bayesian_optimization",
+      "query_a": "federated learning",
+      "query_b": "bayesian optimization machine learning",
+      "usable_a": 8,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2995022099",
+        "W3021654819",
+        "W3012501605",
+        "W2535838896",
+        "W2912213068"
+      ],
+      "sample_ids_b": [
+        "W2131241448",
+        "W2950182411",
+        "W368469426",
+        "W2963474950",
+        "W1604938182"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_030",
+      "pair_id": "v2_formal_verification_algorithmic_fairness",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "formal_verification",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "formal verification neural networks",
+      "query_b": "algorithmic fairness bias audit",
+      "usable_a": 8,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1673923490",
+        "W2112796928",
+        "W2899116309",
+        "W2741907166",
+        "W4388903940"
+      ],
+      "sample_ids_b": [
+        "W2969896603",
+        "W2981869278",
+        "W2962059918",
+        "W4385564466",
+        "W4213278005"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_031",
+      "pair_id": "v2_formal_verification_causal_inference",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "formal_verification",
+      "domain_b": "causal_inference",
+      "query_a": "formal verification neural networks",
+      "query_b": "causal inference observational data",
+      "usable_a": 8,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1673923490",
+        "W2112796928",
+        "W2899116309",
+        "W2741907166",
+        "W4388903940"
+      ],
+      "sample_ids_b": [
+        "W2161511352",
+        "W2790381016",
+        "W2157803622",
+        "W2805983714",
+        "W2155163959"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_032",
+      "pair_id": "v2_formal_verification_time_series_forecasting",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "formal_verification",
+      "domain_b": "time_series_forecasting",
+      "query_a": "formal verification neural networks",
+      "query_b": "time series forecasting deep learning",
+      "usable_a": 8,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1673923490",
+        "W2112796928",
+        "W2899116309",
+        "W2741907166",
+        "W4388903940"
+      ],
+      "sample_ids_b": [
+        "W3022643593",
+        "W3109365969",
+        "W3107324520",
+        "W2007272376",
+        "W4280550128"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_033",
+      "pair_id": "v2_llm_interpretability_uncertainty_quantification",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "llm_interpretability",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "large language models interpretability",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "usable_a": 9,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2582743722",
+        "W4391170193",
+        "W1951724000",
+        "W4401386967",
+        "W4384071683"
+      ],
+      "sample_ids_b": [
+        "W3177828909",
+        "W3102100346",
+        "W2473156356",
+        "W2756203131",
+        "W1485009520"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_034",
+      "pair_id": "v2_recommender_systems_causal_inference",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "recommender_systems",
+      "domain_b": "causal_inference",
+      "query_a": "recommender systems collaborative filtering",
+      "query_b": "causal inference observational data",
+      "usable_a": 7,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1971040550",
+        "W2105953200",
+        "W2605350416",
+        "W2100235918",
+        "W2042281163"
+      ],
+      "sample_ids_b": [
+        "W2161511352",
+        "W2790381016",
+        "W2157803622",
+        "W2805983714",
+        "W2155163959"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_035",
+      "pair_id": "v2_reinforcement_learning_algorithmic_fairness",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "reinforcement_learning",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "reinforcement learning",
+      "query_b": "algorithmic fairness bias audit",
+      "usable_a": 6,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2121863487",
+        "W2107726111",
+        "W1515851193",
+        "W2736601468",
+        "W2963864421"
+      ],
+      "sample_ids_b": [
+        "W2969896603",
+        "W2981869278",
+        "W2962059918",
+        "W4385564466",
+        "W4213278005"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_036",
+      "pair_id": "v2_reinforcement_learning_bayesian_optimization",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "reinforcement_learning",
+      "domain_b": "bayesian_optimization",
+      "query_a": "reinforcement learning",
+      "query_b": "bayesian optimization machine learning",
+      "usable_a": 6,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2121863487",
+        "W2107726111",
+        "W1515851193",
+        "W2736601468",
+        "W2963864421"
+      ],
+      "sample_ids_b": [
+        "W2131241448",
+        "W2950182411",
+        "W368469426",
+        "W2963474950",
+        "W1604938182"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_037",
+      "pair_id": "v2_semantic_segmentation_bayesian_optimization",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "semantic_segmentation",
+      "domain_b": "bayesian_optimization",
+      "query_a": "semantic segmentation deep neural networks",
+      "query_b": "bayesian optimization machine learning",
+      "usable_a": 9,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "sample_ids_b": [
+        "W2131241448",
+        "W2950182411",
+        "W368469426",
+        "W2963474950",
+        "W1604938182"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_038",
+      "pair_id": "v2_semantic_segmentation_causal_inference",
+      "group": "inter_cs_ai_quant_methods",
+      "domain_a": "semantic_segmentation",
+      "domain_b": "causal_inference",
+      "query_a": "semantic segmentation deep neural networks",
+      "query_b": "causal inference observational data",
+      "usable_a": 9,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "sample_ids_b": [
+        "W2161511352",
+        "W2790381016",
+        "W2157803622",
+        "W2805983714",
+        "W2155163959"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_039",
+      "pair_id": "v2_cancer_genomics_climate_downscaling",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "cancer_genomics",
+      "domain_b": "climate_downscaling",
+      "query_a": "cancer genomics precision oncology",
+      "query_b": "statistical downscaling climate projections",
+      "usable_a": 7,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2614443510",
+        "W2949273159",
+        "W2521492299",
+        "W3004781275",
+        "W4312084830"
+      ],
+      "sample_ids_b": [
+        "W2292779425",
+        "W2285042355",
+        "W3015828283",
+        "W2172191993",
+        "W1956072430"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_040",
+      "pair_id": "v2_clinical_decision_support_materials_discovery",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "materials_discovery",
+      "query_a": "clinical decision support systems",
+      "query_b": "machine learning materials discovery",
+      "usable_a": 8,
+      "usable_b": 6,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3004612364",
+        "W2069340802",
+        "W2115441252",
+        "W2073924861",
+        "W2798513298"
+      ],
+      "sample_ids_b": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_041",
+      "pair_id": "v2_clinical_decision_support_structural_health",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "structural_health",
+      "query_a": "clinical decision support systems",
+      "query_b": "structural health monitoring machine learning",
+      "usable_a": 8,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3004612364",
+        "W2069340802",
+        "W2115441252",
+        "W2073924861",
+        "W2798513298"
+      ],
+      "sample_ids_b": [
+        "W1582368210",
+        "W3110031974",
+        "W2039488112",
+        "W3183660758",
+        "W3020454825"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_042",
+      "pair_id": "v2_drug_repurposing_materials_discovery",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "drug_repurposing",
+      "domain_b": "materials_discovery",
+      "query_a": "drug repurposing computational methods",
+      "query_b": "machine learning materials discovery",
+      "usable_a": 8,
+      "usable_b": 6,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2959798450",
+        "W3080773873",
+        "W3008142620",
+        "W3011072970",
+        "W2044960952"
+      ],
+      "sample_ids_b": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_043",
+      "pair_id": "v2_electronic_health_records_inverse_photonics",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "electronic_health_records",
+      "domain_b": "inverse_photonics",
+      "query_a": "electronic health records machine learning",
+      "query_b": "inverse design photonic devices",
+      "usable_a": 8,
+      "usable_b": 6,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2888109941",
+        "W2523834880",
+        "W2784499877",
+        "W4280536523",
+        "W2625625371"
+      ],
+      "sample_ids_b": [
+        "W4211161891",
+        "W2161685427",
+        "W2766162919",
+        "W4226463297",
+        "W3109834426"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_044",
+      "pair_id": "v2_electronic_health_records_materials_discovery",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "electronic_health_records",
+      "domain_b": "materials_discovery",
+      "query_a": "electronic health records machine learning",
+      "query_b": "machine learning materials discovery",
+      "usable_a": 8,
+      "usable_b": 6,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2888109941",
+        "W2523834880",
+        "W2784499877",
+        "W4280536523",
+        "W2625625371"
+      ],
+      "sample_ids_b": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_045",
+      "pair_id": "v2_electronic_health_records_weather_forecasting",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "electronic_health_records",
+      "domain_b": "weather_forecasting",
+      "query_a": "electronic health records machine learning",
+      "query_b": "machine learning weather forecasting",
+      "usable_a": 8,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2888109941",
+        "W2523834880",
+        "W2784499877",
+        "W4280536523",
+        "W2625625371"
+      ],
+      "sample_ids_b": [
+        "W1485009520",
+        "W4405031167",
+        "W2920947047",
+        "W2013120098",
+        "W4220726206"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_046",
+      "pair_id": "v2_microbiome_health_materials_discovery",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "microbiome_health",
+      "domain_b": "materials_discovery",
+      "query_a": "gut microbiome human disease",
+      "query_b": "machine learning materials discovery",
+      "usable_a": 4,
+      "usable_b": 6,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2125826054",
+        "W2885492105",
+        "W2128769815",
+        "W2591030128"
+      ],
+      "sample_ids_b": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_047",
+      "pair_id": "v2_protein_structure_prediction_battery_degradation",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "battery_degradation",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "lithium ion battery degradation modeling",
+      "usable_a": 7,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3177828909",
+        "W4396721167",
+        "W3000982932",
+        "W2804822363",
+        "W3146944767"
+      ],
+      "sample_ids_b": [
+        "W2417460170",
+        "W2047152377",
+        "W3016068557",
+        "W2998038350",
+        "W4398164319"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_048",
+      "pair_id": "v2_protein_structure_prediction_materials_discovery",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "materials_discovery",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "machine learning materials discovery",
+      "usable_a": 7,
+      "usable_b": 6,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3177828909",
+        "W4396721167",
+        "W3000982932",
+        "W2804822363",
+        "W3146944767"
+      ],
+      "sample_ids_b": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_049",
+      "pair_id": "v2_protein_structure_prediction_quantum_chemistry",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "quantum_chemistry",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "quantum chemistry ab initio simulation",
+      "usable_a": 7,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3177828909",
+        "W4396721167",
+        "W3000982932",
+        "W2804822363",
+        "W3146944767"
+      ],
+      "sample_ids_b": [
+        "W2120145199",
+        "W2121817924",
+        "W2756519801",
+        "W2132262459",
+        "W2793443888"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_050",
+      "pair_id": "v2_single_cell_analysis_computational_catalysis",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "computational_catalysis",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "computational screening heterogeneous catalysis",
+      "usable_a": 2,
+      "usable_b": 7,
+      "decision": "excluded",
+      "reason": "EX1 insufficient_evidence_side_a=2",
+      "sample_ids_a": [
+        "W2146512944",
+        "W2168909179"
+      ],
+      "sample_ids_b": [
+        "W2995656838",
+        "W2573377826",
+        "W2146037914",
+        "W3037620337",
+        "W2441647337"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_051",
+      "pair_id": "v2_single_cell_analysis_inverse_photonics",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "inverse_photonics",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "inverse design photonic devices",
+      "usable_a": 2,
+      "usable_b": 6,
+      "decision": "excluded",
+      "reason": "EX1 insufficient_evidence_side_a=2",
+      "sample_ids_a": [
+        "W2146512944",
+        "W2168909179"
+      ],
+      "sample_ids_b": [
+        "W4211161891",
+        "W2161685427",
+        "W2766162919",
+        "W4226463297",
+        "W3109834426"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_052",
+      "pair_id": "v2_single_cell_analysis_weather_forecasting",
+      "group": "inter_life_health_physical_eng",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "weather_forecasting",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "machine learning weather forecasting",
+      "usable_a": 2,
+      "usable_b": 9,
+      "decision": "excluded",
+      "reason": "EX1 insufficient_evidence_side_a=2",
+      "sample_ids_a": [
+        "W2146512944",
+        "W2168909179"
+      ],
+      "sample_ids_b": [
+        "W1485009520",
+        "W4405031167",
+        "W2920947047",
+        "W2013120098",
+        "W4220726206"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_053",
+      "pair_id": "v2_cancer_genomics_time_series_forecasting",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "cancer_genomics",
+      "domain_b": "time_series_forecasting",
+      "query_a": "cancer genomics precision oncology",
+      "query_b": "time series forecasting deep learning",
+      "usable_a": 7,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2614443510",
+        "W2949273159",
+        "W2521492299",
+        "W3004781275",
+        "W4312084830"
+      ],
+      "sample_ids_b": [
+        "W3022643593",
+        "W3109365969",
+        "W3107324520",
+        "W2007272376",
+        "W4280550128"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_054",
+      "pair_id": "v2_cancer_genomics_uncertainty_quantification",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "cancer_genomics",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "cancer genomics precision oncology",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "usable_a": 7,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2614443510",
+        "W2949273159",
+        "W2521492299",
+        "W3004781275",
+        "W4312084830"
+      ],
+      "sample_ids_b": [
+        "W3177828909",
+        "W3102100346",
+        "W2473156356",
+        "W2756203131",
+        "W1485009520"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_055",
+      "pair_id": "v2_clinical_decision_support_causal_inference",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "causal_inference",
+      "query_a": "clinical decision support systems",
+      "query_b": "causal inference observational data",
+      "usable_a": 8,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3004612364",
+        "W2069340802",
+        "W2115441252",
+        "W2073924861",
+        "W2798513298"
+      ],
+      "sample_ids_b": [
+        "W2161511352",
+        "W2790381016",
+        "W2157803622",
+        "W2805983714",
+        "W2155163959"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_056",
+      "pair_id": "v2_clinical_decision_support_survival_analysis",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "survival_analysis",
+      "query_a": "clinical decision support systems",
+      "query_b": "survival analysis machine learning",
+      "usable_a": 8,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3004612364",
+        "W2069340802",
+        "W2115441252",
+        "W2073924861",
+        "W2798513298"
+      ],
+      "sample_ids_b": [
+        "W2963232127",
+        "W3107095885",
+        "W1966327575",
+        "W2747986904",
+        "W3111736660"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_057",
+      "pair_id": "v2_clinical_decision_support_uncertainty_quantification",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "clinical decision support systems",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "usable_a": 8,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3004612364",
+        "W2069340802",
+        "W2115441252",
+        "W2073924861",
+        "W2798513298"
+      ],
+      "sample_ids_b": [
+        "W3177828909",
+        "W3102100346",
+        "W2473156356",
+        "W2756203131",
+        "W1485009520"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_058",
+      "pair_id": "v2_electronic_health_records_algorithmic_fairness",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "electronic_health_records",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "electronic health records machine learning",
+      "query_b": "algorithmic fairness bias audit",
+      "usable_a": 8,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2888109941",
+        "W2523834880",
+        "W2784499877",
+        "W4280536523",
+        "W2625625371"
+      ],
+      "sample_ids_b": [
+        "W2969896603",
+        "W2981869278",
+        "W2962059918",
+        "W4385564466",
+        "W4213278005"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_059",
+      "pair_id": "v2_electronic_health_records_uncertainty_quantification",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "electronic_health_records",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "electronic health records machine learning",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "usable_a": 8,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2888109941",
+        "W2523834880",
+        "W2784499877",
+        "W4280536523",
+        "W2625625371"
+      ],
+      "sample_ids_b": [
+        "W3177828909",
+        "W3102100346",
+        "W2473156356",
+        "W2756203131",
+        "W1485009520"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_060",
+      "pair_id": "v2_medical_imaging_ai_survival_analysis",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "survival_analysis",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "survival analysis machine learning",
+      "usable_a": 5,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2533800772",
+        "W2954996726",
+        "W2777186991",
+        "W3183198896",
+        "W2976398475"
+      ],
+      "sample_ids_b": [
+        "W2963232127",
+        "W3107095885",
+        "W1966327575",
+        "W2747986904",
+        "W3111736660"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_061",
+      "pair_id": "v2_medical_imaging_ai_uncertainty_quantification",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "medical_imaging_ai",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "deep learning medical image analysis",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "usable_a": 5,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2533800772",
+        "W2954996726",
+        "W2777186991",
+        "W3183198896",
+        "W2976398475"
+      ],
+      "sample_ids_b": [
+        "W3177828909",
+        "W3102100346",
+        "W2473156356",
+        "W2756203131",
+        "W1485009520"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_062",
+      "pair_id": "v2_single_cell_analysis_causal_inference",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "causal_inference",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "causal inference observational data",
+      "usable_a": 2,
+      "usable_b": 8,
+      "decision": "excluded",
+      "reason": "EX1 insufficient_evidence_side_a=2",
+      "sample_ids_a": [
+        "W2146512944",
+        "W2168909179"
+      ],
+      "sample_ids_b": [
+        "W2161511352",
+        "W2790381016",
+        "W2157803622",
+        "W2805983714",
+        "W2155163959"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_063",
+      "pair_id": "v2_single_cell_analysis_survival_analysis",
+      "group": "inter_life_health_quant_methods",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "survival_analysis",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "survival analysis machine learning",
+      "usable_a": 2,
+      "usable_b": 5,
+      "decision": "excluded",
+      "reason": "EX1 insufficient_evidence_side_a=2",
+      "sample_ids_a": [
+        "W2146512944",
+        "W2168909179"
+      ],
+      "sample_ids_b": [
+        "W2963232127",
+        "W3107095885",
+        "W1966327575",
+        "W2747986904",
+        "W3111736660"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_064",
+      "pair_id": "v2_battery_degradation_causal_inference",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "battery_degradation",
+      "domain_b": "causal_inference",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "causal inference observational data",
+      "usable_a": 9,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2417460170",
+        "W2047152377",
+        "W3016068557",
+        "W2998038350",
+        "W4398164319"
+      ],
+      "sample_ids_b": [
+        "W2161511352",
+        "W2790381016",
+        "W2157803622",
+        "W2805983714",
+        "W2155163959"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_065",
+      "pair_id": "v2_battery_degradation_survival_analysis",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "battery_degradation",
+      "domain_b": "survival_analysis",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "survival analysis machine learning",
+      "usable_a": 9,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2417460170",
+        "W2047152377",
+        "W3016068557",
+        "W2998038350",
+        "W4398164319"
+      ],
+      "sample_ids_b": [
+        "W2963232127",
+        "W3107095885",
+        "W1966327575",
+        "W2747986904",
+        "W3111736660"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_066",
+      "pair_id": "v2_inverse_photonics_uncertainty_quantification",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "inverse_photonics",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "inverse design photonic devices",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "usable_a": 6,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W4211161891",
+        "W2161685427",
+        "W2766162919",
+        "W4226463297",
+        "W3109834426"
+      ],
+      "sample_ids_b": [
+        "W3177828909",
+        "W3102100346",
+        "W2473156356",
+        "W2756203131",
+        "W1485009520"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_067",
+      "pair_id": "v2_materials_discovery_bayesian_optimization",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "materials_discovery",
+      "domain_b": "bayesian_optimization",
+      "query_a": "machine learning materials discovery",
+      "query_b": "bayesian optimization machine learning",
+      "usable_a": 6,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "sample_ids_b": [
+        "W2131241448",
+        "W2950182411",
+        "W368469426",
+        "W2963474950",
+        "W1604938182"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_068",
+      "pair_id": "v2_materials_discovery_survival_analysis",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "materials_discovery",
+      "domain_b": "survival_analysis",
+      "query_a": "machine learning materials discovery",
+      "query_b": "survival analysis machine learning",
+      "usable_a": 6,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "sample_ids_b": [
+        "W2963232127",
+        "W3107095885",
+        "W1966327575",
+        "W2747986904",
+        "W3111736660"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_069",
+      "pair_id": "v2_quantum_chemistry_bayesian_optimization",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "bayesian_optimization",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "bayesian optimization machine learning",
+      "usable_a": 8,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2120145199",
+        "W2121817924",
+        "W2756519801",
+        "W2132262459",
+        "W2793443888"
+      ],
+      "sample_ids_b": [
+        "W2131241448",
+        "W2950182411",
+        "W368469426",
+        "W2963474950",
+        "W1604938182"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_070",
+      "pair_id": "v2_quantum_chemistry_causal_inference",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "causal_inference",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "causal inference observational data",
+      "usable_a": 8,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2120145199",
+        "W2121817924",
+        "W2756519801",
+        "W2132262459",
+        "W2793443888"
+      ],
+      "sample_ids_b": [
+        "W2161511352",
+        "W2790381016",
+        "W2157803622",
+        "W2805983714",
+        "W2155163959"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_071",
+      "pair_id": "v2_quantum_chemistry_time_series_forecasting",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "time_series_forecasting",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "time series forecasting deep learning",
+      "usable_a": 8,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2120145199",
+        "W2121817924",
+        "W2756519801",
+        "W2132262459",
+        "W2793443888"
+      ],
+      "sample_ids_b": [
+        "W3022643593",
+        "W3109365969",
+        "W3107324520",
+        "W2007272376",
+        "W4280550128"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_072",
+      "pair_id": "v2_quantum_chemistry_uncertainty_quantification",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "usable_a": 8,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2120145199",
+        "W2121817924",
+        "W2756519801",
+        "W2132262459",
+        "W2793443888"
+      ],
+      "sample_ids_b": [
+        "W3177828909",
+        "W3102100346",
+        "W2473156356",
+        "W2756203131",
+        "W1485009520"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_073",
+      "pair_id": "v2_structural_health_uncertainty_quantification",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "structural_health",
+      "domain_b": "uncertainty_quantification",
+      "query_a": "structural health monitoring machine learning",
+      "query_b": "prediction intervals uncertainty deep learning",
+      "usable_a": 8,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1582368210",
+        "W3110031974",
+        "W2039488112",
+        "W3183660758",
+        "W3020454825"
+      ],
+      "sample_ids_b": [
+        "W3177828909",
+        "W3102100346",
+        "W2473156356",
+        "W2756203131",
+        "W1485009520"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_074",
+      "pair_id": "v2_weather_forecasting_time_series_forecasting",
+      "group": "inter_physical_eng_quant_methods",
+      "domain_a": "weather_forecasting",
+      "domain_b": "time_series_forecasting",
+      "query_a": "machine learning weather forecasting",
+      "query_b": "time series forecasting deep learning",
+      "usable_a": 9,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1485009520",
+        "W4405031167",
+        "W2920947047",
+        "W2013120098",
+        "W4220726206"
+      ],
+      "sample_ids_b": [
+        "W3022643593",
+        "W3109365969",
+        "W3107324520",
+        "W2007272376",
+        "W4280550128"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_075",
+      "pair_id": "v2_differential_privacy_graph_neural_networks",
+      "group": "intra_cs_ai",
+      "domain_a": "differential_privacy",
+      "domain_b": "graph_neural_networks",
+      "query_a": "differential privacy machine learning",
+      "query_b": "graph neural networks",
+      "usable_a": 8,
+      "usable_b": 10,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2473418344",
+        "W4205228770",
+        "W2027595342",
+        "W3016632787",
+        "W2121727866"
+      ],
+      "sample_ids_b": [
+        "W2116341502",
+        "W2907492528",
+        "W3152893301",
+        "W4294558607",
+        "W4210257598"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_076",
+      "pair_id": "v2_differential_privacy_recommender_systems",
+      "group": "intra_cs_ai",
+      "domain_a": "differential_privacy",
+      "domain_b": "recommender_systems",
+      "query_a": "differential privacy machine learning",
+      "query_b": "recommender systems collaborative filtering",
+      "usable_a": 8,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2473418344",
+        "W4205228770",
+        "W2027595342",
+        "W3016632787",
+        "W2121727866"
+      ],
+      "sample_ids_b": [
+        "W1971040550",
+        "W2105953200",
+        "W2605350416",
+        "W2100235918",
+        "W2042281163"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_077",
+      "pair_id": "v2_differential_privacy_semantic_segmentation",
+      "group": "intra_cs_ai",
+      "domain_a": "differential_privacy",
+      "domain_b": "semantic_segmentation",
+      "query_a": "differential privacy machine learning",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 8,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2473418344",
+        "W4205228770",
+        "W2027595342",
+        "W3016632787",
+        "W2121727866"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_078",
+      "pair_id": "v2_graph_neural_networks_semantic_segmentation",
+      "group": "intra_cs_ai",
+      "domain_a": "graph_neural_networks",
+      "domain_b": "semantic_segmentation",
+      "query_a": "graph neural networks",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 10,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2116341502",
+        "W2907492528",
+        "W3152893301",
+        "W4294558607",
+        "W4210257598"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_079",
+      "pair_id": "v2_llm_interpretability_semantic_segmentation",
+      "group": "intra_cs_ai",
+      "domain_a": "llm_interpretability",
+      "domain_b": "semantic_segmentation",
+      "query_a": "large language models interpretability",
+      "query_b": "semantic segmentation deep neural networks",
+      "usable_a": 9,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2582743722",
+        "W4391170193",
+        "W1951724000",
+        "W4401386967",
+        "W4384071683"
+      ],
+      "sample_ids_b": [
+        "W2163605009",
+        "W2412782625",
+        "W1686810756",
+        "W1910657905",
+        "W4293406525"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_080",
+      "pair_id": "v2_recommender_systems_formal_verification",
+      "group": "intra_cs_ai",
+      "domain_a": "recommender_systems",
+      "domain_b": "formal_verification",
+      "query_a": "recommender systems collaborative filtering",
+      "query_b": "formal verification neural networks",
+      "usable_a": 7,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W1971040550",
+        "W2105953200",
+        "W2605350416",
+        "W2100235918",
+        "W2042281163"
+      ],
+      "sample_ids_b": [
+        "W1673923490",
+        "W2112796928",
+        "W2899116309",
+        "W2741907166",
+        "W4388903940"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_081",
+      "pair_id": "v2_clinical_decision_support_drug_repurposing",
+      "group": "intra_life_health",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "drug_repurposing",
+      "query_a": "clinical decision support systems",
+      "query_b": "drug repurposing computational methods",
+      "usable_a": 8,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3004612364",
+        "W2069340802",
+        "W2115441252",
+        "W2073924861",
+        "W2798513298"
+      ],
+      "sample_ids_b": [
+        "W2959798450",
+        "W3080773873",
+        "W3008142620",
+        "W3011072970",
+        "W2044960952"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_082",
+      "pair_id": "v2_clinical_decision_support_microbiome_health",
+      "group": "intra_life_health",
+      "domain_a": "clinical_decision_support",
+      "domain_b": "microbiome_health",
+      "query_a": "clinical decision support systems",
+      "query_b": "gut microbiome human disease",
+      "usable_a": 8,
+      "usable_b": 4,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3004612364",
+        "W2069340802",
+        "W2115441252",
+        "W2073924861",
+        "W2798513298"
+      ],
+      "sample_ids_b": [
+        "W2125826054",
+        "W2885492105",
+        "W2128769815",
+        "W2591030128"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_083",
+      "pair_id": "v2_drug_repurposing_cancer_genomics",
+      "group": "intra_life_health",
+      "domain_a": "drug_repurposing",
+      "domain_b": "cancer_genomics",
+      "query_a": "drug repurposing computational methods",
+      "query_b": "cancer genomics precision oncology",
+      "usable_a": 8,
+      "usable_b": 7,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2959798450",
+        "W3080773873",
+        "W3008142620",
+        "W3011072970",
+        "W2044960952"
+      ],
+      "sample_ids_b": [
+        "W2614443510",
+        "W2949273159",
+        "W2521492299",
+        "W3004781275",
+        "W4312084830"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_084",
+      "pair_id": "v2_drug_repurposing_medical_imaging_ai",
+      "group": "intra_life_health",
+      "domain_a": "drug_repurposing",
+      "domain_b": "medical_imaging_ai",
+      "query_a": "drug repurposing computational methods",
+      "query_b": "deep learning medical image analysis",
+      "usable_a": 8,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2959798450",
+        "W3080773873",
+        "W3008142620",
+        "W3011072970",
+        "W2044960952"
+      ],
+      "sample_ids_b": [
+        "W2533800772",
+        "W2954996726",
+        "W2777186991",
+        "W3183198896",
+        "W2976398475"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_085",
+      "pair_id": "v2_protein_structure_prediction_microbiome_health",
+      "group": "intra_life_health",
+      "domain_a": "protein_structure_prediction",
+      "domain_b": "microbiome_health",
+      "query_a": "protein structure prediction deep learning",
+      "query_b": "gut microbiome human disease",
+      "usable_a": 7,
+      "usable_b": 4,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W3177828909",
+        "W4396721167",
+        "W3000982932",
+        "W2804822363",
+        "W3146944767"
+      ],
+      "sample_ids_b": [
+        "W2125826054",
+        "W2885492105",
+        "W2128769815",
+        "W2591030128"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_086",
+      "pair_id": "v2_single_cell_analysis_protein_structure_prediction",
+      "group": "intra_life_health",
+      "domain_a": "single_cell_analysis",
+      "domain_b": "protein_structure_prediction",
+      "query_a": "single cell RNA sequencing analysis",
+      "query_b": "protein structure prediction deep learning",
+      "usable_a": 2,
+      "usable_b": 7,
+      "decision": "excluded",
+      "reason": "EX1 insufficient_evidence_side_a=2",
+      "sample_ids_a": [
+        "W2146512944",
+        "W2168909179"
+      ],
+      "sample_ids_b": [
+        "W3177828909",
+        "W4396721167",
+        "W3000982932",
+        "W2804822363",
+        "W3146944767"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_087",
+      "pair_id": "v2_battery_degradation_structural_health",
+      "group": "intra_physical_eng",
+      "domain_a": "battery_degradation",
+      "domain_b": "structural_health",
+      "query_a": "lithium ion battery degradation modeling",
+      "query_b": "structural health monitoring machine learning",
+      "usable_a": 9,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2417460170",
+        "W2047152377",
+        "W3016068557",
+        "W2998038350",
+        "W4398164319"
+      ],
+      "sample_ids_b": [
+        "W1582368210",
+        "W3110031974",
+        "W2039488112",
+        "W3183660758",
+        "W3020454825"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_088",
+      "pair_id": "v2_computational_catalysis_structural_health",
+      "group": "intra_physical_eng",
+      "domain_a": "computational_catalysis",
+      "domain_b": "structural_health",
+      "query_a": "computational screening heterogeneous catalysis",
+      "query_b": "structural health monitoring machine learning",
+      "usable_a": 7,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2995656838",
+        "W2573377826",
+        "W2146037914",
+        "W3037620337",
+        "W2441647337"
+      ],
+      "sample_ids_b": [
+        "W1582368210",
+        "W3110031974",
+        "W2039488112",
+        "W3183660758",
+        "W3020454825"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_089",
+      "pair_id": "v2_materials_discovery_structural_health",
+      "group": "intra_physical_eng",
+      "domain_a": "materials_discovery",
+      "domain_b": "structural_health",
+      "query_a": "machine learning materials discovery",
+      "query_b": "structural health monitoring machine learning",
+      "usable_a": 6,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2742835787",
+        "W3129039627",
+        "W3036776898",
+        "W2968923792",
+        "W3143460494"
+      ],
+      "sample_ids_b": [
+        "W1582368210",
+        "W3110031974",
+        "W2039488112",
+        "W3183660758",
+        "W3020454825"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_090",
+      "pair_id": "v2_quantum_chemistry_battery_degradation",
+      "group": "intra_physical_eng",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "battery_degradation",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "lithium ion battery degradation modeling",
+      "usable_a": 8,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2120145199",
+        "W2121817924",
+        "W2756519801",
+        "W2132262459",
+        "W2793443888"
+      ],
+      "sample_ids_b": [
+        "W2417460170",
+        "W2047152377",
+        "W3016068557",
+        "W2998038350",
+        "W4398164319"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_091",
+      "pair_id": "v2_quantum_chemistry_structural_health",
+      "group": "intra_physical_eng",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "structural_health",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "structural health monitoring machine learning",
+      "usable_a": 8,
+      "usable_b": 8,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2120145199",
+        "W2121817924",
+        "W2756519801",
+        "W2132262459",
+        "W2793443888"
+      ],
+      "sample_ids_b": [
+        "W1582368210",
+        "W3110031974",
+        "W2039488112",
+        "W3183660758",
+        "W3020454825"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_092",
+      "pair_id": "v2_quantum_chemistry_weather_forecasting",
+      "group": "intra_physical_eng",
+      "domain_a": "quantum_chemistry",
+      "domain_b": "weather_forecasting",
+      "query_a": "quantum chemistry ab initio simulation",
+      "query_b": "machine learning weather forecasting",
+      "usable_a": 8,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2120145199",
+        "W2121817924",
+        "W2756519801",
+        "W2132262459",
+        "W2793443888"
+      ],
+      "sample_ids_b": [
+        "W1485009520",
+        "W4405031167",
+        "W2920947047",
+        "W2013120098",
+        "W4220726206"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_093",
+      "pair_id": "v2_bayesian_optimization_survival_analysis",
+      "group": "intra_quant_methods",
+      "domain_a": "bayesian_optimization",
+      "domain_b": "survival_analysis",
+      "query_a": "bayesian optimization machine learning",
+      "query_b": "survival analysis machine learning",
+      "usable_a": 5,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2131241448",
+        "W2950182411",
+        "W368469426",
+        "W2963474950",
+        "W1604938182"
+      ],
+      "sample_ids_b": [
+        "W2963232127",
+        "W3107095885",
+        "W1966327575",
+        "W2747986904",
+        "W3111736660"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_094",
+      "pair_id": "v2_causal_inference_survival_analysis",
+      "group": "intra_quant_methods",
+      "domain_a": "causal_inference",
+      "domain_b": "survival_analysis",
+      "query_a": "causal inference observational data",
+      "query_b": "survival analysis machine learning",
+      "usable_a": 8,
+      "usable_b": 5,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2161511352",
+        "W2790381016",
+        "W2157803622",
+        "W2805983714",
+        "W2155163959"
+      ],
+      "sample_ids_b": [
+        "W2963232127",
+        "W3107095885",
+        "W1966327575",
+        "W2747986904",
+        "W3111736660"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    },
+    {
+      "candidate_id": "cand_095",
+      "pair_id": "v2_survival_analysis_algorithmic_fairness",
+      "group": "intra_quant_methods",
+      "domain_a": "survival_analysis",
+      "domain_b": "algorithmic_fairness",
+      "query_a": "survival analysis machine learning",
+      "query_b": "algorithmic fairness bias audit",
+      "usable_a": 5,
+      "usable_b": 9,
+      "decision": "eligible",
+      "reason": "IN1",
+      "sample_ids_a": [
+        "W2963232127",
+        "W3107095885",
+        "W1966327575",
+        "W2747986904",
+        "W3111736660"
+      ],
+      "sample_ids_b": [
+        "W2969896603",
+        "W2981869278",
+        "W2962059918",
+        "W4385564466",
+        "W4213278005"
+      ],
+      "screened_utc": "2026-09-25T11:09:00+00:00",
+      "seconds": 0.0
+    }
+  ]
+}

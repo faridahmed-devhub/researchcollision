@@ -209,7 +209,7 @@ Serious failures are classified by origin stage (`retrieval` | `grounding` | `re
 
 - Source papers are a fixed retrieval snapshot from public scholarly APIs at dataset build time; the literature keeps changing after that date.
 - Research-gap annotations are not independently available for these cases, so research-gap relevance is `n/a` rather than a fabricated gold score. Any machine-generated reference sets are labeled in the provenance table and are heuristic, not expert labels.
-- Language-model steps used the deterministic mock LLM provider (no model API credentials were configured for this run): the run exercises real literature retrieval + grounding plumbing, but NOT real language-model reasoning quality.
+- Language-model steps used an OpenAI-compatible LLM provider with real-time remote calls rather than a deterministic local mock, so LLM-generated text from this run is not guaranteed byte-wise reproducible. The run exercises real literature retrieval and grounding plumbing; language-model reasoning quality is not independently certified and remains subject to human review.
 - Human relevance/novelty/plausibility/evidence-quality ratings are shown only if genuinely provided by raters; they are never invented. If none were provided, the human section remains pending.
 - Automatic token/embedding-similarity proxies for gap/intersection relevance and plausibility are approximations. Final judgment requires human ratings.
 - Hallucination rate and citation validity are measured against the case source corpus plus each system's own retrieval context; a broader external oracle would be needed to certify absence of hallucination.

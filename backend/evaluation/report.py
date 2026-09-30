@@ -79,6 +79,7 @@ def build_report(
         f"Literature chain=`{', '.join(providers.get('literature_chain', []))}` "
         f"(first provider that succeeds is used; offline mode only ever calls mock)")
     add("")
+    llm_provider = providers.get("llm_provider") or ""
 
     # -- provenance / annotation sources -----------------------------------
     add("## Dataset provenance & annotation sources")
@@ -252,7 +253,7 @@ def build_report(
 
     add("## Limitations")
     add("")
-    for lim in _limitations(dataset, offline_mode()):
+    for lim in _limitations(dataset, offline_mode(), llm_provider=llm_provider):
         add(f"- {lim}")
     add("")
 
@@ -262,7 +263,7 @@ def build_report(
     return text
 
 
-def _limitations(dataset: Any, offline: bool) -> list[str]:
+def _limitations(dataset: Any, offline: bool, llm_provider: str = "") -> list[str]:
     common = [
         (
             "Automatic token/embedding-similarity proxies for gap/intersection "
@@ -288,11 +289,27 @@ def _limitations(dataset: Any, offline: bool) -> list[str]:
             "requires controlled experiments on real datasets with human evaluation."
         ),
     ]
+    pill = (llm_provider or "").strip().lower()
     if offline:
         common.append(
             "This run was in offline mode: the LLM is the deterministic mock provider "
             "and the logical model is fully mocked, so these numbers exercise "
             "plumbing, not real reasoning quality."
+        )
+    elif pill in ("", "mock", "see config.json (resolved providers)"):
+        common.append(
+            "Language-model steps used the deterministic mock LLM provider (no real "
+            "model endpoint is recorded for this run): the run exercises literature "
+            "retrieval + grounding plumbing, but NOT real language-model reasoning "
+            "quality."
+        )
+    else:
+        common.append(
+            f"Language-model steps used the configured real LLM provider "
+            f"(`{llm_provider}`; endpoint and model identity are not persisted in "
+            "this report and are redacted). Remote model sampling was not guaranteed "
+            "deterministic, so exact byte-wise reproduction of LLM-generated output "
+            "is not claimed."
         )
     if dataset.is_synthetic:
         return [
@@ -312,12 +329,6 @@ def _limitations(dataset: Any, offline: bool) -> list[str]:
             "cases, so research-gap relevance is `n/a` rather than a fabricated gold "
             "score. Any machine-generated reference sets are labeled in the "
             "provenance table and are heuristic, not expert labels."
-        ),
-        (
-            "Language-model steps used the deterministic mock LLM provider (no model "
-            "API credentials were configured for this run): the run exercises real "
-            "literature retrieval + grounding plumbing, but NOT real language-model "
-            "reasoning quality."
         ),
         (
             "Human relevance/novelty/plausibility/evidence-quality ratings are shown "

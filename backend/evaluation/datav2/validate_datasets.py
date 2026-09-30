@@ -31,7 +31,7 @@ V1_CASE_IDS = [
     "speech_recognition_x_hearing_aids",
 ]
 VALID_CORPORA = ("openalex", "arxiv", "pubmed")
-V2_ID_RE = re.compile(r"^v2_[a-z0-9]+_[a-z0-9]+$")
+V2_ID_RE = re.compile(r"^v2_[a-z0-9]+(?:_[a-z0-9]+)+$")
 
 
 def _sha(path: Path) -> str:

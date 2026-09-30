@@ -1,18 +1,30 @@
-﻿# Appendix D — Reproducibility
+﻿# Appendix D: Reproducibility Information
 
-## D.1 Verifying this manuscript's numbers (recommended, read-only)
+This appendix summarizes the artifacts and procedures that support verifying the analysis reported in
+this paper. It complements Section 9.
 
-1. Read `backend/evaluation_out_real_llm_v1/results.json` (do not modify).
-2. Recursively count `EV-*` records → expect **188**.
-3. Tally by `surface` → intersection 55, hypothesis 50, gap 83.
-4. Tally by `system` → keyword 41, embedding 36, llm_only 53, pipeline 58.
-5. Count distinct `case_id` per system → keyword 12, embedding 12, llm_only 12, pipeline 8.
-6. Read `failures[]` → 4 pipeline failures (verbatim in Appendix B / Table D).
+## D.1 Verifying the reported numbers (read-only)
 
-## D.2 Re-running the experiment (separate, explicit step — NOT done here)
+The counts reported in this paper can be verified by a read-only inspection of the recorded evaluation
+outputs maintained in the ResearchCollision repository:
 
-If a fresh run is ever desired, follow the repository README; note that:
-- It will execute real rank/embedding/LLM calls and take significant time.
-- Results will differ on network/LLM availability (the 4 recorded pipeline failures are
-  network-dependent and may or may not recur).
-- This manuscript intentionally does **not** re-run; it only reports the single authoritative run.
+1. Recursively enumerate all recorded evidence records; expect 188.
+2. Tally by surface; expect intersection 55, hypothesis 50, gap 83.
+3. Tally by system; expect keyword 41, embedding 36, llm_only 53, pipeline 58.
+4. Count the distinct cases per system; expect keyword 12, embedding 12, llm_only 12, pipeline 8.
+5. Inspect the recorded failure list; expect the four pipeline failures listed in Appendix C
+   and in Table D of Section 6.
+
+## D.2 Re-running the experiment (explicit, separate step — not performed)
+
+Re-running the experiment is possible, but this paper intentionally does not do so; it reports a
+single authoritative execution. A fresh run would:
+
+- execute real retrieval and language-model calls and take considerable time;
+- produce results that may differ with network and provider availability (the four recorded pipeline
+  failures are network-dependent and may or may not recur), because remote language-model sampling is
+  not guaranteed deterministic.
+
+Manuscript reproduction is fully script-based: the PDF, HTML preview, figures, and all tables in this
+paper are derived by read-only parsing of the recorded evaluation outputs, and no experiment is
+re-executed during manuscript preparation.

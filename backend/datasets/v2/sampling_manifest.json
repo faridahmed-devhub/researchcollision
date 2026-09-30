@@ -1,0 +1,189 @@
+{
+  "kind": "v2_sampling_manifest",
+  "protocol_file": "E:\\AICode\\opencode\\ResearchCollision\\backend\\CASE_SAMPLING_PROTOCOL.md",
+  "protocol_sha256": "c51a2edca0db59037f0c2d1d33deb9e312660363ec5a96d32b7a18b40e753ded",
+  "pool_file": "evaluation/datav2/domain_pool_v1.json",
+  "pool_sha256": "417a85650866b76e97d409aa2fe349b83531f7289ec7913c0072058b8ff73295",
+  "sampling_seed": 20260925,
+  "method": "stratified seeded sampling (proportional, largest remainder) from all unordered domain pairs",
+  "created_utc": "2026-09-25T11:23:34+00:00",
+  "selection_utc": "2026-09-25T11:20:59+00:00",
+  "universe_size": 435,
+  "frame_size": 96,
+  "screened": 96,
+  "eligible": 87,
+  "excluded_by_reason": {
+    "IN1": 87,
+    "EX1 insufficient_evidence_side_a=2": 9
+  },
+  "screening_decisions": {
+    "eligible": 87,
+    "excluded": 9
+  },
+  "candidate_counts": {
+    "screened": 96,
+    "eligible": 87,
+    "excluded": 9
+  },
+  "strata": {
+    "groups": {
+      "inter_cs_ai_life_health": 64,
+      "inter_cs_ai_physical_eng": 64,
+      "inter_cs_ai_quant_methods": 48,
+      "inter_life_health_physical_eng": 64,
+      "inter_life_health_quant_methods": 48,
+      "inter_physical_eng_quant_methods": 48,
+      "intra_cs_ai": 28,
+      "intra_life_health": 28,
+      "intra_physical_eng": 28,
+      "intra_quant_methods": 15
+    },
+    "frame_allocation": {
+      "inter_cs_ai_life_health": 8,
+      "inter_cs_ai_physical_eng": 10,
+      "inter_cs_ai_quant_methods": 8,
+      "inter_life_health_physical_eng": 8,
+      "inter_life_health_quant_methods": 6,
+      "inter_physical_eng_quant_methods": 7,
+      "intra_cs_ai": 4,
+      "intra_life_health": 3,
+      "intra_physical_eng": 4,
+      "intra_quant_methods": 2
+    },
+    "eligible_by_group": {
+      "inter_cs_ai_life_health": 11,
+      "inter_cs_ai_physical_eng": 14,
+      "inter_cs_ai_quant_methods": 11,
+      "inter_life_health_physical_eng": 11,
+      "inter_life_health_quant_methods": 9,
+      "inter_physical_eng_quant_methods": 11,
+      "intra_cs_ai": 6,
+      "intra_life_health": 5,
+      "intra_physical_eng": 6,
+      "intra_quant_methods": 3
+    },
+    "shortfalls": {}
+  },
+  "final_sample": {
+    "target": 60,
+    "selected": 60,
+    "selected_ids": [
+      "v2_battery_degradation_causal_inference",
+      "v2_battery_degradation_differential_privacy",
+      "v2_battery_degradation_recommender_systems",
+      "v2_battery_degradation_structural_health",
+      "v2_bayesian_optimization_survival_analysis",
+      "v2_cancer_genomics_climate_downscaling",
+      "v2_cancer_genomics_semantic_segmentation",
+      "v2_cancer_genomics_time_series_forecasting",
+      "v2_cancer_genomics_uncertainty_quantification",
+      "v2_climate_downscaling_semantic_segmentation",
+      "v2_clinical_decision_support_differential_privacy",
+      "v2_clinical_decision_support_materials_discovery",
+      "v2_clinical_decision_support_microbiome_health",
+      "v2_clinical_decision_support_structural_health",
+      "v2_clinical_decision_support_uncertainty_quantification",
+      "v2_computational_catalysis_differential_privacy",
+      "v2_computational_catalysis_recommender_systems",
+      "v2_computational_catalysis_structural_health",
+      "v2_differential_privacy_algorithmic_fairness",
+      "v2_differential_privacy_graph_neural_networks",
+      "v2_differential_privacy_recommender_systems",
+      "v2_drug_repurposing_cancer_genomics",
+      "v2_drug_repurposing_materials_discovery",
+      "v2_electronic_health_records_algorithmic_fairness",
+      "v2_electronic_health_records_graph_neural_networks",
+      "v2_electronic_health_records_inverse_photonics",
+      "v2_electronic_health_records_materials_discovery",
+      "v2_electronic_health_records_uncertainty_quantification",
+      "v2_federated_learning_bayesian_optimization",
+      "v2_formal_verification_causal_inference",
+      "v2_graph_neural_networks_semantic_segmentation",
+      "v2_inverse_photonics_federated_learning",
+      "v2_inverse_photonics_uncertainty_quantification",
+      "v2_llm_interpretability_semantic_segmentation",
+      "v2_llm_interpretability_uncertainty_quantification",
+      "v2_materials_discovery_bayesian_optimization",
+      "v2_materials_discovery_federated_learning",
+      "v2_materials_discovery_reinforcement_learning",
+      "v2_materials_discovery_structural_health",
+      "v2_medical_imaging_ai_differential_privacy",
+      "v2_medical_imaging_ai_semantic_segmentation",
+      "v2_medical_imaging_ai_uncertainty_quantification",
+      "v2_microbiome_health_semantic_segmentation",
+      "v2_protein_structure_prediction_battery_degradation",
+      "v2_protein_structure_prediction_federated_learning",
+      "v2_protein_structure_prediction_formal_verification",
+      "v2_protein_structure_prediction_materials_discovery",
+      "v2_protein_structure_prediction_microbiome_health",
+      "v2_quantum_chemistry_bayesian_optimization",
+      "v2_quantum_chemistry_causal_inference",
+      "v2_quantum_chemistry_structural_health",
+      "v2_quantum_chemistry_time_series_forecasting",
+      "v2_quantum_chemistry_uncertainty_quantification",
+      "v2_recommender_systems_causal_inference",
+      "v2_reinforcement_learning_algorithmic_fairness",
+      "v2_reinforcement_learning_bayesian_optimization",
+      "v2_semantic_segmentation_bayesian_optimization",
+      "v2_structural_health_recommender_systems",
+      "v2_survival_analysis_algorithmic_fairness",
+      "v2_weather_forecasting_formal_verification"
+    ],
+    "reserve_used": true
+  },
+  "dedup": {
+    "total_records_before_dedup": 2589,
+    "kept_after_dedup": 2525,
+    "dropped_by_matcher": {
+      "doi": 32,
+      "norm_title_only_fallback(b)": 4,
+      "norm_title+year": 25,
+      "norm_title_only_fallback(a)": 3
+    }
+  },
+  "request_optimization": {
+    "strategy": "per-domain OpenAlex query cache (corpus_query_cache.json): each of the distinct frame queries is fetched exactly once; screening decisions and build-time records are computed/reused from the cache, so OpenAlex is never re-queried per candidate",
+    "naive_openalex_search_calls": {
+      "screening": 192,
+      "build": 120,
+      "total": 312
+    },
+    "optimized_openalex_search_calls": {
+      "screening": 30,
+      "build": 0,
+      "total": 30
+    },
+    "distinct_queries_cached": 30,
+    "reduction_percent": 90.4
+  },
+  "build": {
+    "dropped_at_build": [],
+    "final_dataset_size": 60,
+    "records_in_dataset": 600,
+    "per_side_selection": {
+      "slots": "openalex<=3, pubmed<=1, arxiv<=1 per side, remainder pooled by citations",
+      "per_side": 5
+    }
+  },
+  "corpora": {
+    "calls": {
+      "openalex": 150,
+      "arxiv": 120,
+      "pubmed": 50
+    },
+    "arxiv_probe_ok": true,
+    "errors": [],
+    "openalex_errors": [],
+    "used": [
+      "arxiv",
+      "openalex",
+      "pubmed"
+    ]
+  },
+  "artifacts": {
+    "dataset_v2.json": "826263ae99a348b8cafc802e35a94afdd320c38d640cee553a22414cc3b126a4",
+    "candidate_frame.json": "3855de0084562f90ca0350ccaf0047cf74d0effde419dac778d1aa27ecb9f1a1",
+    "candidate_population.json": "f4162dc6f23ddd1381ec2a40225e9ecf68a9dd2c4152a2cd3ab1a541f6b48c23",
+    "corpus_query_cache.json": "09c4ee3b83a54186edf1e5c85ae7b55b81c4a2fbe75333b41f96be1c38dfe014"
+  }
+}

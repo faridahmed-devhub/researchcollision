@@ -462,9 +462,9 @@ class AgenticPipelineBaseline(BaseSystem):
         db.add(job)
         db.commit()
 
-        import app.workers.tasks.discovery_pipeline as dp
+        import evaluation.variants as variants
 
-        pipeline = dp.DiscoveryPipeline(db, job, seed=self.seed)
+        pipeline = variants.build_pipeline_variant(db, job, seed=self.seed, case=case)
         status = await pipeline.run()
         if status != JobStatus.COMPLETED.value:
             raise RuntimeError(

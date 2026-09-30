@@ -1,0 +1,16 @@
+import pymupdf, re, sys
+sys.stdout.reconfigure(encoding="utf-8")
+BASE = r"E:\AICode\opencode\ResearchCollision\backend\research_paper"
+d = pymupdf.open(BASE + r"\research_paper.pdf")
+t0 = d[0].get_text()
+print("=== PAGE 1 (title/TOC) ===")
+print(t0[:900])
+h = open(BASE + r"\research_paper.html", encoding="utf-8").read()
+print("=== placeholders ===")
+dbl = h.count("{")
+print("unresolved { braces:", dbl)
+print("empty TOC num spans:", h.count('class="num"></span>'))
+print("title block present:", "Evidence-Surface Analysis of a Multi-System" in h)
+print("status box verbatim:", "INCOMPLETE (8 of 12 cases)" in h)
+print("source artifact:", "results.json (188 evidence records, authoritative)" in h)
+print("footer label:", "Generated render: pass 2 (final)" in h)
